@@ -140,15 +140,4 @@ $(document).ready(function() {
 		$('.ads__horizontal').hide();
 	});
 	
-	// breaking news
-    $('.js--breaking').marquee({
-        pauseOnHover: true,
-        allowCss3Support: false,
-        delayBeforeStart: 2000,
-        duration: 8000,
-        gap: 100,
-        duplicated: true,
-		startVisible: true
-    }); 
-
 });
