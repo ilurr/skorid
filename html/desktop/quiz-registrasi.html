@@ -317,104 +317,106 @@
 				
 					<!-- quiz -->
 					<section class="quiz -page box clearfix">
-						<h3 class="title -center"><span>Lengkapi Data Anda</span></h3>
-						<div class="quiz__detail clearfix">
-							<div class="display-table">
-								<div class="display-center">
-									<!-- form -->
-									<div class="quiz__form">
-										<div class="form__group clearfix">
-											<div class="form__group__inline">
-												<label for="">Email</label>
-												<input type="text" class="form__input" disabled="disabled" value="admin@pikiran-rakyat.com">
+						<div class="quiz__layers">
+							<h3 class="title -center"><span>Lengkapi Data Anda</span></h3>
+							<div class="quiz__detail clearfix">
+								<div class="display-table">
+									<div class="display-center">
+										<!-- form -->
+										<div class="quiz__form">
+											<div class="form__group clearfix">
+												<div class="form__group__inline">
+													<label for="">Email</label>
+													<input type="text" class="form__input" disabled="disabled" value="admin@pikiran-rakyat.com">
+												</div>
 											</div>
-										</div>
-										<div class="form__group clearfix">
-											<div class="form__group__inline">
-												<label for="">Nama Lengkap</label>
-												<input type="text" class="form__input">
+											<div class="form__group clearfix">
+												<div class="form__group__inline">
+													<label for="">Nama Lengkap</label>
+													<input type="text" class="form__input">
+												</div>
+												<span class="error">Nama harus diisi</span>
 											</div>
-											<span class="error">Nama harus diisi</span>
-										</div>
-										<div class="form__group clearfix">
-											<div class="form__group__inline">
-												<label for="">Jenis Kelamin</label>
-												<div class="form__group__flex">
-													<div class="form__group radio">
-														<label>
-															<input type="radio" name="gender"> Laki-laki
-														</label>
+											<div class="form__group clearfix">
+												<div class="form__group__inline">
+													<label for="">Jenis Kelamin</label>
+													<div class="form__group__flex">
+														<div class="form__group radio">
+															<label>
+																<input type="radio" name="gender"> Laki-laki
+															</label>
+														</div>
+														<div class="form__group radio">
+															<label>
+																<input type="radio" name="gender"> Perempuan
+															</label>
+														</div>
+														<div class="form__group radio">
+														</div>
 													</div>
-													<div class="form__group radio">
-														<label>
-															<input type="radio" name="gender"> Perempuan
-														</label>
+												</div>
+											</div>
+											<div class="form__group clearfix">
+												<div class="form__group__inline">
+													<label for="">Tanggal Lahir</label>
+													<div class="form__group__flex">
+														<div class="form__group select">
+															<select name="select" id="select">
+																<option value="">Tanggal</option>
+																<option value="">1</option>
+																<option value="">2</option>
+																<option value="">3</option>
+															</select>
+														</div>
+														<div class="form__group select">
+															<select name="select" id="select">
+																<option value="">Bulan</option>
+																<option value="">Januari</option>
+																<option value="">Februari</option>
+																<option value="">Maret</option>
+															</select>
+														</div>
+														<div class="form__group select">
+															<select name="select" id="select">
+																<option value="">Tahun</option>
+																<option value="">2000</option>
+																<option value="">2001</option>
+																<option value="">2002</option>
+															</select>
+														</div>
 													</div>
-													<div class="form__group radio">
+												</div>
+											</div>
+											<div class="form__group clearfix">
+												<div class="form__group__inline">
+													<label for="">No Telp/HP</label>
+													<input type="text" class="form__input">
+												</div>
+											</div>
+											<div class="form__group clearfix">
+												<div class="form__group__inline">
+													<label for="">Alamat</label>
+													<input type="text" class="form__input">
+												</div>
+											</div>
+											<div class="form__group clearfix">
+												<div class="form__group__inline">
+													<label for="">Kota</label>
+													<input type="text" class="form__input">
+												</div>
+											</div>
+											<div class="form__group clearfix">
+												<div class="form__group__inline">
+													<label for=""></label>
+													<div class="form__group__flex">
+														<input type="button" value="Back" class="form__button back disabled" disabled="disabled">
+														<input type="submit" value="Next" class="form__button" onclick="location.href='quiz-start.html';">
 													</div>
 												</div>
 											</div>
 										</div>
-										<div class="form__group clearfix">
-											<div class="form__group__inline">
-												<label for="">Tanggal Lahir</label>
-												<div class="form__group__flex">
-													<div class="form__group select">
-														<select name="select" id="select">
-															<option value="">Tanggal</option>
-															<option value="">1</option>
-															<option value="">2</option>
-															<option value="">3</option>
-														</select>
-													</div>
-													<div class="form__group select">
-														<select name="select" id="select">
-															<option value="">Bulan</option>
-															<option value="">Januari</option>
-															<option value="">Februari</option>
-															<option value="">Maret</option>
-														</select>
-													</div>
-													<div class="form__group select">
-														<select name="select" id="select">
-															<option value="">Tahun</option>
-															<option value="">2000</option>
-															<option value="">2001</option>
-															<option value="">2002</option>
-														</select>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="form__group clearfix">
-											<div class="form__group__inline">
-												<label for="">No Telp/HP</label>
-												<input type="text" class="form__input">
-											</div>
-										</div>
-										<div class="form__group clearfix">
-											<div class="form__group__inline">
-												<label for="">Alamat</label>
-												<input type="text" class="form__input">
-											</div>
-										</div>
-										<div class="form__group clearfix">
-											<div class="form__group__inline">
-												<label for="">Kota</label>
-												<input type="text" class="form__input">
-											</div>
-										</div>
-										<div class="form__group clearfix">
-											<div class="form__group__inline">
-												<label for=""></label>
-												<div class="form__group__flex">
-													<input type="button" value="Back" class="form__button back disabled" disabled="disabled">
-													<input type="submit" value="Next" class="form__button" onclick="location.href='quiz-deskripsi.html';">
-												</div>
-											</div>
-										</div>
+										<!-- /form -->
 									</div>
-									<!-- /form -->
 								</div>
 							</div>
 						</div>

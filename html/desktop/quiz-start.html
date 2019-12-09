@@ -317,15 +317,158 @@
 				
 					<!-- quiz -->
 					<section class="quiz -page box clearfix">
-						<div class="quiz__layers">
-							<h3 class="title -center"><span>Login</span></h3>
-							<div class="quiz__detail clearfix">
+						<div class="quiz__layers -active" id="desc">
+							<h3 class="title -center"><span>Tentang Quiz</span></h3>
+							<div class="quiz__detail">
 								<div class="display-table">
 									<div class="display-center">
-										<p>Untuk melanjutkan, silakan Login terlebih dahulu dengan salah satu akun di bawah ini</p>
-										<div class="quiz__login">
-											<a href="quiz-registrasi.html" class="button button--login button--facebook"><span class="icon icon-facebook"></span> Login with Facebook</a>
-											<a href="quiz-registrasi.html" class="button button--login button--google"><span class="icon icon-google"></span> Login with Google</a>
+										<div class="quiz__teaser">
+											<div class="quiz__scroll">
+												<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+												<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+											</div>
+										</div>
+										<div class="quiz__action">
+											<div class="quiz__button">
+												<div class="quiz__button__item">
+													<input type="button" value="Back" class="form__button back">
+												</div>
+												<div class="quiz__button__item">
+													<input type="button" value="Next" class="form__button js-btn" data-target="q1">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="quiz__layers" id="q1">
+							<h3 class="title -center"><span>Pertanyaan 1/3</span></h3>
+							<div class="quiz__detail">
+								<div class="display-table">
+									<div class="display-center">
+										<div class="quiz__question">
+											Manakah Yang Anda pilih untuk mengisi waktu luang:
+										</div>
+										<div class="quiz__option">
+											<div class="quiz__option__item">
+												<label>
+													<div class="quiz__bg" style="background-image:url('https://source.unsplash.com/300x200/?shopping,indoor,retail')"></div>
+													<input type="radio" name="q1"> <span>Jalan-jalan ke mall</span>
+												</label>
+											</div>
+											<div class="quiz__option__item">
+												<label>
+													<div class="quiz__bg" style="background-image:url('https://source.unsplash.com/300x200/?mountain')"></div>
+													<input type="radio" name="q1"> <span>Jalan-jalan ke Gunung</span>
+												</label>
+											</div>
+											<div class="quiz__option__item">
+												<label>
+													<div class="quiz__bg" style="background-image:url('https://source.unsplash.com/300x200/?tribune,football')"></div>
+													<input type="radio" name="q1"> <span>Nonton olahraga ke stadion</span>
+												</label>
+											</div>
+											<div class="quiz__option__item">
+												<label>
+													<div class="quiz__bg" style="background-image:url('https://source.unsplash.com/300x200/?home,indoor,house')"></div>
+													<input type="radio" name="q1"> <span>Berdiam diri di Rumah</span>
+												</label>
+											</div>
+										</div>
+										<div class="quiz__action">
+											<div class="quiz__button">
+												<div class="quiz__button__item">
+													<input type="button" value="Back" class="form__button back js-btn" data-target="desc">
+												</div>
+												<div class="quiz__button__item">
+													<input type="button" value="Next" class="form__button js-btn" data-target="q2">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="quiz__layers" id="q2">
+							<h3 class="title -center"><span>Pertanyaan 2/3</span></h3>
+							<div class="quiz__detail">
+								<div class="display-table">
+									<div class="display-center">
+										<div class="quiz__question">
+											Dengan siapa Anda mengisi waktu luang?
+										</div>
+										<div class="quiz__option">
+											<div class="quiz__option__item">
+												<label>
+													<div class="quiz__bg" style="background-image:url('https://source.unsplash.com/300x200/?friends')"></div>
+													<input type="radio" name="q1"> <span>Dengan teman-teman</span>
+												</label>
+											</div>
+											<div class="quiz__option__item">
+												<label>
+													<div class="quiz__bg" style="background-image:url('https://source.unsplash.com/300x200/?family')"></div>
+													<input type="radio" name="q1"> <span>Keluarga</span>
+												</label>
+											</div>
+											<div class="quiz__option__item">
+												<label>
+													<div class="quiz__bg" style="background-image:url('https://source.unsplash.com/300x200/?myself')"></div>
+													<input type="radio" name="q1"> <span>Seorang Diri</span>
+												</label>
+											</div>
+										</div>
+										<div class="quiz__action">
+											<div class="quiz__button">
+												<div class="quiz__button__item">
+													<input type="button" value="Back" class="form__button back js-btn" data-target="q1">
+												</div>
+												<div class="quiz__button__item">
+													<input type="button" value="Next" class="form__button js-btn" data-target="q3">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="quiz__layers" id="q3">
+							<h3 class="title -center"><span>Pertanyaan 3/3</span></h3>
+							<div class="quiz__detail">
+								<div class="display-table">
+									<div class="display-center">
+										<div class="quiz__question">
+											Gimana?
+										</div>
+										<div class="quiz__option">
+											<div class="quiz__option__item">
+												<label>
+													<div class="quiz__bg" style="background-image:url('https://source.unsplash.com/300x200/?tv')"></div>
+													<input type="radio" name="q1"> <span>Yoi</span>
+												</label>
+											</div>
+											<div class="quiz__option__item">
+												<label>
+													<div class="quiz__bg" style="background-image:url('https://source.unsplash.com/300x200/?bike')"></div>
+													<input type="radio" name="q1"> <span>Beres</span>
+												</label>
+											</div>
+											<div class="quiz__option__item">
+												<label>
+													<div class="quiz__bg" style="background-image:url('https://source.unsplash.com/300x200/?thumb')"></div>
+													<input type="radio" name="q1"> <span>Ntap</span>
+												</label>
+											</div>
+										</div>
+										<div class="quiz__action">
+											<div class="quiz__button">
+												<div class="quiz__button__item">
+													<input type="button" value="Back" class="form__button back js-btn" data-target="q2">
+												</div>
+												<div class="quiz__button__item">
+													<input type="button" value="Next" class="form__button" onclick="location.href='quiz-result.html';">
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -401,6 +544,30 @@
 	<script src="./asset/js/jquery.magnific-popup.min.js"></script>
 	<script src="./asset/js/jquery.marquee.min.js"></script>
 	<script src="./asset/js/main.js"></script>
+	<script>
+	$(document).ready(function() {
+		var w = document.querySelectorAll('.quiz__layers');
+		var b = document.querySelectorAll('.js-btn');
+		//console.log(w.length);
+		
+		for(var i=0;i<b.length;i++) {
+			b[i].addEventListener('click', function(e) {
+				var d = this.getAttribute('data-target');
+				switchPage(d);
+			});
+		}
+		function switchPage(e) {
+			var s = document.getElementById(e);
+			if(!!s){
+				//console.log(s);
+				for(var i=0;i<w.length;i++){
+					w[i].classList.remove('-active');
+				}
+				s.classList.add('-active');
+			}
+		}
+	});
+	</script>
 	
 </body>
 </html>
