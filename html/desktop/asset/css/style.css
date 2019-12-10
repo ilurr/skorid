@@ -894,12 +894,22 @@ input[type="radio"] {
   .hl.-section .hl__b-box {
     padding: 300px 15px 20px; }
   .hl.-topic .hl__big {
-    height: 350px; }
-  .hl.-topic .hl__b-box {
-    padding: 100px 15px 20px; }
+    height: auto; }
+  .hl.-topic .hl__b-wrap {
+    position: relative;
+    padding: 10px 20px;
+    background: #fff; }
   .hl.-topic .hl__b-img {
     height: 350px;
     background: #5a5a5a; }
+  .hl.-topic .hl__b-title {
+    font-size: 24px;
+    max-height: none;
+    color: #000; }
+    .hl.-topic .hl__b-title:hover {
+      color: #E52525; }
+  .hl.-topic .hl__b-lead {
+    color: #000; }
   .hl .slick-dots {
     bottom: 570px;
     text-align: right;
