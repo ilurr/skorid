@@ -1320,15 +1320,19 @@ input[type="radio"] {
 
 .quiz {
   position: relative;
-  background: #fff;
-  margin: 15px 0;
-  padding: 0; }
-  .quiz .title {
-    background: #000;
-    color: #fff; }
+  margin: 15px -15px;
+  background: #EFEFEF;
+  padding: 0 0 20px; }
+  .quiz.-page {
+    background: #fff;
+    margin: 15px 0;
+    padding: 0; }
+    .quiz.-page .title {
+      background: #000;
+      color: #fff; }
   .quiz__wrap {
     position: relative;
-    padding: 0 15px 10px; }
+    padding: 0 15px; }
   .quiz__box {
     position: relative;
     background: #fff;
