@@ -832,6 +832,18 @@ input[type="radio"] {
     overflow: hidden; }
     .hl__b-img img {
       width: 100%; }
+  .hl__b-cat {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    z-index: 2;
+    background: #000;
+    padding: 4px 6px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 10px;
+    font-weight: 700;
+    color: #fff; }
   .hl__b-box {
     position: absolute;
     bottom: 0;
@@ -1810,8 +1822,9 @@ input[type="radio"] {
 
 .videos {
   position: relative;
-  padding: 0;
-  margin: 15px -15px; }
+  padding: 0 0 20px;
+  margin: 15px -15px;
+  background: #EFEFEF; }
   .videos__wrap {
     position: relative;
     margin: 0;
@@ -1843,7 +1856,7 @@ input[type="radio"] {
     .videos__img .icon {
       position: absolute;
       left: 50%;
-      top: 50%;
+      top: calc(50% - 20px);
       z-index: 2;
       color: #fff;
       font-size: 55px;
@@ -1859,8 +1872,6 @@ input[type="radio"] {
       transform: translate(-50%, -50%) scale(1.1); }
     .videos__img:hover img {
       opacity: .9; }
-  .videos__box {
-    position: relative; }
   .videos__info {
     position: relative;
     text-transform: uppercase;
@@ -1869,13 +1880,23 @@ input[type="radio"] {
     font-size: 10px;
     font-weight: 400;
     color: #9C9C9C; }
+  .videos__box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    padding: 60px 0 0;
+    background: linear-gradient(90deg, #000, transparent);
+    background: -webkit-linear-gradient(90deg, #000, transparent); }
   .videos__title {
-    margin: 15px 0 5px;
-    height: 60px;
-    max-height: 60px;
-    overflow: hidden;
-    font-size: 16px;
-    font-weight: 500; }
+    margin: 15px 0;
+    padding: 0 15px;
+    font-weight: 500;
+    color: #fff;
+    height: auto;
+    max-height: 54px;
+    overflow: hidden; }
   .videos__link {
     display: block; }
   .videos__item {
@@ -1951,8 +1972,9 @@ input[type="radio"] {
 
 .photos {
   position: relative;
-  padding: 0;
-  margin: 15px -15px; }
+  padding: 0 0 20px;
+  margin: 15px -15px;
+  background: #EFEFEF; }
   .photos__img {
     position: relative;
     overflow: hidden;
@@ -2348,6 +2370,8 @@ input[type="radio"] {
   .title.-jerman {
     background: #e2821f;
     color: #fff; }
+  .title span img {
+    height: 30px; }
   .title__logo {
     display: inline-block;
     height: 30px;
@@ -2485,7 +2509,8 @@ input[type="radio"] {
       width: calc(100% - 55px); }
     .read__info__author {
       padding: 0 10px 0 0;
-      display: inline-block; }
+      display: inline-block;
+      list-style: none; }
     .read__info__date {
       position: relative;
       font-size: 12px;
@@ -2517,7 +2542,8 @@ input[type="radio"] {
       font-weight: 700; }
     .read__content ol, .read__content ul {
       list-style: disc;
-      padding: 0 0 0 30px; }
+      padding: 0 0 0 30px;
+      margin: 15px 0; }
     .read__content ol {
       list-style: decimal; }
     .read__content li {

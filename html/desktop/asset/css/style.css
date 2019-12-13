@@ -573,6 +573,9 @@ input[type="radio"] {
   .social--footer {
     padding: 12px 0;
     text-align: right; }
+  .social--footer {
+    padding: 12px 0;
+    text-align: center; }
   .social--article {
     padding: 5px 0;
     text-align: right;
@@ -661,6 +664,8 @@ input[type="radio"] {
     transition: all 0.2s ease; }
   .nav li {
     position: relative; }
+    .nav li:last-child .nav__submenu {
+      left: -90px; }
     .nav li:hover .nav__submenu {
       top: 42px;
       visibility: visible;
@@ -668,9 +673,10 @@ input[type="radio"] {
     .nav li a {
       position: relative;
       display: block;
-      padding: 12px 10px;
+      padding: 13px 5px;
       text-transform: uppercase;
       font-family: "Open Sans", sans-serif;
+      font-size: 13px;
       font-weight: 700;
       color: #fff; }
       .nav li a.active, .nav li a:hover {
@@ -700,6 +706,9 @@ input[type="radio"] {
 .is--scroll .nav__logo {
   opacity: 1;
   visibility: visible; }
+
+.is--scroll .nav li a {
+  font-size: 12px; }
 
 .search {
   position: relative; }
@@ -793,6 +802,17 @@ input[type="radio"] {
     height: 600px; }
     .hl__b-img img {
       width: 100%; }
+  .hl__b-cat {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    z-index: 2;
+    background: #000;
+    padding: 8px 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: #fff; }
   .hl__b-box {
     position: absolute;
     bottom: 0;
@@ -929,14 +949,6 @@ input[type="radio"] {
   position: relative; }
   .latest__wrap {
     padding: 25px 0; }
-  .latest__item {
-    position: relative;
-    margin: 20px 0;
-    padding: 0 25px; }
-    .latest__item:first-child {
-      margin: 0 0 20px; }
-    .latest__item:last-child {
-      margin: 20px 0 0; }
   .latest__img {
     width: 150px;
     height: 155px;
@@ -1048,6 +1060,18 @@ input[type="radio"] {
     color: #E52525; }
     .latest__button:hover {
       color: #000; }
+  .latest__item {
+    position: relative;
+    margin: 20px 0;
+    padding: 0 25px; }
+    .latest__item:first-child {
+      margin: 0 0 20px; }
+    .latest__item:last-child {
+      margin: 20px 0 0; }
+    .latest__item.-noimg {
+      padding: 20px 25px; }
+      .latest__item.-noimg .latest__right {
+        min-height: auto; }
   .latest.-images .latest__img {
     width: 220px; }
     .latest.-images .latest__img:after {
@@ -1252,7 +1276,7 @@ input[type="radio"] {
     border-top: 2px solid #E5E5E5;
     font-weight: 500;
     height: auto;
-    max-height: 68px;
+    max-height: 66px;
     overflow: hidden; }
   .editors__link {
     display: block; }
@@ -1707,14 +1731,10 @@ input[type="radio"] {
     right: -45px; }
 
 .videos {
-  position: relative;
-  padding: 25px 25px 15px; }
+  position: relative; }
   .videos__wrap {
     position: relative;
-    margin: 0; }
-    @media (min-width: 1100px) {
-      .videos__wrap {
-        margin: 0 -10px; } }
+    margin: 25px 15px 15px; }
   .videos__img {
     position: relative;
     width: 175px;
@@ -1804,6 +1824,9 @@ input[type="radio"] {
   .videos__player {
     position: relative;
     margin: 0 -15px 20px; }
+  .videos__holder {
+    position: relative;
+    margin: 0 -15px; }
   .videos__caption {
     padding: 10px 0;
     text-align: left;
@@ -1822,6 +1845,18 @@ input[type="radio"] {
       left: 0;
       width: 100%;
       height: 100%; }
+
+.is--video .videos__holder {
+  position: relative;
+  margin: 0 -15px 20px;
+  padding-bottom: calc(56.25% + 17px); }
+
+.is--video .videos__player {
+  position: fixed;
+  bottom: 60px;
+  right: 15px;
+  width: 500px;
+  z-index: 99; }
 
 .photo {
   position: relative;
@@ -2282,6 +2317,8 @@ input[type="radio"] {
     background: #8BC34A; }
   .title.-jerman {
     background: #e2821f; }
+  .title span img {
+    height: 30px; }
   .title__logo {
     display: inline-block;
     height: 30px;
@@ -2414,10 +2451,11 @@ input[type="radio"] {
     align-items: center;
     justify-content: space-between; }
     .read__info__col {
-      width: calc(100% - (45px + 200px)); }
+      width: calc(100% - (55px + 200px)); }
     .read__info__author {
       padding: 0 10px 0 0;
-      display: inline-block; }
+      display: inline-block;
+      list-style: none; }
     .read__info__date {
       position: relative;
       padding-bottom: 2px; }
@@ -2446,6 +2484,7 @@ input[type="radio"] {
     .read__content strong {
       font-weight: 700; }
     .read__content ol, .read__content ul {
+      margin: 15px 0;
       list-style: disc;
       padding: 0 0 0 30px; }
     .read__content ol {

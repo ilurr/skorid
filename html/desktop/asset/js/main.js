@@ -10,6 +10,12 @@ $(document).ready(function() {
     var prevArrowV = "<a href='#' class='arrow arrow--up'><span class='icon icon-angle-up'></span></a>";
     var nextArrowV = "<a href='#' class='arrow arrow--down'><span class='icon icon-angle-down'></span></a>";
 		
+    if($('#js-video').length>0) {
+		var videoPlayer = $('#js-video').offset().top;
+		var videoPlayerHeight = $('#js-video').outerHeight();
+	}
+	
+	console.log(videoPlayer)
 	// scroll
 	$(window).scroll(function () {
 
@@ -27,6 +33,12 @@ $(document).ready(function() {
 		} else {
 			$("body").removeClass("is--scroll");
 			$(".header").removeAttr("style");
+		}
+		
+		if(scrollpos > (videoPlayer + videoPlayerHeight)) {
+			$("body").addClass("is--video");
+		} else {
+			$("body").removeClass("is--video");
 		}
 	});
 	
