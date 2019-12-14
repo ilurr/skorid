@@ -2507,6 +2507,39 @@ input[type="radio"] {
       width: auto !important; }
     .read__content .videos__player {
       margin: 0 0 20px; }
+  .read__next {
+    position: relative;
+    padding: 10px 0 20px;
+    text-align: center;
+    font-size: 14px; }
+    .read__next__info {
+      position: relative;
+      background: #fff;
+      margin: 0 0 20px; }
+      .read__next__info:after {
+        content: '';
+        position: absolute;
+        bottom: 50%;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+        border-bottom: 1px solid #999; }
+      .read__next__info span {
+        position: relative;
+        z-index: 2;
+        display: inline-block;
+        padding: 0 10px;
+        color: #999;
+        background: #fff; }
+    .read__next__button {
+      display: inline-block;
+      padding: 10px 15px;
+      background: #EAEAEA;
+      border-radius: 5px;
+      font-weight: 500;
+      color: #000 !important; }
+      .read__next__button:hover {
+        color: #E52525 !important; }
   .read__tagging {
     padding: 10px 0; }
   .read__header .photo {
