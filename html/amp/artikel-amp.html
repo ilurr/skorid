@@ -1,0 +1,473 @@
+<!doctype html>
+<html ⚡ lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,minimum-scale=1">
+		<meta name="description" content="This is the AMP Boilerplate.">
+		<link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
+		<link rel="preconnect dns-prefetch" href="https://fonts.gstatic.com/" crossorigin>
+		<script async src="https://cdn.ampproject.org/v0.js"></script>
+		<!-- Import other AMP Extensions here -->
+
+		<script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+		<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+		<script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+		<script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,400i,500,600,700,700i&display=swap" rel="stylesheet">
+		<style amp-custom>.icon-bar{display:inline-block;width:43px;height:43px;cursor:pointer;text-decoration:none;color:#fff;text-align:center}.icon-bar i{position:relative;display:inline-block;width:25px;color:#fff;font:700 14px/.4 Helvetica;text-transform:uppercase;text-indent:-105px}.icon-bar i,.icon-bar i:after,.icon-bar i:before{height:2px;background:#fff;transition:all .2s ease-out}.icon-bar i:after,.icon-bar i:before{content:"";width:29px;position:absolute;right:0}.icon-bar i:before{top:-10px}.icon-bar i:after{bottom:-10px;width:21px}.icon-bar.active i{background:transparent}.icon-bar.active i:before{width:25px;top:0;transform:rotate(-45deg)}.icon-bar.active i:after{width:25px;bottom:0;transform:rotate(45deg)}*,:after,:before{box-sizing:border-box}html{margin:0;padding:0}body{font-family:Poppins,sans-serif;font-size:14px;font-weight:400;line-height:1.3;color:#000;background:#f8f8f8;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeSpeed;margin:0;padding:73px 0 0}article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block}a{color:inherit;vertical-align:top;outline:0;transition:all .2s ease}a,a:hover{text-decoration:none}a:hover{color:#0bb1ef}a:focus,button:focus{outline:0;outline:0 auto -webkit-focus-ring-color;outline-offset:0}img{max-width:100%;width:auto;height:auto;vertical-align:top;border:0;-ms-interpolation-mode:bicubic}table{border-collapse:collapse}iframe{border:none}iframe,video{vertical-align:top}ol,ul{margin:0;padding:0;list-style:none}h1,h2,h3,h4,h5,h6{margin:0;font-size:14px;font-weight:400}.clearfix:after,.clearfix:before{display:table;content:"";line-height:0}.clearfix:after{clear:both}.container{width:100%;margin-right:auto;margin-left:auto;padding-right:15px;padding-left:15px}.container,.page,.row{position:relative}.page__teaser{padding:0 0 30px;font-size:16px;font-weight:400}.page__teaser a{color:#e52525}.section,.social{position:relative}.social__block{display:block}.social__item{display:inline-block;padding:0;padding:5px;border-radius:100%;overflow:hidden}.social__item amp-social-share{vertical-align:top}.social__item.facebook{background:#32529f}.social__item.twitter{background:#1da1f2}.social__item.whatsapp{background:#25d366}.social__item.line{background:#52b448}.social--article{padding:10px 0;text-align:center}.header{position:fixed;top:0;left:0;padding:0;z-index:5;background:#000;width:100%}.header__top{position:relative;box-shadow:0 0 10px rgba(0,0,0,.1);z-index:2;background:#000}.logo{position:relative;text-align:left;padding:10px 15px}.logo img{height:50px}.logo__link,.logo a{display:inline-block}.menu{position:relative;padding:0}.menu--left,.menu--right{top:15px;position:absolute;z-index:1}.menu--left{left:5px}.menu--right{right:5px}.menu__item{display:inline-block;vertical-align:top;position:relative;padding:0}.menu__link{display:inline-block;padding:8px 9px;color:#fff}.menu__link:hover{color:#e52525}.menu__link span{font-size:25px}.nav{z-index:4;padding:0;transition:all .2s ease;position:absolute;width:100%;height:100vh;top:0;left:0;z-index:5}.nav__close{position:relative;height:64px;width:100%}.nav__close .menu--close{top:15px;position:absolute;z-index:1;right:5px;background:#000}.nav__scroll{background:#000;position:relative;height:calc(100% - 40px);width:100%;overflow-y:scroll;padding:10px 0 40px}.nav__wrap{position:relative;display:-ms-flexbox;display:flex;justify-content:flex-start;margin:0;padding:10px 0 80px;flex-wrap:wrap;transition:all .2s ease}.nav__wrap li{display:block;width:100%;margin-bottom:1px}.nav__wrap li a{position:relative;display:block;padding:15px 20px;text-transform:uppercase;letter-spacing:.1px;background:#1d1d1d;font-size:14px;font-weight:700;color:#fff}.nav__wrap li a:after{content:"";position:absolute;bottom:0;left:5%;border-bottom:1px solid #1f1f1f;width:90%}.nav__wrap li a:before{content:"";position:absolute;left:0;top:0;width:5px;height:100%;background:#e52525}.nav__wrap li a .icon{display:inline-block;width:16px;height:16px;background-size:100%;background-position:50%;background-repeat:no-repeat;vertical-align:bottom}.nav__wrap li a.active,.nav__wrap li a:hover{color:#e52525}.nav__submenu{position:relative;padding:0 0 0 20px}.nav__submenu li{margin-bottom:0}.nav__submenu li a{font-size:12px;padding:10px 20px;font-weight:400;background:transparent}.nav__submenu li a:after{border-bottom:1px solid #1f1f1f}.nav__submenu li a:before{background:transparent}.nav__submenu li:last-child a:after{border-bottom:transparent}.nav.-hide{opacity:0;visibility:hidden;transform:translateX(100%)}.menu--right:hover~.nav{opacity:1;visibility:visible;transform:translateX(0)}.latest{position:relative;margin:15px -15px}.latest__wrap{padding:0 15px}.latest__item{position:relative;padding:0;border-radius:5px;background:#fff;overflow:hidden;box-shadow:0 4px 4px rgba(0,0,0,.1);margin:15px 0}.latest__item:first-child{margin:0 0 15px}.latest__item:last-child{margin:15px 0 0}.latest__img{width:100px;height:100px;position:relative;overflow:hidden;float:left;margin-right:10px;background:#fff;z-index:2}@media (min-width:360px){.latest__img{width:120px;height:120px}}.latest__img img{width:100%}.latest__img .icon{position:absolute;left:50%;top:50%;z-index:3;color:#fff;font-size:40px;transition:all .2s ease;transform:translate(-50%,-50%)}.latest__img:hover .icon{transform:translate(-50%,-50%) scale(1.1)}.latest__right{position:relative;padding:2px 10px;min-height:90px}@media (min-width:360px){.latest__right{padding:6px 10px 7px;min-height:110px}}.latest__subtitle{display:inline-block;padding:0;border-radius:5px;text-transform:uppercase;font-size:11px;font-weight:500;line-height:1;color:#e52525}.latest__subtitle:hover{color:#931111}.latest__title{margin:3px 0 0;font-size:14px;font-weight:500;height:auto;max-height:54px;overflow:hidden}@media (min-width:360px){.latest__title{margin:7px 0 4px;font-size:16px;max-height:60px}}.latest__title:hover{color:#e52525}.latest__lead{margin:0;font-size:12px;color:#9c9c9c;height:auto;max-height:30px;overflow:hidden}.latest__date{display:inline-block;padding:0;font-size:10px;color:#9c9c9c}@media (min-width:360px){.latest__date{font-size:11px}}.latest__link{display:block}.latest__link:hover{color:inherit}.latest__more{margin:20px 0;padding:10px 0 20px;text-align:center}.latest__button{display:inline-block;padding:5px 0;text-transform:uppercase;font-style:italic;letter-spacing:2px;border-bottom:1px solid #e52525;font-size:18px;font-weight:700;color:#e52525}.latest__button:hover{color:#000}.latest.-images .latest__img:after,.latest.-video .latest__img:after{content:"";position:absolute;z-index:2;right:0;bottom:0;width:100%;height:100%;background:#000;opacity:.2;pointer-events:none;transition:all .2s ease}.latest.-video .latest__img img{position:absolute;left:50%;top:50%;width:auto;height:100%;max-width:none;z-index:2;transform:translate(-50%,-50%)}.videos__player{position:relative;margin:0 -15px 20px}.videos__caption{padding:10px;text-align:left;font-size:12px;font-weight:400;color:#999}.videos__ratio{position:relative;padding-bottom:56.25%}.videos__ratio img{width:100%}.videos__ratio amp-youtube,.videos__ratio iframe{position:absolute;top:0;left:0;width:100%;height:100%}.photo{position:relative;margin:0 -15px;margin-bottom:10px}.photo img{width:100%}.photo__author{display:inline;font-size:11px;font-weight:500;color:#4d4d4d;position:relative;padding:0 5px}.photo__caption{padding:10px;text-align:left;font-size:12px;font-weight:400;color:#999}.photo__wrap{position:relative}.photo__icon{display:inline-block;width:40px;height:40px;border-radius:40px;padding:10px;background:#fff;text-align:center;font-size:20px;line-height:1;color:#000}.photo__icon__expand{position:absolute;top:15px;right:15px;z-index:1}.title{position:relative;padding:16px 15px;font-family:Open Sans,sans-serif;font-size:18px;font-weight:700;line-height:1}.title.-white{color:#fff}.title.-center{text-align:center}.title.-inggris{background:#3f1052;color:#fff}.title.-indonesia{background:#8f001f;color:#fff}.title.-spanyol{background:#0e3672;color:#fff}.title.-italia{background:#318fd7;color:#fff}.title.-perancis{background:#8bc34a;color:#fff}.title.-jerman{background:#e2821f;color:#fff}.title span img{height:30px}.title__logo{display:inline-block;height:30px;vertical-align:middle}.title__logo.-fixed{position:absolute;top:10px;left:15px;z-index:1}.title__logo img{height:100%}.title__idx{display:flex;float:right;font-size:20px;padding:0 10px}.title__idx:hover{color:#fff}.title .more{display:inline-block;float:right;padding:4px 6px;border-radius:5px;font-size:11px;font-weight:500;line-height:1;color:#6f6f6f}.title .more:hover{color:#c01717}.title .more .icon{vertical-align:middle;font-size:10px}.title2{position:relative;padding:20px 0;text-align:left;font-family:Open Sans,sans-serif;font-size:18px;font-weight:700;color:#000}.title2 span{position:relative;display:inline-block;background:#fff;padding:0 10px 0 0;z-index:2}.title2:after{content:"";border-top:1px solid #c3c3c3;position:absolute;z-index:1;top:32px;left:0;width:100%}.breadcrumb{margin:15px 0}.breadcrumb,.breadcrumb__wrap{position:relative}.breadcrumb__item{display:inline-block;font-family:Open Sans,sans-serif;font-size:16px;font-weight:500;color:#b5b5b5}.breadcrumb__item:after{content:" / "}.breadcrumb__item:last-child:after{content:""}.breadcrumb__link{position:relative;display:inline-block;color:#606060}.breadcrumb__link:hover{color:#000}.read{position:relative}.read__box{margin:0 -15px;padding:0 15px 10px;background:#fff;box-shadow:0 4px 4px rgba(0,0,0,.1)}.read__article{padding:0 0 20px}.read__title{margin:15px 0 5px;font-size:21px;font-weight:600;color:#000}.read__credit{position:relative;padding:10px 0 20px}.read__info{font-size:14px;color:#888;margin:5px 0;position:relative;display:-ms-flexbox;display:flex;align-items:center;justify-content:space-between}.read__info__col{width:calc(100% - 55px)}.read__info__author{padding:0 10px 0 0;display:inline-block;list-style:none}.read__info__date{position:relative;font-size:12px;padding-bottom:10px;color:#888}.read__info__img{margin-right:10px;border-radius:100%;width:45px;height:45px;overflow:hidden}.read__photo{margin:0 0 20px}.read__content{padding:0 0 20px;font-size:16px;font-weight:400;line-height:1.5;color:#000}.read__content h2{font-size:22px;font-weight:700;margin:30px 0 15px}.read__content h3{font-size:19px;font-weight:700;margin:25px 0 10px}.read__content strong{font-weight:700}.read__content ol,.read__content ul{list-style:disc;padding:0 0 0 30px;margin:15px 0}.read__content ol{list-style:decimal}.read__content li{list-style:inherit;display:list-item}.read__content iframe{max-width:100%}.read__content a{color:#e52525;position:relative}.read__content a:hover{color:#000}.read__content table{table-layout:auto}.read__content table colgroup col,.read__content table td,.read__content table th{width:auto}.read__content .videos__player{margin:0 0 20px}.read__next{position:relative;padding:10px 0 20px;text-align:center;font-size:14px}.read__next__info{position:relative;background:#fff;margin:0 0 20px}.read__next__info:after{content:"";position:absolute;bottom:50%;left:0;width:100%;z-index:1;border-bottom:1px solid #999}.read__next__info span{position:relative;z-index:2;display:inline-block;padding:0 10px;color:#999;background:#fff}.read__next__button{display:inline-block;padding:10px 15px;background:#eaeaea;border-radius:5px;font-weight:500;color:#000}.read__next__button:hover{color:#e52525}.read__tagging{padding:10px 0}.read__header .photo{margin-left:-15px;margin-right:-15px}.read__header .photo__caption{padding:10px 15px}.tag,.tag--article,.tag__list{position:relative}.tag__list{margin:0 -2px;display:-ms-flexbox;display:flex;flex-wrap:wrap}.tag__list li{display:inline-block;padding:0 4px 8px}.tag__list li a{border-radius:5px;display:block;padding:6px 12px;background:#ffc9cd;font-size:14px;font-weight:500;color:#c71422}.tag__list li a:hover{color:#fff;background:#ff636f}.paging,.paging__wrap{position:relative}.paging__wrap{padding:0}.paging__teaser{padding:0 0 10px;font-family:Open Sans,sans-serif;font-size:16px;font-weight:700}.paging__all{margin:5px 2px;float:right;padding-left:20px}.paging__item{display:inline-block;vertical-align:middle;margin:5px 2px}.paging__link{padding:10px 14px;display:block;line-height:1;border-radius:20px;background:#d2d2d2;font-weight:400}.paging__link,.paging__link--next,.paging__link--prev{font-family:Open Sans,sans-serif;font-size:14px;color:#000}.paging__link--next,.paging__link--prev{font-weight:300}.paging__link--active,.paging__link:hover{background:#e52525;color:#fff}.paging--article{padding:5px 0;position:relative}.paging--page{position:relative;padding:10px 0;margin:20px 0}.paging--page .paging__wrap{text-align:center}.paging--page .paging__link{padding:12px 15px;min-width:38px}.footer{margin-top:0;padding:20px 0 80px;background:#000;color:#fff;width:100%;text-align:center}.footer__logo{padding:10px 0;position:relative}.footer__logo a{position:relative;z-index:2;display:inline-block}.footer__logo img{height:60px}.footer__copyright{padding:7px 0;margin:0}.mt1{margin-top:10px}.mt2{margin-top:20px}.mt3{margin-top:30px}.mt4{margin-top:40px}.mt5{margin-top:50px}.mt6{margin-top:60px}.mt7{margin-top:70px}.adv__title{position:relative;padding:7px 15px;background:#e5e5e5;letter-spacing:2px;margin:15px 0 0 -15px;display:inline-block;font-size:14px;color:#616161}</style>
+		<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+		<link rel="canonical" href=".">
+
+		<title>Skor.id</title>
+	</head>
+	
+	<body>
+
+		<!-- header -->
+		<header class="header">
+			<div class="header__top">
+				<div class="logo">
+					<a href="index.html">
+						<amp-img src="./asset/images/logo-skorid.png" alt="Skor.id" height="50" width="113"></amp-img>
+					</a>
+				</div>
+				<div class="menu menu--right clearfix">
+					<div class="menu__item">
+						<div class="menu__link icon-bar">
+							<i></i>
+						</div>
+					</div>
+				</div>
+				
+				<!-- nav -->
+				<nav class="nav -hide">
+					<div class="nav__close">
+						<div class="menu--close clearfix">
+							<div class="menu__item">
+								<div class="menu__link icon-bar active">
+									<i></i>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="nav__scroll">
+						<ul class="nav__wrap">
+							<li>
+								<a href="index.html">Home</a>
+							</li>
+							<li>
+								<a href="klasemen.html">Kompetisi</a>
+							</li>
+							<li>
+								<a href="section.html">Bola Nasional</a>
+								<ul class="nav__submenu">
+									<li><a href="section.html">Liga 1</a></li>
+									<li><a href="section.html">Liga 2</a></li>
+									<li><a href="section.html">Nusantara</a></li>
+									<li><a href="section.html">Timnas Indonesia</a></li>
+									<li><a href="section.html">Liga Top Skor</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="livescore.html">Bola Internasional</a>
+								<ul class="nav__submenu">
+									<li><a href="section.html">Liga Inggris</a></li>
+									<li><a href="section.html">Liga Spanyol</a></li>
+									<li><a href="section.html">Liga Italia</a></li>
+									<li><a href="section.html">Liga Champions</a></li>
+									<li><a href="section.html">Dunia</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="section.html">Balap</a>
+								<ul class="nav__submenu">
+									<li><a href="section.html">Formula 1</a></li>
+									<li><a href="section.html">MotoGp</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="section.html">Basket</a>
+								<ul class="nav__submenu">
+									<li><a href="section.html">IBL</a></li>
+									<li><a href="section.html">NBA</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="section.html">Raket</a>
+								<ul class="nav__submenu">
+									<li><a href="section.html">Badminton</a></li>
+									<li><a href="section.html">Tenis</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="klasemen.html">Fight</a>
+								<ul class="nav__submenu">
+									<li><a href="section.html">Tinju</a></li>
+									<li><a href="section.html">MMA</a></li>
+									<li><a href="section.html">One
+Championship</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="section.html">Olahraga Lainnya</a>
+							</li>
+							<li>
+								<a href="section.html">E-Sports</a>
+							</li>
+							<li>
+								<a href="section.html">Entertainment</a>
+								<ul class="nav__submenu">
+									<li><a href="section.html">Selebriti</a></li>
+									<li><a href="section.html">Gosip</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="section.html">Galeri</a>
+								<ul class="nav__submenu">
+									<li><a href="images.html">Foto</a></li>
+									<li><a href="video.html">Video</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+		
+		
+		<!-- content -->
+		<div class="row clearfix">
+			<div class="container clearfix">
+			
+				<!-- ads top -->
+				<div class="ads__top">
+					<amp-ad width=300 height=50 type="criteo" data-tagtype="passback" data-zone="567890"></amp-ad>
+				</div>
+				
+				<!-- breadcrumb -->
+				<div class="breadcrumb clearfix">
+					<ul class="breadcrumb__wrap">
+						<li class="breadcrumb__item"><a class="breadcrumb__link" href="index.html">Home</a></li>
+						<li class="breadcrumb__item"><a class="breadcrumb__link" href="section.html">Bola</a></li>
+					</ul>
+				</div>
+
+				<div class="read__box">
+					<!-- read header -->
+					<section class="read__header clearfix">
+						<div class="adv__title">Advertorial</div>
+
+						<h1 class="read__title">Klasemen Liga Italia, Rekor Conte dan Kesempurnaan Inter Milan</h1>
+
+						<div class="read__info__date">
+							Senin, 24 September 2019 | 23:34 WIB
+						</div>
+
+						<div class="social social--article clearfix">
+							<div class="social__item facebook">
+								<amp-social-share class="rounded" width="29" height="29" type="facebook"></amp-social-share>
+							</div>
+							<div class="social__item twitter">
+								<amp-social-share class="rounded" width="29" height="29" type="twitter"></amp-social-share>
+							</div>
+							<div class="social__item whatsapp">
+								<amp-social-share class="rounded" width="29" height="29" type="whatsapp"></amp-social-share>
+							</div>
+							<div class="social__item line">
+								<amp-social-share class="rounded" width="29" height="29" type="line"></amp-social-share>
+							</div>
+						</div>
+
+						<!-- photo main -->
+						<div class="photo">
+							<div class="photo__img">
+								<amp-img src="https://asset.kompas.com/crop/0x0:0x0/750x500/data/photo/2019/09/27/5d8d352cd8a4e.jpg" alt="Klasemen Liga Italia, Rekor Conte dan Kesempurnaan Inter Milan" width="750" height="500" layout="responsive"></amp-img>
+							</div>
+							<div class="photo__caption">Inter Milan vs Lazio berlangsung di Stadion Giuseppe Meazza, Rabu (25/9/2019). </div>
+						</div>
+
+						<div class="read__info">
+							<div class="read__info__img">
+								<amp-img src="https://asset.kompas.com/crop/0x0:0x0/100x100/left/data/photo/profile/872c8ee83496cfd3df7933c69aa3334f.jpg" layout="responsive" width="100" height="100"></amp-img>
+							</div>
+							<div class="read__info__col">
+								<div class="read__info__author">
+									<strong>Penulis:</strong> <a href="opini-author.html">Gloria Setyvani Putri</a>
+								</div>
+								<div class="read__info__author">
+									<strong>Editor:</strong> <a href="opini-author.html">Jalu Wisnu Wirajati</a>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<!-- content -->
+					<article class="read__content clearfix">
+						<p><strong>KOMPAS.com</strong> -  <a target='_self' class='inner-link-tag' href='https://www.kompas.com/tag/Inter-Milan' style='color:#428bca;'>Inter Milan</a> berada di puncak klasemen  <a target='_self' class='inner-link-tag' href='https://www.kompas.com/tag/Liga-Italia' style='color:#428bca;'>Liga Italia</a> setelah meraih hasil sempurna dalam lima pekan pertama  <a target='_self' class='inner-link-tag' href='https://www.kompas.com/tag/Serie-A' style='color:#428bca;'>Serie A</a>. </p><p>Selain itu,  <a target='_self' class='inner-link-tag' href='https://www.kompas.com/tag/Antonio-Conte' style='color:#428bca;'>Antonio Conte</a> juga mencatat rekor tersendiri sebagai pelatih Inter Milan pada lima laga pertamanya di kasta teratas Liga Italia. </p><p>Antonio Conte berhasil membukukan satu rekor prestisius saat timnya menang 1-0 atas Lazio di Stadion Giuseppe Meazza, Rabu (25/9/2019) waktu setempat.</p><!-- (ads.paragraph.4) --><p><strong>Baca juga: <a href="https://bola.kompas.com/read/2019/09/26/04354588/inter-vs-lazio-perkasa-inter-raih-5-kemenangan-beruntun" class="inner-link-baca-juga" target="_self">Inter Vs Lazio, Perkasa, Inter Raih 5 Kemenangan Beruntun</a></strong></p><p>I Nerazzurri - julukan Inter Milan - berhasil menang atas Lazio berkat gol Danilo D'Ambrosio pada menit ke-23.</p><p>Hasil tersebut membuat tim asuhan Antonio Conte mampu meraih lima kemenangan beruntun pada awal Liga Italia musim 2019-2020.</p><p>Dilansir dari Opta, Conte menjadi pelatih pertama yang mampu membawa Inter Milan meriah catatan ini sepanjang sejarah klub.</p><p>Kemenangan lima kali secara beruntun menjadi pertanda bagus bagi peluang Inter Milan menjuarai Liga Italia musim ini.</p><p>Saat ini, anak-anak asuhan Conte tersebut memuncaki klasemen sementara dengan koleksi 15 poin.</p><p>Mereka unggul unggul dua poin atas Juventus yang menghuni posisi kedua.</p><p><strong>Baca juga: <a href="https://bola.kompas.com/read/2019/09/25/04243848/brescia-vs-juventus-si-nyonya-besar-raih-kemenangan-meski-tanpa-ronaldo" class="inner-link-baca-juga" target="_self">Brescia Vs Juventus, Si Nyonya Besar Raih Kemenangan meski Tanpa Ronaldo</a></strong></p><!-- (ads.paralax) --><p>Atalanta menyeruak ke posisi ke-3 dengan koleksi 10 poin setelah secara mengejutkan menang di kandang AS Roma. <div id="page2" style="position:relative;top:-120px"></div></p><p>Itulah kekalahan pertama AS Roma di Serie A musim ini. </p><p>Cagliari, Torino, dan Napoli mengekor di belakang Atalanta dengan merangkum 9 poin. </p><p>AS Roma dan Bologna terlempar dari enam besar karena baru mengumpulkan 8 poin dari lima pertandingan. </p><p>Rival sekota Inter Milan, AC Milan, tertahan di papan tengah, posisi ke-10 dengan 6 poin, berselisih satu angka dengan Lazio di atasnya. </p><p><strong> <a target='_self' class='inner-link-tag' href='https://www.kompas.com/tag/Hasil-Liga-Italia' style='color:#428bca;'>Hasil Liga Italia</a>, pekan ke-5 Serie A: </strong></p><p>Hellas Verona 0-0 Udinese<br />Brescia 1-<strong>2 Juventus</strong> (Alfredo Donnarumma 4'; Jhon Chancellor 40'-bd, Miralem Pjanic 63')<br />AS Roma 0-<strong>2 Atalanta</strong> (Duvan Zapata 71', Marten De Roon 90')<br />Fiorentina 2-1 Sampdoria (German Pezzella 31', Federico Chiesa 57'; Federico Bonazzoli 79')<br />Genoa 0-0 Bologna<br /><strong>Inter 1</strong>-0 Lazio (Danilo D'Ambrosio 23')<br /><strong>Parma 1</strong>-0 Sassuolo (Mehdi Bourabia 90'-bd)<br />Napoli 0-<strong>1 Cagliari</strong> (Lucas Castro 87')<br />SPAL 1-<strong>3 Lecce</strong> (Federico Di Francesco 17'; Marco Mancosu 11'-pen, 73'-pen, Marco Calderoni 47')<br /><strong>Torino 2</strong>-1 AC Milan (Andre Belotti 71', 76' ; Krzysztof Piatek 19'-pen)</p>
+						<div class="read__next">
+							<div class="read__next__info"><span>2 dari 3 halaman</span></div>
+							<a href="#" class="read__next__button">Selanjutnya: Jalannya Pertandingan...</a>
+						</div>
+					</article>
+
+					<div class="read__credit bottom">
+						<div class="read__info__author">
+							<strong>Sumber:</strong> <a href="opini-author.html">Kompas.com</a>
+						</div>
+					</div>
+
+					<!-- ads square -->
+					<div class="ads mt2 clearfix">
+						<amp-ad width=300 height=250 type="criteo" data-tagtype="passback" data-zone="567890"></amp-ad>
+					</div>
+
+					<!-- tagging -->
+					<section class="read__tagging clearfix">
+						<div class="title2">
+							<span>Tag</span>
+						</div>
+						<div class="tag tag--article clearfix">
+							<ul class="tag__list">
+								<li>
+									<h4><a href="tagging.html">Inter Milan</a></h4>
+								</li>
+								<li>
+									<h4><a href="tagging.html">Serie A</a></h4>
+								</li>
+								<li>
+									<h4><a href="tagging.html">Lazio</a></h4>
+								</li>
+								<li>
+									<h4><a href="tagging.html">Liga Italia</a></h4>
+								</li>
+							</ul>
+						</div>
+					</section>
+				</div>
+			
+				<!-- latests -->
+				<section class="latest clearfix">
+					<h3 class="title">
+						<span>Berita Terkait</span>
+					</h3>
+					<div class="latest__wrap">
+						<div class="latest__item clearfix">
+							<div class="latest__img">
+								<a href="artikel.html">
+									<amp-img src="https://asset.kompas.com/crop/0x0:0x0/120x120/data/photo/2019/06/15/100351085.jpg" alt="Indonesia Vs Malaysia, Evan Dimas Ungkap Kelebihan Harimau Malaya" layout="responsive" width="120" height="120"></amp-img>
+								</a>
+							</div>
+							<div class="latest__right">
+								<h4 class="latest__subtitle"><a class="latest__link" href="section.html">Liga Indonesia</a></h4>
+								<h2 class="latest__title">
+									<a href="artikel.html" class="latest__link">Indonesia Vs Malaysia, Evan Dimas Ungkap Kelebihan Harimau Malaya</a>
+								</h2>
+								<div class="latest__date">3 menit yang lalu</div>
+							</div>
+						</div>
+						<div class="latest__item clearfix">
+							<div class="latest__img">
+								<a href="artikel.html">
+									<amp-img src="https://asset.kompas.com/crop/0x0:0x0/120x120/data/photo/2019/05/19/903934684.jpg" alt="Kostum Ronaldo Terjual Setiap Satu Menit" layout="responsive" width="120" height="120"></amp-img>
+								</a>
+							</div>
+							<div class="latest__right">
+								<h4 class="latest__subtitle"><a class="latest__link" href="section.html">Liga Italia</a></h4>
+								<h2 class="latest__title">
+									<a href="artikel.html" class="latest__link">Kostum Ronaldo Terjual Setiap Satu Menit</a>
+								</h2>
+								<div class="latest__date">3 menit yang lalu</div>
+							</div>
+						</div>
+						<div class="latest__item clearfix">
+							<div class="latest__img">
+								<a href="artikel.html">
+									<amp-img src="https://asset.kompas.com/crop/0x0:0x0/120x120/data/photo/2019/08/25/5d62368a70612.jpg" alt="Alasan Bejo Beri Supriadi Lakukan Debut Saat Persebaya Lawan Persija" layout="responsive" width="120" height="120"></amp-img>
+								</a>
+							</div>
+							<div class="latest__right">
+								<h4 class="latest__subtitle"><a class="latest__link" href="section.html">Liga Indonesia</a></h4>
+								<h2 class="latest__title">
+									<a href="artikel.html" class="latest__link">Alasan Bejo Beri Supriadi Lakukan Debut Saat Persebaya Lawan Persija</a>
+								</h2>
+								<div class="latest__date">3 menit yang lalu</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- latests -->
+				<section class="latest clearfix">
+					<h3 class="title">
+						<span>Latest</span>
+					</h3>
+					<div class="latest__wrap">
+						<div class="latest__item clearfix">
+							<div class="latest__img">
+								<a href="artikel.html">
+									<amp-img src="https://asset.kompas.com/crop/0x0:0x0/120x120/data/photo/2019/06/17/1267950637.jpg" alt="Uccio Salucci Yakin Rossi Dapat Membalap hingga 2022" layout="responsive" width="120" height="120"></amp-img>
+								</a>
+							</div>
+							<div class="latest__right">
+								<h4 class="latest__subtitle"><a class="latest__link" href="section.html">Olahraga</a></h4>
+								<h2 class="latest__title">
+									<a href="artikel.html" class="latest__link">Uccio Salucci Yakin Rossi Dapat Membalap hingga 2022</a>
+								</h2>
+								<div class="latest__date">3 menit yang lalu</div>
+							</div>
+						</div>
+						<div class="latest__item clearfix">
+							<div class="latest__img">
+								<a href="artikel.html">
+									<amp-img src="https://asset.kompas.com/crop/0x0:0x0/120x120/data/photo/2018/07/14/103265694.jpg" alt="Eden Hazard Buka Pintu Lebar Untuk Real Madrid" layout="responsive" width="120" height="120"></amp-img>
+								</a>
+							</div>
+							<div class="latest__right">
+								<h4 class="latest__subtitle"><a class="latest__link" href="section.html">Liga Inggris</a></h4>
+								<h2 class="latest__title">
+									<a href="artikel.html" class="latest__link">Eden Hazard Buka Pintu Lebar Untuk Real Madrid</a>
+								</h2>
+								<div class="latest__date">3 menit yang lalu</div>
+							</div>
+						</div>
+						<div class="latest__item clearfix">
+							<div class="latest__img">
+								<a href="artikel.html">
+									<amp-img src="https://asset.kompas.com/crop/0x0:0x0/120x120/data/photo/2019/08/21/5d5d62dc4e730.jpg" alt="Coutinho Tak Sabar Raih Banyak Trofi Bersama Bayern Muenchen" layout="responsive" width="120" height="120"></amp-img>
+								</a>
+							</div>
+							<div class="latest__right">
+								<h4 class="latest__subtitle"><a class="latest__link" href="section.html">Liga Jerman</a></h4>
+								<h2 class="latest__title">
+									<a href="artikel.html" class="latest__link">Coutinho Tak Sabar Raih Banyak Trofi Bersama Bayern Muenchen</a>
+								</h2>
+								<div class="latest__date">3 menit yang lalu</div>
+							</div>
+						</div>
+						<div class="latest__item clearfix">
+							<div class="latest__img">
+								<a href="artikel.html">
+									<amp-img src="https://asset.kompas.com/crop/0x0:0x0/120x120/data/photo/2015/04/29/1318417shutterstock-golf780x390.jpg" alt="Sudah Pulih, Petugas Korban Sambaran Petir di Kejuaraan Golf Atlanta" layout="responsive" width="120" height="120"></amp-img>
+								</a>
+							</div>
+							<div class="latest__right">
+								<h4 class="latest__subtitle"><a class="latest__link" href="section.html">Olahraga</a></h4>
+								<h2 class="latest__title">
+									<a href="artikel.html" class="latest__link">Sudah Pulih, Petugas Korban Sambaran Petir di Kejuaraan Golf Atlanta</a>
+								</h2>
+								<div class="latest__date">3 menit yang lalu</div>
+							</div>
+						</div>
+						<div class="latest__item clearfix">
+							<div class="latest__img">
+								<a href="artikel.html">
+									<amp-img src="https://asset.kompas.com/crop/0x0:0x0/120x120/data/photo/2018/06/21/3334426512.jpg" alt="Resmi, Emre Can Bergabung dengan Juventus" layout="responsive" width="120" height="120"></amp-img>
+								</a>
+							</div>
+							<div class="latest__right">
+								<h4 class="latest__subtitle"><a class="latest__link" href="section.html">Liga Italia</a></h4>
+								<h2 class="latest__title">
+									<a href="artikel.html" class="latest__link">Resmi, Emre Can Bergabung dengan Juventus</a>
+								</h2>
+								<div class="latest__date">3 menit yang lalu</div>
+							</div>
+						</div>
+						<div class="latest__item clearfix">
+							<div class="latest__img">
+								<a href="artikel.html">
+									<amp-img src="https://asset.kompas.com/crop/0x0:0x0/120x120/data/photo/2018/07/10/2249629156.jpg" alt="Trofi Liga Champions Jadi Alasan Riyad Mahrez ke Manchester City" layout="responsive" width="120" height="120"></amp-img>
+								</a>
+							</div>
+							<div class="latest__right">
+								<h4 class="latest__subtitle"><a class="latest__link" href="section.html">Liga Champions</a></h4>
+								<h2 class="latest__title">
+									<a href="artikel.html" class="latest__link">Trofi Liga Champions Jadi Alasan Riyad Mahrez ke Manchester City</a>
+								</h2>
+								<div class="latest__date">3 menit yang lalu</div>
+							</div>
+						</div>
+						<div class="latest__item clearfix">
+							<div class="latest__img">
+								<a href="artikel.html">
+									<amp-img src="https://asset.kompas.com/crop/0x0:0x0/120x120/data/photo/2018/07/15/3311487914.jpg" alt="Pele Antusias Sambut Prestasi Kylian Mbappe di Final Piala Dunia" layout="responsive" width="120" height="120"></amp-img>
+								</a>
+							</div>
+							<div class="latest__right">
+								<h4 class="latest__subtitle"><a class="latest__link" href="section.html">Internasional</a></h4>
+								<h2 class="latest__title">
+									<a href="artikel.html" class="latest__link">Pele Antusias Sambut Prestasi Kylian Mbappe di Final Piala Dunia</a>
+								</h2>
+								<div class="latest__date">3 menit yang lalu</div>
+							</div>
+						</div>
+						<div class="latest__item clearfix">
+							<div class="latest__img">
+								<a href="artikel.html">
+									<amp-img src="https://asset.kompas.com/crop/0x0:0x0/120x120/data/photo/2018/07/13/3947370450.jpg" alt="Indra Sjafri Bicara soal Egy Maulana dan Semifinal Piala AFF U-19" layout="responsive" width="120" height="120"></amp-img>
+								</a>
+							</div>
+							<div class="latest__right">
+								<h4 class="latest__subtitle"><a class="latest__link" href="section.html">Liga Indonesia</a></h4>
+								<h2 class="latest__title">
+									<a href="artikel.html" class="latest__link">Indra Sjafri Bicara soal Egy Maulana dan Semifinal Piala AFF U-19</a>
+								</h2>
+								<div class="latest__date">3 menit yang lalu</div>
+							</div>
+						</div>
+						<div class="latest__item clearfix">
+							<div class="latest__img">
+								<a href="artikel.html">
+									<amp-img src="https://asset.kompas.com/crop/0x0:0x0/120x120/data/photo/2019/09/04/5d6f613749f2c.png" alt="Alexis Sanchez Berambisi Bawa Inter Milan Juara Serie A Italia" layout="responsive" width="120" height="120"></amp-img>
+								</a>
+							</div>
+							<div class="latest__right">
+								<h4 class="latest__subtitle"><a class="latest__link" href="section.html">Liga Italia</a></h4>
+								<h2 class="latest__title">
+									<a href="artikel.html" class="latest__link">Alexis Sanchez Berambisi Bawa Inter Milan Juara Serie A Italia</a>
+								</h2>
+								<div class="latest__date">3 menit yang lalu</div>
+							</div>
+						</div>
+						<div class="latest__item clearfix">
+							<div class="latest__img">
+								<a href="artikel.html">
+									<amp-img src="https://asset.kompas.com/crop/0x0:0x0/120x120/data/photo/2018/07/15/30335776.jpg" alt="Distribusi Gelar dan Hadiah Piala Dunia 2018, Panggung Modric-Mbappe" layout="responsive" width="120" height="120"></amp-img>
+								</a>
+							</div>
+							<div class="latest__right">
+								<h4 class="latest__subtitle"><a class="latest__link" href="section.html">Internasional</a></h4>
+								<h2 class="latest__title">
+									<a href="artikel.html" class="latest__link">Distribusi Gelar dan Hadiah Piala Dunia 2018, Panggung Modric-Mbappe</a>
+								</h2>
+								<div class="latest__date">3 menit yang lalu</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- ads square -->
+				<div class="ads clearfix">
+					<amp-ad width=300 height=250 type="criteo" data-tagtype="passback" data-zone="567890"></amp-ad>
+				</div>
+			
+			</div>
+		</div>		
+
+		<!-- footer -->
+		<footer class="footer">
+			<div class="row footer__top container clearfix">
+				<div class="footer__logo">
+					<a href="index.html">
+						<amp-img src="./asset/images/logo-skorid.png" alt="Skor.id" height="60" width="136"></amp-img>
+					</a>
+				</div>
+				<div class="footer__copyright">
+					<p>&copy; SKOR ID. All Right Reserved. 2019</p>
+				</div>
+			</div>
+		</footer>
+		
+	</body>
+</html>
