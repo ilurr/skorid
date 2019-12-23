@@ -1,8 +1,8 @@
 @charset "UTF-8";
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?j3wozf");
-  src: url("../fonts/icomoon.eot?j3wozf#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?j3wozf") format("truetype"), url("../fonts/icomoon.woff?j3wozf") format("woff"), url("../fonts/icomoon.svg?j3wozf#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?6sn5c8");
+  src: url("../fonts/icomoon.eot?6sn5c8#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?6sn5c8") format("truetype"), url("../fonts/icomoon.woff?6sn5c8") format("woff"), url("../fonts/icomoon.svg?6sn5c8#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block; }
@@ -10,7 +10,6 @@
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
-  speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -20,14 +19,14 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.icon-search:before {
+  content: "\e902"; }
+
 .icon-line:before {
   content: "\e900"; }
 
 .icon-play:before {
   content: "\e901"; }
-
-.icon-search:before {
-  content: "\e902"; }
 
 .icon-camera:before {
   content: "\f030"; }
@@ -58,6 +57,9 @@
 
 .icon-youtube:before {
   content: "\f16a"; }
+
+.icon-instagram:before {
+  content: "\f16d"; }
 
 .icon-google:before {
   content: "\f1a0"; }
@@ -1614,7 +1616,7 @@ input[type="radio"] {
   .schedule__container {
     position: relative;
     padding: 10px 50px;
-    height: 155px;
+    height: 160px;
     overflow: hidden; }
   .schedule__box {
     position: relative;
@@ -1628,14 +1630,27 @@ input[type="radio"] {
     /* NEW, Spec - Firefox, Chrome, Opera */
     align-items: stretch;
     justify-content: center;
-    padding: 30px 0 0; }
+    padding: 10px 0; }
+  .schedule__top {
+    position: relative;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;
+    /* NEW, Spec - Firefox, Chrome, Opera */
+    justify-content: center;
+    align-items: center; }
+  .schedule__arrow {
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 30px;
+    vertical-align: middle; }
   .schedule__date {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    text-align: center;
-    z-index: 1; }
+    position: relative;
+    display: inline-block; }
     .schedule__date span {
       display: inline-block;
       padding: 5px 15px;
@@ -1688,6 +1703,9 @@ input[type="radio"] {
       font-weight: 700;
       line-height: 1;
       color: #9C9C9C; }
+      .schedule__matches .time span {
+        font-weight: 600;
+        color: #c2000b; }
     .schedule__matches .score {
       position: relative;
       padding: 5px 0;
@@ -1696,6 +1714,12 @@ input[type="radio"] {
       font-size: 32px;
       font-weight: 700;
       line-height: 1; }
+    .schedule__matches .agg {
+      font-family: "Open Sans", sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 1;
+      color: #9C9C9C; }
     .schedule__matches .name {
       font-size: 12px;
       font-weight: 500;
@@ -1703,17 +1727,25 @@ input[type="radio"] {
       max-height: 30px;
       overflow: hidden; }
   .schedule__gameweek {
+    position: relative;
     padding: 20px 10px; }
     .schedule__gameweek .schedule__box {
       flex-wrap: wrap;
       justify-content: flex-start; }
+    .schedule__gameweek .schedule__date {
+      padding: 5px 20px; }
+    .schedule__gameweek .schedule__date span {
+      font-size: 14px; }
     .schedule__gameweek .schedule__matches {
-      width: calc(100% / 2);
-      border-right: 1px solid #f0f0f0;
+      width: calc(100%);
       border-top: 1px solid #f0f0f0;
-      padding: 20px 10px; }
-    .schedule__gameweek .schedule__matches:nth-of-type(odd) {
-      border-right: transparent; }
+      padding: 15px 10px; }
+    .schedule__gameweek .schedule__matches .time {
+      margin-top: 0;
+      font-size: 14px;
+      letter-spacing: 1px; }
+    .schedule__gameweek .schedule__matches .score {
+      padding: 8px 0; }
     .schedule__gameweek .schedule__matches:after {
       border-left: transparent; }
   .schedule .arrow {
@@ -1728,6 +1760,47 @@ input[type="radio"] {
     left: -45px; }
   .schedule .arrow--right {
     right: -45px; }
+
+.competition {
+  position: relative; }
+  .competition__box {
+    position: relative;
+    padding: 20px 20px; }
+  .competition__list {
+    position: relative; }
+  .competition__item {
+    position: relative;
+    overflow: hidden;
+    margin: 0 0 20px;
+    background: #f0f0f0;
+    border-radius: 5px;
+    height: 50px;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
+    .competition__item.active .icon-angle-down:before {
+      content: "\f106"; }
+  .competition__title {
+    display: block;
+    padding: 15px 20px;
+    background: #ccc;
+    border-radius: 5px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 500; }
+    .competition__title .icon {
+      float: right;
+      font-size: 30px;
+      margin-top: -5px; }
+  .competition__sublist {
+    position: relative;
+    padding: 10px 10px; }
+  .competition__subtitle {
+    display: block;
+    position: relative;
+    padding: 12px 10px; }
 
 .videos {
   position: relative; }
@@ -2148,14 +2221,16 @@ input[type="radio"] {
       display: flex;
       /* NEW, Spec - Firefox, Chrome, Opera */
       padding: 10px 0;
-      border-bottom: 1px solid #F4F4F4; }
+      border-bottom: 1px solid #F4F4F4;
+      justify-content: space-between; }
       .standing__table .t-head span {
         display: inline-block;
-        width: 25px;
-        text-align: center; }
-        .standing__table .t-head span:first-child {
-          text-align: left;
-          width: calc(100% - (25px * 5)); }
+        width: 10%;
+        text-align: center;
+        padding: 0 2px; }
+        .standing__table .t-head span.wide {
+          width: 50%;
+          text-align: left; }
     .standing__table .t-body {
       position: relative; }
     .standing__table .t-footer {
@@ -2177,6 +2252,7 @@ input[type="radio"] {
       /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
       display: flex;
       /* NEW, Spec - Firefox, Chrome, Opera */
+      justify-content: space-between;
       align-items: center;
       padding: 10px 0;
       border-bottom: 1px solid #F4F4F4; }
@@ -2206,32 +2282,21 @@ input[type="radio"] {
           height: 100%; }
       .standing__table .t-row span {
         display: inline-block;
-        width: 25px;
+        width: 10%;
         text-align: center;
-        color: #606060; }
-        .standing__table .t-row span:nth-child(2) {
+        color: #606060;
+        padding: 0 2px; }
+        .standing__table .t-row span.wide {
           text-align: left;
-          width: calc(100% - (25px * 6));
+          width: 50%;
           white-space: nowrap;
           overflow: hidden;
           color: #242424; }
-        .standing__table .t-row span:nth-child(1), .standing__table .t-row span:nth-child(7) {
+        .standing__table .t-row span:first-child, .standing__table .t-row span:last-child {
           color: #242424; }
-    .standing__table.detail {
-      padding: 10px 10px; }
-      .standing__table.detail .t-head span,
-      .standing__table.detail .t-row span {
-        width: 40px; }
-      .standing__table.detail .t-row span:nth-child(7) {
-        color: #606060; }
-      .standing__table.detail .t-row span:nth-child(10) {
-        color: #242424; }
-      .standing__table.detail .t-row span:nth-child(2) {
-        width: calc(100% - (40px * 9)); }
-      .standing__table.detail .t-head span:first-child {
-        width: calc(100% - (40px * 8)); }
-      .standing__table.detail .t-row.pos:after {
-        left: 0; }
+    .standing__table.motogp .t-row .img {
+      height: 15px;
+      margin-right: 6px; }
   .standing__info {
     position: relative;
     padding: 20px 25px;
@@ -2294,6 +2359,35 @@ input[type="radio"] {
   .standing .slick-list {
     border-radius: 5px; }
 
+.tab {
+  position: relative; }
+  .tab__menu {
+    position: relative;
+    background: #e5e5e5;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;
+    /* NEW, Spec - Firefox, Chrome, Opera */ }
+  .tab__item {
+    display: inline-block;
+    width: 100%; }
+  .tab__link {
+    display: block;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    border-right: 1px solid #e5e5e5; }
+    .tab__link .title {
+      text-align: center;
+      background: #c5c5c5;
+      padding: 15px 15px;
+      font-size: 16px; }
+    .tab__link.-active .title {
+      background: #000; }
+
 .title {
   position: relative;
   padding: 12px 15px;
@@ -2316,6 +2410,8 @@ input[type="radio"] {
     background: #8BC34A; }
   .title.-jerman {
     background: #e2821f; }
+  .title.-white {
+    background: #fff; }
   .title span img {
     height: 30px; }
   .title__logo {
@@ -2337,7 +2433,6 @@ input[type="radio"] {
     .title__idx:hover {
       color: #fff; }
   .title .more {
-    display: inline-block;
     float: right;
     padding: 6px;
     border-radius: 5px;
@@ -2380,6 +2475,11 @@ input[type="radio"] {
   font-size: 25px;
   font-weight: 700;
   color: #000; }
+  .title3 .title__logo {
+    position: relative;
+    background: #e5e5e5;
+    padding-right: 2px;
+    z-index: 2; }
   .title3 span {
     position: relative;
     display: inline-block;

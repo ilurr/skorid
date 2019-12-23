@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?j3wozf');
-  src:  url('fonts/icomoon.eot?j3wozf#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?j3wozf') format('truetype'),
-    url('fonts/icomoon.woff?j3wozf') format('woff'),
-    url('fonts/icomoon.svg?j3wozf#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?6sn5c8');
+  src:  url('fonts/icomoon.eot?6sn5c8#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?6sn5c8') format('truetype'),
+    url('fonts/icomoon.woff?6sn5c8') format('woff'),
+    url('fonts/icomoon.svg?6sn5c8#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-search:before {
+  content: "\e902";
+  color: #fff;
+}
 .icon-line:before {
   content: "\e900";
   color: #00c300;
@@ -32,10 +36,6 @@
 .icon-play:before {
   content: "\e901";
   color: #fff;
-}
-.icon-search:before {
-  content: "\e902";
-  color: #999;
 }
 .icon-camera:before {
   content: "\f030";
@@ -66,6 +66,9 @@
 }
 .icon-youtube:before {
   content: "\f16a";
+}
+.icon-instagram:before {
+  content: "\f16d";
 }
 .icon-google:before {
   content: "\f1a0";
