@@ -152,4 +152,22 @@ $(document).ready(function() {
 		});
 	}
 	
+	// kompetisi
+	$('.competition__item').each(function (){
+		var list = $(this).find('.competition__sublist').outerHeight();
+		var hbtn = $(this).find('.competition__title').outerHeight();
+		$(this).find('.competition__title').on('click', function(e){
+			e.preventDefault();
+			var pr = $(this).parent();
+			//console.log(pr);
+			if(pr.hasClass('active')){
+				pr.removeAttr('style');
+				pr.removeClass('active');
+			} else {
+				pr.toggleClass('active');
+				pr.css('height', (list + hbtn));
+			}
+		})
+	});
+
 });
