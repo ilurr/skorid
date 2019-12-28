@@ -2836,6 +2836,23 @@ input[type="radio"] {
       display: inline-block; }
     .footer__logo img {
       height: 60px; }
+  .footer__menu {
+    position: relative;
+    padding: 10px 0; }
+    .footer__menu.inline {
+      text-align: center; }
+      .footer__menu.inline .footer__item {
+        margin: 5px 0;
+        position: relative;
+        display: inline-block; }
+        .footer__menu.inline .footer__item:after {
+          content: '-'; }
+        .footer__menu.inline .footer__item:last-child:after {
+          content: ''; }
+      .footer__menu.inline .footer__link {
+        padding: 0 5px;
+        display: inline-block;
+        font-size: 14px; }
   .footer__copyright {
     padding: 7px 0;
     margin: 0; }
