@@ -1801,6 +1801,34 @@ input[type="radio"] {
     display: block;
     position: relative;
     padding: 12px 10px; }
+  .competition__option {
+    position: relative;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;
+    /* NEW, Spec - Firefox, Chrome, Opera */
+    flex-wrap: nowrap; }
+    .competition__option .title {
+      background: #c2000b; }
+    .competition__option__col {
+      width: 100%; }
+  .competition__form {
+    display: block;
+    margin: 5px 0;
+    background: #fff;
+    border-radius: 5px; }
+    .competition__form select {
+      border: transparent;
+      font-size: 16px; }
+    .competition__form.form__group.select:after {
+      top: calc(50% - 7px);
+      right: 15px;
+      width: 10px;
+      height: 10px; }
 
 .videos {
   position: relative; }
@@ -2229,13 +2257,16 @@ input[type="radio"] {
         text-align: center;
         padding: 0 2px; }
         .standing__table .t-head span.wide {
-          width: 50%;
+          width: 40%;
+          text-align: left; }
+        .standing__table .t-head span.half {
+          width: 25%;
           text-align: left; }
     .standing__table .t-body {
       position: relative; }
     .standing__table .t-footer {
       position: relative;
-      padding: 10px 0 0;
+      padding: 10px 10px 0;
       text-align: center; }
       .standing__table .t-footer a {
         display: inline-block;
@@ -2280,6 +2311,13 @@ input[type="radio"] {
         vertical-align: middle; }
         .standing__table .t-row .img img {
           height: 100%; }
+      .standing__table .t-row .flag {
+        display: inline-block;
+        height: 15px;
+        margin-right: 6px;
+        vertical-align: middle; }
+        .standing__table .t-row .flag img {
+          height: 100%; }
       .standing__table .t-row span {
         display: inline-block;
         width: 10%;
@@ -2288,7 +2326,13 @@ input[type="radio"] {
         padding: 0 2px; }
         .standing__table .t-row span.wide {
           text-align: left;
-          width: 50%;
+          width: 40%;
+          white-space: nowrap;
+          overflow: hidden;
+          color: #242424; }
+        .standing__table .t-row span.half {
+          text-align: left;
+          width: 25%;
           white-space: nowrap;
           overflow: hidden;
           color: #242424; }
@@ -2346,6 +2390,8 @@ input[type="radio"] {
       right: 14px;
       width: 10px;
       height: 10px; }
+  .standing.-indeks .standing__table .t-footer {
+    text-align: right; }
   .standing .arrow {
     top: 10px;
     color: #fff;
@@ -2764,7 +2810,7 @@ input[type="radio"] {
       padding: 0 5px; }
   .footer__copyright {
     text-align: center;
-    padding: 7px 0;
+    padding: 0;
     margin: 0; }
 
 /* Slider */
