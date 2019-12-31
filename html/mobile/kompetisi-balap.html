@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width">
+		<meta name="description" content="">
+		<meta name="author" content="Skor.id">
+	
+		<title>Skor.id</title>
+		
+		<link rel="apple-touch-icon" sizes="57x57" href="./asset/images/favicon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="./asset/images/favicon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="./asset/images/favicon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="./asset/images/favicon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="./asset/images/favicon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="./asset/images/favicon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="./asset/images/favicon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="./asset/images/favicon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="./asset/images/favicon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="./asset/images/favicon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./asset/images/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="./asset/images/favicon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./asset/images/favicon/favicon-16x16.png">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="./asset/images/favicon/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+	
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,400i,500,600,700,700i&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="./asset/css/style-m.css" type="text/css">	
+	
+		<script src="./asset/js/jquery-1.12.0.min.js"></script>
+		
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+<body class="wp">
+	<!-- header -->
+	<header class="header">
+		<div class="header__top">
+			<div class="logo">
+				<a href="index.html">
+					<img src="./asset/images/logo-skorid.jpg" alt="Skor.id">
+				</a>
+			</div>
+			<div class="menu menu--right clearfix">
+				<div class="menu__item">
+					<a href="#" class="menu__link" id="js--search">
+						<span class="icon icon-search"></span>
+					</a>
+				</div>
+				<div class="menu__item">
+					<a href="#sidr" class="menu__link icon-bar" id="js--menu">
+						<i></i>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="header__bottom">
+			<div class="row container clearfix">
+				<form action="search.html" class="search__bar">
+					<input type="text" placeholder="Cari" class="search__input">
+					<input type="submit" name="submit" class="search__submit">
+					<span class="icon icon-search"></span>
+				</form>
+			</div>
+			<div class="search__overlay"></div>
+		</div>
+	</header>
+	
+	<!-- nav -->
+	<nav class="nav -hide" id="js--nav">
+		<div class="nav__scroll">
+			<ul class="nav__wrap">
+				<li>
+					<a href="index.html" class="active">Home</a>
+				</li>
+				<li>
+					<a href="kompetisi.html">Kompetisi</a>
+				</li>
+				<li>
+					<a href="section.html">Bola Nasional</a>
+					<ul class="nav__submenu">
+						<li><a href="section.html">Liga 1</a></li>
+						<li><a href="section.html">Liga 2</a></li>
+						<li><a href="section.html">Nusantara</a></li>
+						<li><a href="section.html">Timnas Indonesia</a></li>
+						<li><a href="section.html">Liga Top Skor</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="livescore.html">Bola Internasional</a>
+					<ul class="nav__submenu">
+						<li><a href="section.html">Liga Inggris</a></li>
+						<li><a href="section.html">Liga Spanyol</a></li>
+						<li><a href="section.html">Liga Italia</a></li>
+						<li><a href="section.html">Liga Champions</a></li>
+						<li><a href="section.html">Dunia</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="section.html">Balap</a>
+					<ul class="nav__submenu">
+						<li><a href="section.html">Formula 1</a></li>
+						<li><a href="section.html">MotoGp</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="section.html">Basket</a>
+					<ul class="nav__submenu">
+						<li><a href="section.html">IBL</a></li>
+						<li><a href="section.html">NBA</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="section.html">Raket</a>
+					<ul class="nav__submenu">
+						<li><a href="section.html">Badminton</a></li>
+						<li><a href="section.html">Tenis</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="klasemen.html">Fight</a>
+					<ul class="nav__submenu">
+						<li><a href="section.html">Tinju</a></li>
+						<li><a href="section.html">MMA</a></li>
+						<li><a href="section.html">One
+	Championship</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="section.html">Olahraga Lainnya</a>
+				</li>
+				<li>
+					<a href="section.html">E-Sports</a>
+				</li>
+				<li>
+					<a href="section.html">Entertainment</a>
+					<ul class="nav__submenu">
+						<li><a href="section.html">Selebriti</a></li>
+						<li><a href="section.html">Gosip</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="section.html">Galeri</a>
+					<ul class="nav__submenu">
+						<li><a href="images.html">Foto</a></li>
+						<li><a href="video.html">Video</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="nav__overlay"></div>
+	</nav>
+	
+	<div class="row clearfix">
+		<div class="container clearfix">
+		
+			<!-- ads top -->
+			<div class="ads__top">
+				<img src="https://tpc.googlesyndication.com/simgad/11715859930472282029" alt="">
+			</div>
+			
+			<section class="competition clearfix">
+				<h3 class="title">
+					<span>Kompetisi</span>
+				</h3>
+				<div class="competition__box">
+					<div class="competition__option">
+						<div class="competition__option__col">
+							<h3 class="title">
+								<div class="form__group select competition__form">
+									<select name="league" id="">
+										<option value="">Sport</option>
+										<option value="">Sepak Bola</option>
+										<option value="">Basket</option>
+										<option value="">Balap</option>
+									</select>
+								</div>
+							</h3>
+						</div>
+						<div class="competition__option__col">
+							<h3 class="title">
+								<div class="form__group select competition__form">
+									<select name="league" id="">
+										<option value="">Liga</option>
+										<option value="">Liga Indonesia</option>
+										<option value="">Liga Inggris</option>
+										<option value="">Liga Italia</option>
+										<option value="">Liga Spanyol</option>
+										<option value="">Liga Jerman</option>
+										<option value="">Liga Perancis</option>
+									</select>
+								</div>
+							</h3>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- standing -->
+			<section class="standing table indeks box clearfix">
+				<div class="standing__league">
+					<h3 class="title">
+						<div class="title__logo">
+							<img src="./asset/images/logo-motogp.png" alt="MotoGP">
+						</div>
+						<span>MotoGP</span>
+					</h3>
+					<div class="standing__scroll">
+					<div class="standing__table detail">
+						<div class="t-head">
+							<span>#</span>
+							<span class="wide">Pembalap</span>
+							<span class="half">Team</span>
+							<span>Wins</span>
+							<span>Podiums</span>
+							<span>Points</span>
+						</div>
+						<div class="t-body">
+							<div class="t-row pos ">
+								<span>1</span>
+								<span class="wide"><div class="flag"><img src="./asset/images/flag/esp.svg" alt="esp"></div>Marc Márquez</span>
+								<span class="half">Repsol Honda</span>
+								<span>20</span>
+								<span>9</span>
+								<span>34</span>
+							</div>
+							<div class="t-row pos ">
+								<span>2</span>
+								<span class="wide"><div class="flag"><img src="./asset/images/flag/ita.svg" alt="ita"></div>Valentino Rossi</span>
+								<span class="half">Yamaha</span>
+								<span>20</span>
+								<span>9</span>
+								<span>34</span>
+							</div>
+							<div class="t-row pos ">
+								<span>3</span>
+								<span class="wide"><div class="flag"><img src="./asset/images/flag/ita.svg" alt="ita"></div>Andrea Dovizioso</span>
+								<span class="half">Ducati</span>
+								<span>20</span>
+								<span>9</span>
+								<span>34</span>
+							</div>
+							<div class="t-row pos ">
+								<span>4</span>
+								<span class="wide"><div class="flag"><img src="./asset/images/flag/esp.svg" alt="esp"></div>Maverick Viñales</span>
+								<span class="half">Yamaha</span>
+								<span>20</span>
+								<span>9</span>
+								<span>34</span>
+							</div>
+							<div class="t-row pos ">
+								<span>5</span>
+								<span class="wide"><div class="flag"><img src="./asset/images/flag/esp.svg" alt="esp"></div>Álex Rins</span>
+								<span class="half">Suzuki</span>
+								<span>20</span>
+								<span>9</span>
+								<span>34</span>
+							</div>
+						</div>
+					</div>
+					</div>
+					<div class="t-footer">
+						<a href="kompetisi-klasemen.html" class="more">Selengkapnya</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- standing -->
+			<section class="standing table indeks box clearfix">
+				<div class="standing__league">
+					<h3 class="title">
+						<div class="title__logo">
+							<img src="./asset/images/logo-f1.png" alt="F1">
+						</div>
+						<span>F1</span>
+					</h3>
+					<div class="standing__scroll">
+					<div class="standing__table detail">
+						<div class="t-head">
+							<span>#</span>
+							<span class="wide">Pembalap</span>
+							<span class="half">Team</span>
+							<span>Wins</span>
+							<span>Podiums</span>
+							<span>Points</span>
+						</div>
+						<div class="t-body">
+							<div class="t-row pos ">
+								<span>1</span>
+								<span class="wide"><div class="flag"><img src="./asset/images/flag/gbr.svg" alt="gbr"></div>Lewis Hamilton</span>
+								<span class="half">Mercedes</span>
+								<span>20</span>
+								<span>9</span>
+								<span>34</span>
+							</div>
+							<div class="t-row pos ">
+								<span>2</span>
+								<span class="wide"><div class="flag"><img src="./asset/images/flag/fin.svg" alt="fin"></div>Valtteri Bottas</span>
+								<span class="half">Mercedes</span>
+								<span>20</span>
+								<span>9</span>
+								<span>34</span>
+							</div>
+							<div class="t-row pos ">
+								<span>3</span>
+								<span class="wide"><div class="flag"><img src="./asset/images/flag/ned.svg" alt="ned"></div>Max Verstappen</span>
+								<span class="half">Red Bull</span>
+								<span>20</span>
+								<span>9</span>
+								<span>34</span>
+							</div>
+							<div class="t-row pos ">
+								<span>4</span>
+								<span class="wide"><div class="flag"><img src="./asset/images/flag/mon.svg" alt="mon"></div>Charles Leclerc</span>
+								<span class="half">Ferrari</span>
+								<span>20</span>
+								<span>9</span>
+								<span>34</span>
+							</div>
+							<div class="t-row pos ">
+								<span>5</span>
+								<span class="wide"><div class="flag"><img src="./asset/images/flag/ger.svg" alt="ger"></div>Sebastian Vettel</span>
+								<span class="half">Ferrari</span>
+								<span>20</span>
+								<span>9</span>
+								<span>34</span>
+							</div>
+						</div>
+					</div>
+					</div>
+					<div class="t-footer">
+						<a href="kompetisi-klasemen.html" class="more">Selengkapnya</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- ads bottom -->
+			<div class="ads__bottom">
+				<img src="https://tpc.googlesyndication.com/simgad/11715859930472282029" alt="">
+			</div>
+			
+		</div>
+	</div>
+	
+	<!-- footer -->
+	<footer class="footer">
+		<div class="row footer__top container clearfix">
+			<div class="footer__logo">
+				<a href="index.html">
+					<img src="./asset/images/logo-skorid-black.jpg" alt="Skor.id">
+				</a>
+			</div>
+			<div class="footer__menu inline clearfix">
+				<div class="footer__item">
+					<a href="about.html" class="footer__link">Tentang Kami</a>
+				</div>
+				<div class="footer__item">
+					<a href="pedoman.html" class="footer__link">Pedoman Media Siber</a>
+				</div>
+			</div>
+			<div class="social social--footer clearfix">
+				<div class="social__item">
+					<a href="#" class="social__link social__link--facebook">
+						<span class="icon icon-facebook"></span>
+					</a>
+				</div>
+				<div class="social__item">
+					<a href="#" class="social__link social__link--twitter">
+						<span class="icon icon-twitter"></span>
+					</a>
+				</div>
+				<div class="social__item">
+					<a href="#" class="social__link social__link--instagram">
+						<span class="icon icon-instagram"></span>
+					</a>
+				</div>
+				<div class="social__item">
+					<a href="#" class="social__link social__link--youtube">
+						<span class="icon icon-youtube"></span>
+					</a>
+				</div>
+			</div>
+			<div class="footer__copyright">
+				<p>&copy; SKOR ID. All Right Reserved. 2019</p>
+			</div>
+		</div>
+	</footer>
+	
+	<!-- ads horizontal -->
+	<!-- ads horizontal -->
+	<div class="ads__horizontal">
+		<a href="javascript:void(0)" class="ads__button" id="js--close">x</a>
+		<img src="https://tpc.googlesyndication.com/simgad/11715859930472282029" alt="">	
+	</div>
+
+	<script src="./asset/js/slick.min.js"></script>
+	<script src="./asset/js/jquery.sticky-kit.min.js"></script>
+	<script src="./asset/js/jquery.magnific-popup.min.js"></script>
+	<script src="./asset/js/jquery.marquee.min.js"></script>
+	<script src="./asset/js/main.js"></script>
+	
+</body>
+</html>
