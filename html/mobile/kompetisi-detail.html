@@ -166,10 +166,45 @@
 				<img src="https://tpc.googlesyndication.com/simgad/11715859930472282029" alt="">
 			</div>
 			
-			<section class="tab -page clearfix">
+			<section class="competition clearfix">
 				<h3 class="title">
-					<span>Liga Inggris</span>
+					<span>Premier League</span>
 				</h3>
+				<div class="competition__box">
+					<div class="competition__option">
+						<div class="competition__option__col">
+							<h3 class="title">
+								<div class="form__group select competition__form">
+									<select name="league" id="">
+										<option value="">Sport</option>
+										<option value="">Sepak Bola</option>
+										<option value="">Basket</option>
+										<option value="">Balap</option>
+									</select>
+								</div>
+							</h3>
+						</div>
+						<div class="competition__option__col">
+							<h3 class="title">
+								<div class="form__group select competition__form">
+									<select name="league" id="">
+										<option value="">Liga</option>
+										<option value="">Liga Indonesia</option>
+										<option value="">Liga Inggris</option>
+										<option value="">Liga Italia</option>
+										<option value="">Liga Spanyol</option>
+										<option value="">Liga Jerman</option>
+										<option value="">Liga Perancis</option>
+									</select>
+								</div>
+							</h3>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- tabs -->
+			<section class="tab -page box clearfix">
 				<div class="tab__menu clearfix">
 					<div class="tab__item">
 						<a href="kompetisi-detail.html" class="tab__link -active"><div class="title"><span>Pertandingan</span></div></a>
@@ -182,105 +217,361 @@
 					<div class="tab__content__item">
 
 						<!-- schedule -->
-						<div class="schedule__gameweek">
-							<div class="schedule__top">
-								<a href="kompetisi-pertandingan.html" class="schedule__arrow -left"><span class="icon icon-angle-left"></span></a>
-								<div class="schedule__date"><span>23 Nov 2019</span></div>
-								<a href="kompetisi-pertandingan.html" class="schedule__arrow -right"><span class="icon icon-angle-right"></span></a>
-							</div>
-							<div class="schedule__item">
-								<div class="schedule__matches">
-									<div class="s-col">
-										<div class="league">Liga Inggris</div>
-										<div class="time"><span>Live</span> 23'</div>
+						<section class="tab__content__box box -detail clearfix">
+							<div class="schedule__indeks js--schedule2">
+								<div class="schedule__gameweek">
+									<div class="schedule__top">
+										<div class="schedule__date"><span>8 Nov 2019</span></div>
 									</div>
-									<div class="s-col">
-										<div class="team">
-											<div class="img"><img src="./asset/images/team/premier-league/ars.png" alt="ARS"></div>
-											<div class="name">Arsenal</div>
+									<div class="schedule__item">
+										<div class="schedule__matches">
+											<div class="s-col">
+												<div class="time">FT (Agg 5-2)</div>
+											</div>
+											<div class="s-col">
+												<div class="team">
+													<div class="img"><img src="./asset/images/team/premier-league/mci.png" alt="MCI"></div>
+													<div class="name">Man City</div>
+												</div>
+												<div class="score">4</div>
+											</div>
+											<div class="s-col">
+												<div class="team">
+													<div class="img"><img src="./asset/images/team/premier-league/wat.png" alt="WAT"></div>
+													<div class="name">Watford</div>
+												</div>
+												<div class="score">2</div>
+											</div>
 										</div>
-										<div class="score">-</div>
 									</div>
-									<div class="s-col">
-										<div class="team">
-											<div class="img"><img src="./asset/images/team/premier-league/mun.png" alt="MUN"></div>
-											<div class="name">Man United</div>
+									<div class="schedule__item">
+										<div class="schedule__matches">
+											<div class="s-col">
+												<div class="time">FT</div>
+											</div>
+											<div class="s-col">
+												<div class="team">
+													<div class="img"><img src="./asset/images/team/premier-league/che.png" alt="CHE"></div>
+													<div class="name">Chelsea</div>
+												</div>
+												<div class="score">2</div>
+											</div>
+											<div class="s-col">
+												<div class="team">
+													<div class="img"><img src="./asset/images/team/premier-league/cry.png" alt="CRY"></div>
+													<div class="name">Crystal Palace</div>
+												</div>
+												<div class="score">0</div>
+											</div>
 										</div>
-										<div class="score">-</div>
+									</div>
+									<div class="schedule__item">
+										<div class="schedule__matches">
+											<div class="s-col">
+												<div class="time">FT</div>
+											</div>
+											<div class="s-col">
+												<div class="team">
+													<div class="img"><img src="./asset/images/team/premier-league/lei.png" alt="LEI"></div>
+													<div class="name">Leicester City</div>
+												</div>
+												<div class="score">2</div>
+											</div>
+											<div class="s-col">
+												<div class="team">
+													<div class="img"><img src="./asset/images/team/premier-league/ars.png" alt="ARS"></div>
+													<div class="name">Arsenal</div>
+												</div>
+												<div class="score">0</div>
+											</div>
+										</div>
+									</div>
+									<div class="schedule__item">
+										<div class="schedule__matches">
+											<div class="s-col">
+												<div class="time">FT</div>
+											</div>
+											<div class="s-col">
+												<div class="team">
+													<div class="img"><img src="./asset/images/team/premier-league/bur.png" alt="BUR"></div>
+													<div class="name">Burnley</div>
+												</div>
+												<div class="score">3</div>
+											</div>
+											<div class="s-col">
+												<div class="team">
+													<div class="img"><img src="./asset/images/team/premier-league/whu.png" alt="WHU"></div>
+													<div class="name">West Ham</div>
+												</div>
+												<div class="score">0</div>
+											</div>
+										</div>
+									</div>
+									<div class="schedule__item">
+										<div class="schedule__matches">
+											<div class="s-col">
+												<div class="time">FT</div>
+											</div>
+											<div class="s-col">
+												<div class="team">
+													<div class="img"><img src="./asset/images/team/premier-league/new.png" alt="NEW"></div>
+													<div class="name">Newcastle Utd</div>
+												</div>
+												<div class="score">2</div>
+											</div>
+											<div class="s-col">
+												<div class="team">
+													<div class="img"><img src="./asset/images/team/premier-league/bou.png" alt="BOU"></div>
+													<div class="name">Bournemouth</div>
+												</div>
+												<div class="score">1</div>
+											</div>
+										</div>
+									</div>
+									<div class="schedule__item">
+										<div class="schedule__matches">
+											<div class="s-col">
+												<div class="time">FT</div>
+											</div>
+											<div class="s-col">
+												<div class="team">
+													<div class="img"><img src="./asset/images/team/premier-league/sou.png" alt="SOU"></div>
+													<div class="name">Southampton</div>
+												</div>
+												<div class="score">1</div>
+											</div>
+											<div class="s-col">
+												<div class="team">
+													<div class="img"><img src="./asset/images/team/premier-league/eve.png" alt="EVE"></div>
+													<div class="name">Everton</div>
+												</div>
+												<div class="score">2</div>
+											</div>
+										</div>
+									</div>
+									<div class="schedule__item">
+										<div class="schedule__matches">
+											<div class="s-col">
+												<div class="time">FT</div>
+											</div>
+											<div class="s-col">
+												<div class="team">
+													<div class="img"><img src="./asset/images/team/premier-league/tot.png" alt="TOT"></div>
+													<div class="name">Tottenham</div>
+												</div>
+												<div class="score">1</div>
+											</div>
+											<div class="s-col">
+												<div class="team">
+													<div class="img"><img src="./asset/images/team/premier-league/shu.png" alt="SHU"></div>
+													<div class="name">Sheffield United</div>
+												</div>
+												<div class="score">1</div>
+											</div>
+										</div>
+									</div>
+									<div class="schedule__item">
+										<div class="schedule__matches">
+											<div class="s-col">
+												<div class="time">FT</div>
+											</div>
+											<div class="s-col">
+												<div class="team">
+													<div class="img"><img src="./asset/images/team/premier-league/liv.png" alt="LIV"></div>
+													<div class="name">Liverpool</div>
+												</div>
+												<div class="score">3</div>
+											</div>
+											<div class="s-col">
+												<div class="team">
+													<div class="img"><img src="./asset/images/team/premier-league/nor.png" alt="NOR"></div>
+													<div class="name">Norwich City</div>
+												</div>
+												<div class="score">1</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="schedule__gameweek">
+									<div class="schedule__top">
+										<div class="schedule__date"><span>23 Nov 2019</span></div>
+									</div>
+									<div class="schedule__item">
+										<div class="schedule__matches">
+											<div class="s-col">
+												<div class="time"><span>Live</span> 23'</div>
+											</div>
+											<div class="s-col">
+												<div class="team">
+													<div class="img"><img src="./asset/images/team/premier-league/ars.png" alt="ARS"></div>
+													<div class="name">Arsenal</div>
+												</div>
+												<div class="score">-</div>
+											</div>
+											<div class="s-col">
+												<div class="team">
+													<div class="img"><img src="./asset/images/team/premier-league/mun.png" alt="MUN"></div>
+													<div class="name">Man United</div>
+												</div>
+												<div class="score">-</div>
+											</div>
+										</div>
+									</div>
+									<div class="schedule__item">
+										<div class="schedule__matches">
+											<div class="s-col">
+												<div class="time">20.30 PM</div>
+											</div>
+											<div class="s-col">
+												<div class="team">
+													<div class="img"><img src="./asset/images/team/premier-league/cry.png" alt="CRY"></div>
+													<div class="name">Crystal Palace</div>
+												</div>
+												<div class="score">-</div>
+											</div>
+											<div class="s-col">
+												<div class="team">
+													<div class="img"><img src="./asset/images/team/premier-league/liv.png" alt="LIV"></div>
+													<div class="name">Liverpool</div>
+												</div>
+												<div class="score">-</div>
+											</div>
+										</div>
+									</div>
+									<div class="schedule__item">
+										<div class="schedule__matches">
+											<div class="s-col">
+												<div class="time">20.30 PM</div>
+											</div>
+											<div class="s-col">
+												<div class="team">
+													<div class="img"><img src="./asset/images/team/premier-league/eve.png" alt="EVE"></div>
+													<div class="name">Everton</div>
+												</div>
+												<div class="score">-</div>
+											</div>
+											<div class="s-col">
+												<div class="team">
+													<div class="img"><img src="./asset/images/team/premier-league/nor.png" alt="NOR"></div>
+													<div class="name">Norwich City</div>
+												</div>
+												<div class="score">-</div>
+											</div>
+										</div>
+									</div>
+									<div class="schedule__item">
+										<div class="schedule__matches">
+											<div class="s-col">
+												<div class="time">20.30 PM</div>
+											</div>
+											<div class="s-col">
+												<div class="team">
+													<div class="img"><img src="./asset/images/team/premier-league/whu.png" alt="WHU"></div>
+													<div class="name">West Ham</div>
+												</div>
+												<div class="score">-</div>
+											</div>
+											<div class="s-col">
+												<div class="team">
+													<div class="img"><img src="./asset/images/team/premier-league/tot.png" alt="TOT"></div>
+													<div class="name">Tottenham</div>
+												</div>
+												<div class="score">-</div>
+											</div>
+										</div>
+									</div>
+									<div class="schedule__item">
+										<div class="schedule__matches">
+											<div class="s-col">
+												<div class="time">20.30 PM</div>
+											</div>
+											<div class="s-col">
+												<div class="team">
+													<div class="img"><img src="./asset/images/team/premier-league/mci.png" alt="MCI"></div>
+													<div class="name">Man City</div>
+												</div>
+												<div class="score">-</div>
+											</div>
+											<div class="s-col">
+												<div class="team">
+													<div class="img"><img src="./asset/images/team/premier-league/che.png" alt="CHE"></div>
+													<div class="name">Chelsea</div>
+												</div>
+												<div class="score">-</div>
+											</div>
+										</div>
+									</div>
+									<div class="schedule__item">
+										<div class="schedule__matches">
+											<div class="s-col">
+												<div class="time">20.30 PM</div>
+											</div>
+											<div class="s-col">
+												<div class="team">
+													<div class="img"><img src="./asset/images/team/premier-league/wat.png" alt="WAT"></div>
+													<div class="name">Watford</div>
+												</div>
+												<div class="score">-</div>
+											</div>
+											<div class="s-col">
+												<div class="team">
+													<div class="img"><img src="./asset/images/team/premier-league/bur.png" alt="BUR"></div>
+													<div class="name">Burnley</div>
+												</div>
+												<div class="score">-</div>
+											</div>
+										</div>
+									</div>
+									<div class="schedule__item">
+										<div class="schedule__matches">
+											<div class="s-col">
+												<div class="time">20.30 PM</div>
+											</div>
+											<div class="s-col">
+												<div class="team">
+													<div class="img"><img src="./asset/images/team/premier-league/bou.png" alt="BOU"></div>
+													<div class="name">Bournemouth</div>
+												</div>
+												<div class="score">-</div>
+											</div>
+											<div class="s-col">
+												<div class="team">
+													<div class="img"><img src="./asset/images/team/premier-league/wlv.png" alt="WLV"></div>
+													<div class="name">Wolves</div>
+												</div>
+												<div class="score">-</div>
+											</div>
+										</div>
+									</div>
+									<div class="schedule__item">
+										<div class="schedule__matches">
+											<div class="s-col">
+												<div class="time">20.30 PM</div>
+											</div>
+											<div class="s-col">
+												<div class="team">
+													<div class="img"><img src="./asset/images/team/premier-league/brh.png" alt="BRH"></div>
+													<div class="name">Brighton</div>
+												</div>
+												<div class="score">-</div>
+											</div>
+											<div class="s-col">
+												<div class="team">
+													<div class="img"><img src="./asset/images/team/premier-league/lei.png" alt="LEI"></div>
+													<div class="name">Leicester City</div>
+												</div>
+												<div class="score">-</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="schedule__item">
-								<div class="schedule__matches">
-									<div class="s-col">
-										<div class="league">Liga Inggris</div>
-										<div class="time">23 Nov 2019, 20.30 PM</div>
-									</div>
-									<div class="s-col">
-										<div class="team">
-											<div class="img"><img src="./asset/images/team/premier-league/cry.png" alt="CRY"></div>
-											<div class="name">Crystal Palace</div>
-										</div>
-										<div class="score">-</div>
-									</div>
-									<div class="s-col">
-										<div class="team">
-											<div class="img"><img src="./asset/images/team/premier-league/liv.png" alt="LIV"></div>
-											<div class="name">Liverpool</div>
-										</div>
-										<div class="score">-</div>
-									</div>
-								</div>
-							</div>
-							<div class="schedule__item">
-								<div class="schedule__matches">
-									<div class="s-col">
-										<div class="league">Liga Inggris</div>
-										<div class="time">23 Nov 2019, 20.30 PM</div>
-									</div>
-									<div class="s-col">
-										<div class="team">
-											<div class="img"><img src="./asset/images/team/premier-league/eve.png" alt="EVE"></div>
-											<div class="name">Everton</div>
-										</div>
-										<div class="score">-</div>
-									</div>
-									<div class="s-col">
-										<div class="team">
-											<div class="img"><img src="./asset/images/team/premier-league/nor.png" alt="NOR"></div>
-											<div class="name">Norwich City</div>
-										</div>
-										<div class="score">-</div>
-									</div>
-								</div>
-							</div>
-							<div class="schedule__item">
-								<div class="schedule__matches">
-									<div class="s-col">
-										<div class="league">Liga Inggris</div>
-										<div class="time">23 Nov 2019, 20.30 PM</div>
-									</div>
-									<div class="s-col">
-										<div class="team">
-											<div class="img"><img src="./asset/images/team/premier-league/whu.png" alt="WHU"></div>
-											<div class="name">West Ham</div>
-										</div>
-										<div class="score">-</div>
-									</div>
-									<div class="s-col">
-										<div class="team">
-											<div class="img"><img src="./asset/images/team/premier-league/tot.png" alt="TOT"></div>
-											<div class="name">Tottenham</div>
-										</div>
-										<div class="score">-</div>
-									</div>
-								</div>
-							</div>
-						</div>
+						</section>
 
 					</div>
 				</div>
 			</section>
+
 
 			<!-- ads bottom -->
 			<div class="ads__bottom">

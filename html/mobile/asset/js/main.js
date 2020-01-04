@@ -6,9 +6,6 @@ $(document).ready(function() {
     var prevArrow = "<a href='#' class='arrow arrow--left'><span class='icon icon-angle-left'></span></a>";
     var nextArrow = "<a href='#' class='arrow arrow--right'><span class='icon icon-angle-right'></span></a>";
 		
-    var prevArrowV = "<a href='#' class='arrow arrow--up'><span class='icon icon-angle-up'></span></a>";
-    var nextArrowV = "<a href='#' class='arrow arrow--down'><span class='icon icon-angle-down'></span></a>";
-		
 	// scroll
 	$(window).scroll(function () {
 
@@ -65,13 +62,13 @@ $(document).ready(function() {
 			nextArrow: nextArrow
 		});
 	}
-    if($('.js--network').length>0) {
-		$('.js--network').slick({
-			autoplay: true,
-			slidesToShow: 2,
-			autoplaySpeed: 7000,
+    if($('.js--schedule2').length>0) {
+		$('.js--schedule2').slick({
+			autoplay: false,
+			slidesToShow: 1,
 			pauseOnFocus: true,
-			fade: false,
+			fade: true,
+			infinite: false,
 			dots: false,
 			arrows: true,
 			cssEase: 'ease',
@@ -79,22 +76,7 @@ $(document).ready(function() {
 			nextArrow: nextArrow
 		});
 	}
-    if($('.js--network-sidebar').length>0) {
-		$('.js--network-sidebar').slick({
-			autoplay: true,
-			slidesToShow: 4,
-			autoplaySpeed: 10000,
-			pauseOnFocus: true,
-			fade: false,
-			vertical: true,
-			dots: false,
-			arrows: true,
-			cssEase: 'ease',
-			prevArrow: prevArrowV,
-			nextArrow: nextArrowV
-		});
-	}
-	
+
 	// search
 	$('#js--search').click(function(e){
 		e.preventDefault();
@@ -169,5 +151,33 @@ $(document).ready(function() {
 			}
 		})
 	});
+
+    // tabs
+    $('[data-type="tabs"]').each(function(){
+
+        var $active, $content, $links = $(this).find('a');
+        $active = $($links.filter('[href="'+location.hash+'"]')[0] || $links[0]);
+        //$active = $active.parent();
+        var $activeNameClass = $active.attr('class');
+        $active.addClass('-active');
+        $content = $($active.attr('href'));
+
+        $links.not($active).each(function () {
+            $($(this).attr('href')).hide();
+        });
+
+        $(this).on('click', 'a', function(e){
+            $active.removeClass('-active');
+            $content.hide();
+
+            $active = $(this);
+            $content = $($(this).attr('href'));
+
+            $active.addClass('-active');
+            $content.show();
+
+            e.preventDefault();
+        });
+    });
 
 });
