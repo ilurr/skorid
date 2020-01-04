@@ -15,7 +15,7 @@ $(document).ready(function() {
 		var videoPlayerHeight = $('#js-video').outerHeight();
 	}
 	
-	console.log(videoPlayer)
+	//console.log(videoPlayer)
 	// scroll
 	$(window).scroll(function () {
 
@@ -106,6 +106,20 @@ $(document).ready(function() {
 			nextArrow: nextArrow
 		});
 	}
+    if($('.js--schedule2').length>0) {
+		$('.js--schedule2').slick({
+			autoplay: false,
+			slidesToShow: 1,
+			pauseOnFocus: true,
+			fade: true,
+			infinite: false,
+			dots: false,
+			arrows: true,
+			cssEase: 'ease',
+			prevArrow: prevArrow,
+			nextArrow: nextArrow
+		});
+	}
 	
 	// sticky share
     if($('.js--tower').length>0) {
@@ -168,6 +182,34 @@ $(document).ready(function() {
 				pr.css('height', (list + hbtn));
 			}
 		})
-	})
+	});
+
+    // tabs
+    $('[data-type="tabs"]').each(function(){
+
+        var $active, $content, $links = $(this).find('a');
+        $active = $($links.filter('[href="'+location.hash+'"]')[0] || $links[0]);
+        //$active = $active.parent();
+        var $activeNameClass = $active.attr('class');
+        $active.addClass('-active');
+        $content = $($active.attr('href'));
+
+        $links.not($active).each(function () {
+            $($(this).attr('href')).hide();
+        });
+
+        $(this).on('click', 'a', function(e){
+            $active.removeClass('-active');
+            $content.hide();
+
+            $active = $(this);
+            $content = $($(this).attr('href'));
+
+            $active.addClass('-active');
+            $content.show();
+
+            e.preventDefault();
+        });
+    });
 	
 });

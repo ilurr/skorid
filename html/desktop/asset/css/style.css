@@ -808,12 +808,12 @@ input[type="radio"] {
     left: 0;
     top: 20px;
     z-index: 2;
-    background: #fff;
+    background: #c2000b;
     padding: 8px 15px;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 700;
-    color: #000; }
+    color: #fff; }
   .hl__b-box {
     position: absolute;
     bottom: 0;
@@ -855,7 +855,6 @@ input[type="radio"] {
     font-weight: 400;
     color: #fff; }
   .hl__s-item {
-    display: block;
     position: relative;
     width: 25%;
     padding: 0 7px;
@@ -1301,7 +1300,6 @@ input[type="radio"] {
   .quiz__box {
     position: relative; }
   .quiz__img {
-    height: 210px;
     overflow: hidden;
     position: relative; }
   .quiz__footer {
@@ -1618,6 +1616,32 @@ input[type="radio"] {
     padding: 10px 50px;
     height: 160px;
     overflow: hidden; }
+    .schedule__container .arrow {
+      top: 30px;
+      font-size: 60px;
+      color: #E5E5E5;
+      background: transparent; }
+      .schedule__container .arrow:hover {
+        color: #000;
+        background: transparent; }
+    .schedule__container .arrow--left {
+      left: -45px; }
+    .schedule__container .arrow--right {
+      right: -45px; }
+  .schedule__indeks {
+    position: relative; }
+    .schedule__indeks .arrow {
+      top: 11px;
+      background: transparent; }
+      .schedule__indeks .arrow:hover {
+        color: #c2000b;
+        background: transparent; }
+      .schedule__indeks .arrow.slick-disabled {
+        color: #f0f0f0; }
+    .schedule__indeks .arrow--left {
+      left: 30%; }
+    .schedule__indeks .arrow--right {
+      right: 30%; }
   .schedule__box {
     position: relative;
     display: -webkit-box;
@@ -1728,7 +1752,9 @@ input[type="radio"] {
       overflow: hidden; }
   .schedule__gameweek {
     position: relative;
-    padding: 20px 10px; }
+    padding: 0; }
+    .schedule__gameweek .schedule__top {
+      padding: 10px 0 0; }
     .schedule__gameweek .schedule__box {
       flex-wrap: wrap;
       justify-content: flex-start; }
@@ -1739,27 +1765,18 @@ input[type="radio"] {
     .schedule__gameweek .schedule__matches {
       width: calc(100%);
       border-top: 1px solid #f0f0f0;
-      padding: 15px 10px; }
+      padding: 12px 10px;
+      align-items: center; }
     .schedule__gameweek .schedule__matches .time {
       margin-top: 0;
       font-size: 14px;
       letter-spacing: 1px; }
+    .schedule__gameweek .schedule__matches .name {
+      font-size: 14px; }
     .schedule__gameweek .schedule__matches .score {
-      padding: 8px 0; }
+      padding: 2px 0; }
     .schedule__gameweek .schedule__matches:after {
       border-left: transparent; }
-  .schedule .arrow {
-    top: 30px;
-    font-size: 60px;
-    color: #E5E5E5;
-    background: transparent; }
-    .schedule .arrow:hover {
-      color: #000;
-      background: transparent; }
-  .schedule .arrow--left {
-    left: -45px; }
-  .schedule .arrow--right {
-    right: -45px; }
 
 .competition {
   position: relative; }
@@ -2390,8 +2407,6 @@ input[type="radio"] {
       right: 14px;
       width: 10px;
       height: 10px; }
-  .standing.-indeks .standing__table .t-footer {
-    text-align: right; }
   .standing .arrow {
     top: 10px;
     color: #fff;
@@ -2433,6 +2448,23 @@ input[type="radio"] {
       font-size: 16px; }
     .tab__link.-active .title {
       background: #000; }
+  .tab__content {
+    position: relative; }
+    .tab__content__box {
+      position: relative; }
+      .tab__content__box.-indeks {
+        margin: 20px; }
+        .tab__content__box.-indeks .title {
+          background: #f0f0f0;
+          color: #000;
+          border-bottom: 1px solid #ccc;
+          font-size: 15px; }
+          .tab__content__box.-indeks .title span {
+            vertical-align: middle; }
+        .tab__content__box.-indeks .title__logo {
+          height: 20px; }
+        .tab__content__box.-indeks .standing__table .t-footer {
+          text-align: right; }
 
 .title {
   position: relative;
