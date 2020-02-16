@@ -1,0 +1,24 @@
+{{#each channel}}
+{{#gte @index compare=../index_start}}
+{{#gte @index compare=../index_end}}
+{{else}}
+<div class="opinion__item">
+	<div class="opinion__img">
+		<a href="artikel-opini.html">
+			<img src="{{author_img}}" alt="{{title}}">
+		</a>
+	</div>
+	<div class="opinion__right">
+		<!--<h2 class="opinion__title">
+			<a href="artikel-opini.html" class="opinion__link">{{title}}</a>
+		</h2>-->
+		<h3 class="opinion__author">
+			<a href="opini-author.html" class="opinion__link">{{author}}</a>
+		</h3>
+		<div class="opinion__author__title">{{author_title}}</div>
+	</div>
+</div>
+{{/gte}}
+{{else}}
+{{/gte}}
+{{/each}}

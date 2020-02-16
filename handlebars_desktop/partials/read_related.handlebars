@@ -1,0 +1,13 @@
+{{#if channel}}
+<div class="read__related clearfix">
+	<ul class="related__list clearfix">
+		{{#each channel.related as |terkait|}}
+		<li>
+			<h2 class="related__title">
+				<a href="artikel.html" class="related__link">{{terkait}}</a>
+			</h2>
+		</li>
+		{{/each}}
+	</ul>
+</div>
+{{/if}}

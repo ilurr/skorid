@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	{{> head}}
+
+<body class="wp">
+	<!-- header -->
+	{{> header}}
+	
+	<!-- nav -->
+	{{>nav section="Home"}}
+	
+	<div class="row clearfix">
+		<div class="container clearfix">
+		
+			<!-- ads top -->
+			{{> ads_top}}
+			
+			<section class="competition clearfix">
+				<h3 class="title">
+					<span>Kompetisi</span>
+				</h3>
+				<div class="competition__box">
+					<div class="competition__option">
+						<div class="competition__option__col">
+							<h3 class="title">
+								<div class="form__group select competition__form">
+									<select name="league" id="">
+										<option value="">Sport</option>
+										<option value="">Sepak Bola</option>
+										<option value="">Basket</option>
+										<option value="">Balap</option>
+									</select>
+								</div>
+							</h3>
+						</div>
+						<div class="competition__option__col">
+							<h3 class="title">
+								<div class="form__group select competition__form">
+									<select name="league" id="">
+										<option value="">Liga</option>
+										<option value="">Liga Indonesia</option>
+										<option value="">Liga Inggris</option>
+										<option value="">Liga Italia</option>
+										<option value="">Liga Spanyol</option>
+										<option value="">Liga Jerman</option>
+										<option value="">Liga Perancis</option>
+									</select>
+								</div>
+							</h3>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- standing -->
+			<section class="standing table indeks box clearfix">
+				{{> widget_balap channel=channel.balap.motogp index_start=0 index_end=5 league="MotoGP" indeks=true detail=true}}
+			</section>
+
+			<!-- standing -->
+			<section class="standing table indeks box clearfix">
+				{{> widget_balap channel=channel.balap.f1 index_start=0 index_end=5 league="F1" indeks=true detail=true}}
+			</section>
+
+			<!-- ads bottom -->
+			{{> ads_skin}}
+			
+		</div>
+	</div>
+	
+	<!-- footer -->
+	{{> footer}}
+	
+	<!-- ads horizontal -->
+	{{> ads_tower}}
+
+	{{> js}}
+	
+</body>
+</html>

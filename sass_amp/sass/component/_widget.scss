@@ -1,0 +1,119 @@
+.widget {
+	position: relative;
+	table {
+		width: 100%;
+	}
+	th {
+		text-align: left;
+	}
+	th,
+	td {
+		padding: 10px;
+		span {
+			float: right;
+		}
+	}
+	tr {
+		border-bottom: 1px solid #dfdfdf;
+		&:hover {
+			background: #f0f0f0;
+		}
+	}
+	&__title {
+		padding: 10px;
+		font-size: 16px;
+		font-weight: 500;
+		border-bottom: 1px solid #c0c0c0;
+		span {
+			padding: 3px 0 0;
+			float: right;
+			font-size: 14px;
+			font-weight: 400;
+			text-align: right;
+		}
+	}
+	&__salat {
+		position: relative;
+		a {
+			color: $color_theme;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	
+	// radio
+	&__radio {
+		text-align: center;
+		padding: 0 0 20px;
+	}
+	
+	// epaper
+	&__epaper {
+		position: relative;
+		&__box {
+			position: relative;
+			border: 1px solid #D2D2D2;
+		}
+		&__img {
+			text-align: center;
+			padding: 10px;
+		}
+		&__title {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			z-index: 1;
+			padding: 200px 10px 10px;
+			margin: 20px;
+			width: calc(100% - 40px);
+			text-align: center;
+			@include font-pack(false, 16px, 700, false, false);
+			background: linear-gradient(90deg,#fff,transparent);
+			background: -webkit-linear-gradient(90deg,#fff,transparent);
+		}
+		a {
+			color: inherit;
+			&:hover {
+				.widget__epaper__title {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	
+	// mail
+	&__mail {
+		position: relative;
+		padding: 15px;
+		border: 1px solid #D2D2D2;
+		&__title {
+			@include font-pack(false, 16px, 700, false, #000);
+			margin: 0 0 10px;
+		}
+		p {
+			margin: 0;
+		}
+	}
+	
+	// valas
+	&__valas {
+		position: relative;
+		&__content {
+			height: 235px;
+			overflow-x: scroll;
+		}
+	}
+	
+	// login
+	&__login {
+		margin: 10vh auto 5vh;
+		padding: 15px 5px 30px;
+		p {
+			color: #2a2a2a;
+		}
+		&__box {
+			margin: 20px 0 0;
+		}
+	}
+}

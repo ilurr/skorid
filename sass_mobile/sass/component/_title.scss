@@ -1,0 +1,125 @@
+.title {
+	position: relative;
+	padding: 16px 15px;
+	//background: #000;
+	@include font-pack($font_secondary, 18px, 700, 1, false);
+	&.-white {
+		color: #fff;
+	}
+	&.-center {
+		text-align: center;
+	}
+	&.-inggris {
+		background: #3F1052;
+		color: #fff;
+	}
+	&.-indonesia {
+		background: #8F001F;
+		color: #fff;
+	}
+	&.-spanyol {
+		background: #0E3672;
+		color: #fff;
+	}
+	&.-italia {
+		background: #318fd7;
+		color: #fff;
+	}
+	&.-perancis {
+		background: #8BC34A;
+		color: #fff;
+	}
+	&.-jerman {
+		background: #e2821f;
+		color: #fff;
+	}
+	span {
+		img {
+			height: 30px;
+		}
+	}
+	&__logo {
+		display: inline-block;
+		height: 30px;
+		vertical-align: middle;
+		&.-fixed {
+			position: absolute;
+			top: 10px;
+			left: 15px;
+			z-index: 1;
+		}
+		img {
+			height: 100%;
+		}
+	}
+	&__idx {
+		display: flex;
+		float: right;
+		font-size: 20px;
+		padding: 0 10px;
+		&:hover {
+			color: #fff;
+		}
+	}
+	.more {
+		display: inline-block;
+		float: right;
+		padding: 4px 6px;
+		border-radius: 5px;
+		//background: $color_theme;
+		@include font-pack(false, 11px, 500, 1, #6F6F6F);
+		&:hover {
+			color: darken($color_theme, 10%);
+		}
+		.icon {
+			vertical-align: middle;
+			font-size: 10px;
+		}
+	}
+}
+
+.title2 {
+	position: relative;
+	padding: 20px 0;
+	text-align: left;
+	@include font-pack($font_secondary, 18px, 700, false, #000);
+	span {
+	    position: relative;
+		display: inline-block;
+		background: #fff;
+		padding: 0 10px 0 0;
+		z-index: 2;
+	}
+	&:after {
+		content: '';
+		border-top: 1px solid #c3c3c3;
+		position: absolute;
+		z-index: 1;
+		top: 32px;
+		left: 0;
+		width: 100%;
+	}
+}
+
+.title3 {
+	position: relative;
+	padding: 10px 0;
+	text-align: left;
+	@include font-pack($font_secondary, 25px, 700, false, #000);
+	span {
+	    position: relative;
+		display: inline-block;
+		background: #e5e5e5;
+		padding: 0 10px 0 0;
+		z-index: 2;
+	}
+	&:after {
+		content: '';
+		border-top: 1px solid #a5a5a5;
+		position: absolute;
+		z-index: 1;
+		top: 27px;
+		left: 0;
+		width: 100%;
+	}
+}

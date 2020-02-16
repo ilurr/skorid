@@ -1,0 +1,121 @@
+.title {
+	position: relative;
+	padding: 12px 15px;
+	background: #000;
+	@include font-pack($font_secondary, 20px, 700, false, #fff);
+	&.-center {
+		text-align: center;
+	}
+	&.-inggris {
+		background: #3F1052;
+	}
+	&.-indonesia {
+		background: #8F001F;
+	}
+	&.-spanyol {
+		background: #0E3672;
+	}
+	&.-italia {
+		background: #318fd7;
+	}
+	&.-perancis {
+		background: #8BC34A;
+	}
+	&.-jerman {
+		background: #e2821f;
+	}
+	&.-white {
+		background: #fff;
+	}
+	span {
+		img {
+			height: 30px;
+		}
+	}
+	&__logo {
+		display: inline-block;
+		height: 30px;
+		vertical-align: middle;
+		&.-fixed {
+			position: absolute;
+			top: 10px;
+			left: 15px;
+			z-index: 1;
+		}
+		img {
+			height: 100%;
+		}
+	}
+	&__idx {
+		display: flex;
+		float: right;
+		font-size: 25px;
+		padding: 0 10px;
+		&:hover {
+			color: #fff;
+		}
+	}
+	.more {
+		//display: inline-block;
+		float: right;
+		padding: 6px;
+		border-radius: 5px;
+		background: $color_theme;
+		@include font-pack(false, 10px, 700, 1, #fff);
+		&:hover {
+			background: darken($color_theme, 5%);
+		}
+	}
+}
+
+.title2 {
+	position: relative;
+	padding: 20px 0;
+	text-align: left;
+	@include font-pack($font_secondary, 18px, 700, false, #000);
+	span {
+	    position: relative;
+		display: inline-block;
+		background: #fff;
+		padding: 0 10px 0 0;
+		z-index: 2;
+	}
+	&:after {
+		content: '';
+		border-top: 1px solid #c3c3c3;
+		position: absolute;
+		z-index: 1;
+		top: 32px;
+		left: 0;
+		width: 100%;
+	}
+}
+
+.title3 {
+	position: relative;
+	padding: 10px 0;
+	text-align: left;
+	@include font-pack($font_secondary, 25px, 700, false, #000);
+	.title__logo {
+		position: relative;
+		background: #e5e5e5;
+		padding-right: 2px;		
+		z-index: 2;
+	}
+	span {
+	    position: relative;
+		display: inline-block;
+		background: #e5e5e5;
+		padding: 0 10px 0 0;
+		z-index: 2;
+	}
+	&:after {
+		content: '';
+		border-top: 1px solid #a5a5a5;
+		position: absolute;
+		z-index: 1;
+		top: 27px;
+		left: 0;
+		width: 100%;
+	}
+}

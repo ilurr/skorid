@@ -1,0 +1,17 @@
+<nav class="nav">
+	<div class="nav__logo"><a href="index.html"><img src="./asset/images/logo-skorid.jpg" alt="Skor.id"></a></div>
+	<ul class="nav__wrap">
+		{{#each MainMenu}}
+		<li>
+			<a href="{{link}}"{{#eq ../section compare=title}} class="active"{{/eq}}>{{title}}</a>
+			{{#if submenu}}
+			<ul class="nav__submenu">
+				{{#each submenu}}
+				<li><a href="{{link}}">{{title}}</a></li>
+				{{/each}}
+			</ul>
+			{{/if}}
+		</li>
+		{{/each}}
+	</ul>
+</nav>

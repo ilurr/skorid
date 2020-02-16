@@ -1,0 +1,26 @@
+<div class="hl__big">
+	{{#each channel}}
+	{{#gte @index compare=../index_start}}
+	{{#gte @index compare=../index_end}}
+	{{else}}
+	<div class="hl__b-item">
+		{{#eq ../noimg compare=true}}
+		{{else}}
+		<div class="hl__b-img">
+			<img src="https://asset.kompas.com/crop/0x0:0x0/740x350/data/photo/{{img}}" alt="{{title}}">
+		</div>
+		{{/eq}}
+		<div class="hl__b-wrap">
+			{{#eq ../detail compare=true}}
+			<h1 class="hl__b-title">{{title}}</h1>
+			{{else}}
+			<h1 class="hl__b-title"><a class="hl__link" href="topik-detail.html">{{title}}</a></h1>
+			{{/eq}}
+			<p class="hl__b-lead">{{lead}}</p>
+		</div>
+	</div>
+	{{/gte}}
+	{{else}}
+	{{/gte}}
+	{{/each}}
+</div>

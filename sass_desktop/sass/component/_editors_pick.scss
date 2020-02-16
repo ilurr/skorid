@@ -1,0 +1,55 @@
+.editors {
+	position: relative;
+	&__container {
+		position: relative;
+		padding: 20px 50px 10px;
+	}
+	&__wrap {
+		position: relative;
+		@include display-flex();
+		flex-wrap: wrap;
+		margin: 0 -5px;
+	}
+	&__item {
+		width: 33.333333%;
+		padding: 0 5px;
+	}
+	&__img {
+		border-radius: 5px;
+		position: relative;
+		overflow: hidden;
+		img {
+			width: 100%;
+		}
+	}
+	&__box {
+		position: relative;
+		padding: 5px 0 10px;
+	}
+	&__title {
+		margin: 5px 0;
+		padding-top: 7px;
+		border-top: 2px solid #E5E5E5;
+		@include font-pack(false, false, 500, false, false);
+		@include title_overflow(auto, 66px);
+	}
+	&__link {
+		display: block;
+	}
+	.arrow {
+		top: 45px;
+		font-size: 60px;
+		color: #E5E5E5;
+		background: transparent;
+		&:hover {
+			color: #000;
+			background: transparent;
+		}
+	}
+	.arrow--left {
+		left: -45px;
+	}
+	.arrow--right {
+		right: -45px;
+	}
+}

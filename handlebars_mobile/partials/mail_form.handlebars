@@ -1,0 +1,52 @@
+<div class="mail__form clearfix">
+	<div class="mail__teaser">Isi form di bawah ini dengan data dan identitas diri Anda secara lengkap. Redaksi mengutamakan surat yang ditulis dengan identitas yang jelas.</div>
+	<form id="kirim">
+		<div class="mail__body">
+			<div class="form__group clearfix">
+				<label for="">Email</label>
+				<input type="text" class="form__input" disabled="disabled" value="admin@pikiran-rakyat.com">
+			</div>
+			<div class="form__group clearfix">
+				<label for="">Nama Lengkap</label>
+				<input type="text" class="form__input">
+				<span class="error">Nama harus diisi</span>
+			</div>
+			<div class="form__group clearfix">
+				<label for="">Alamat</label>
+				<input type="text" class="form__input">
+			</div>
+			<div class="form__group clearfix">
+				<label for="">Kota</label>
+				<input type="text" class="form__input">
+			</div>
+			<div class="form__group clearfix">
+				<label for="">No Telp/HP</label>
+				<input type="text" class="form__input">
+			</div>
+			<div class="form__group clearfix">
+				<label for="">Judul Surat</label>
+				<input type="text" class="form__input">
+			</div>
+			<div class="form__group select clearfix">
+				<label for="">Kepada</label>
+				<select name="select" id="select">
+					<option value="redaksi">Redaksi</option>
+					<option value="redaksi">Instansi Pemerintahan</option>
+					<option value="redaksi">Swasta</option>
+				</select>
+			</div>
+			<div class="form__group clearfix">
+				<label for="">Isi Surat</label>
+				<textarea name="content" id="" cols="30" rows="10" class="form__textarea"></textarea>
+			</div>
+		</div>
+		<div class="mail__action">
+			<div class="form__group clearfix">
+				<img src="https://www.google.com/recaptcha/intro/images/hero-recaptcha-demo.gif" alt="" style="height:100px">
+			</div>
+			<div class="form__group clearfix">
+				<input type="submit" value="Kirim" class="form__button">
+			</div>
+		</div>
+	</form>
+</div>

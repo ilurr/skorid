@@ -1,0 +1,22 @@
+{{#each channel}}
+{{#gte @index compare=../index_start}}
+{{#gte @index compare=../index_end}}
+{{else}}
+<div class="photos__item{{#eq @index compare=0}} -big{{/eq}}">
+	<div class="photos__img">
+		<a href="artikel-images.html">
+			{{#eq @index compare=0}}
+			<img src="https://asset.kompas.com/crop/0x0:0x0/480x276/data/photo/{{img}}" alt="{{title}}">
+			{{else}}
+			<img src="https://asset.kompas.com/crop/0x0:0x0/230x128/data/photo/{{img}}" alt="{{title}}">
+			{{/eq}}
+			<div class="photos__box">
+				<h2 class="photos__title">{{title}}</h2>
+			</div>
+		</a>
+	</div>
+</div>
+{{/gte}}
+{{else}}
+{{/gte}}
+{{/each}}

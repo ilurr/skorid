@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	{{> head}}
+
+<body>
+	<!-- header -->
+	{{> header section_name="Kompetisi"}}
+	
+	<!-- ads skin -->
+	{{!> ads_skin}}
+	
+	<div class="row clearfix">
+		<div class="container clearfix">
+			<!-- ads top -->
+			{{> ads_top}}
+		</div>
+	</div>
+
+	<!-- title -->
+	<div class="row clearfix">
+		<div class="container clearfix">
+			<div class="col-offset-fluid clearfix">
+				<div class="col-bs10-10">
+			
+					<div class="title3">
+						<span>Premier League</span>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- content -->
+	<div class="row clearfix">
+		<div class="container clearfix">
+			<div class="col-offset-fluid clearfix">
+				
+				<div class="col-bs10-7">
+				
+					<section class="tab -page box clearfix">
+						<div class="tab__menu clearfix">
+							<div class="tab__item">
+								<a href="kompetisi-detail.html" class="tab__link -active"><div class="title"><span>Pertandingan</span></div></a>
+							</div>
+							<div class="tab__item">
+								<a href="kompetisi-klasemen.html" class="tab__link"><div class="title"><span>Klasemen</span></div></a>
+							</div>
+						</div>
+						<div class="tab__content">
+							<div class="tab__content__item">
+
+								<!-- schedule -->
+								<div class="schedule__gameweek">
+									{{> widget_salat channel=channel.bola.fixtures.inggris.rounds.[1] index_start=0 index_end=8 detail=true}}
+								</div>
+
+							</div>
+						</div>
+					</section>
+
+				</div>
+				
+				<div class="col-bs10-3">
+				
+					<!-- ads giant -->
+					{{> ads_giant}}
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- footer -->
+	{{> footer}}
+	
+	<!-- ads horizontal -->
+	{{> ads_horizontal}}
+
+	{{> js}}
+	
+</body>
+</html>

@@ -1,0 +1,140 @@
+.topic {
+	position: relative;
+	padding: 0 0 20px;
+	margin: 15px -15px;
+	&__wrap {
+		position: relative;
+		@include display-flex();
+		padding: 0;
+		margin: 0;
+		@include min-responsive($screen-lg-desktop) {
+			margin: 0 -20px;
+		}
+	}
+	&__item {
+		position: relative;
+		padding: 0 20px;
+		width: 50%;
+	}
+	&__img {
+		position: relative;
+		img {
+			width: 100%;
+		}
+	}
+	&__box {
+		position: relative;
+		background: rgba(0,0,0,.5);
+		padding: 0 20px 20px;
+	}
+	&__title {
+		margin: 10px 0 5px;
+		@include font-pack(false, 20px, 700, false, #fff);
+		@include title_overflow(55px, 55px);
+	}
+	&__date {
+		letter-spacing: 1.2px;
+		@include font-pack(false, 12px, false, false, #fff);
+	}
+	&__link {
+		display: block;
+		&:hover {
+			color: inherit;
+			text-decoration: underline;
+		}
+	}
+	.arrow {
+		&--left {
+			left: 5px;
+		}
+		&--right {
+			right: 5px;
+		}
+	}
+	
+	// indeks
+	&__big {
+		position: relative;
+		overflow: hidden;
+		margin: 0 -15px;
+	}
+	&__b {
+		&-item {
+			position: relative;
+		}
+		&-cat {
+			position: absolute;
+			top: 20px;
+			left: 0;
+			z-index: 1;
+			background: $color_theme;
+			padding: 8px 10px 8px 20px;
+			display: inline-block;
+			font-style: italic;
+			text-transform: uppercase;
+			letter-spacing: 4px;
+			height: 30px;
+			@include font-pack(false, 12px, 700, false, #fff);
+			&:after {
+				content: '';
+				position: absolute;
+				top: 0;
+				right: -10px;
+				width: 0;
+				height: 0;
+				border-top: 15px solid $color_theme;
+				border-bottom: 15px solid transparent;
+				border-right: 5px solid transparent;
+				border-left: 5px solid $color_theme;
+			}
+		}
+		&-img {
+			position: relative;
+			background: #000;
+			height: auto;
+			img {
+				width: 100%;
+			}
+		}
+		&-box {
+			position: relative;
+			width: 100%;
+			padding: 0 15px;
+		}
+		&-title {
+			margin: 15px 0 12px;
+			padding: 0;
+			@include font-pack(false, 18px, 700, false, #000);
+			& a:hover {
+				color: inherit;
+				text-decoration: underline;
+			}
+		}
+		&-lead {
+			display: block;
+			margin: 0;
+			padding: 0;
+			@include font-pack(false, 14px, false, false, #000);
+		}
+		&-link {
+			background: #fff;
+			display: inline-block;
+			padding: 8px 15px;
+			border-radius: 20px;
+			@include font-pack(false, 14px, 400, false, #000);
+		}
+	}
+	
+	// index
+	&--list {
+		position: relative;
+		padding: 20px 15px;
+		.latest__more {
+			text-align: right;
+			padding: 10px 15px 20px;
+		}
+		.latest__button {
+			font-size: 12px;
+		}
+	}
+}

@@ -1,0 +1,33 @@
+{{#each channel}}
+{{#gte @index compare=../index_start}}
+{{#gte @index compare=../index_end}}
+{{else}}
+<div class="topic__item clearfix">
+	<div class="topic__img">
+		<a href="artikel.html">
+			{{#eq @index compare=4}}
+			<img src="https://asset.kompas.com/crop/0x0:0x0/353x247/data/photo/{{img}}" alt="{{title}}">
+			{{else}}
+			{{#eq @index compare=8}}
+			<img src="https://asset.kompas.com/crop/0x0:0x0/353x247/data/photo/{{img}}" alt="{{title}}">
+			{{else}}
+			{{#eq @index compare=12}}
+			<img src="https://asset.kompas.com/crop/0x0:0x0/353x247/data/photo/{{img}}" alt="{{title}}">
+			{{else}}
+			<img src="https://asset.kompas.com/crop/0x0:0x0/82x82/data/photo/{{img}}" alt="{{title}}">
+			{{/eq}}
+			{{/eq}}
+			{{/eq}}
+		</a>
+	</div>
+	<div class="topic__box">
+		<h2 class="topic__title">
+			<a href="artikel.html" class="topic__link">{{title}}</a>
+		</h2>
+		<div class="topic__info">{{subtitle}} | 23:12 WIB</div>
+	</div>
+</div>
+{{/gte}}
+{{else}}
+{{/gte}}
+{{/each}}

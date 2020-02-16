@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+	{{> head}}
+
+<body class="wp">
+	<!-- header -->
+	{{> header}}
+	
+	<!-- nav -->
+	{{>nav section="Home"}}
+	
+	<div class="row clearfix">
+		<div class="container clearfix">
+		
+			<!-- ads top -->
+			{{> ads_top}}
+			
+			<!-- schedule -->
+			<section class="schedule clearfix">
+				<h3 class="title">
+					<span>Live Score</span>
+					<a class="more" href="livescore.html">Lihat Semua <span class="icon icon-angle-right"></span></a>
+				</h3>
+				<div class="schedule__scroll">
+					<div class="schedule__track">
+						{{> widget_salat channel=channel.bola.fixtures.inggris.rounds.[1] index_start=0 index_end=4 dir="premier-league"}}
+						{{> widget_salat channel=channel.bola.fixtures.inggris.rounds.[0] index_start=0 index_end=4 dir="premier-league"}}
+					</div>
+				</div>
+			</section>
+
+			{{> read_breadcrumb channel=read.bola.article}}
+			
+			<div class="read__box">
+				<!-- header -->
+				<section class="read__header clearfix">
+					{{> read_header channel=read.bola.article ads=true}}
+				</section>
+
+				<!-- content -->
+				<article class="read__content clearfix">
+					{{{read.bola.article.content}}}
+					<ol>
+						<li>Paris Saint-Germain</li>
+						<li>Real Madrid</li>
+						<li>Bayern Muenchen</li>
+						<li>Tottenham Hotspur</li>
+					</ol>
+					<div class="photo">
+						<div class="photo__img">
+							<img src="https://asset.kompas.com/crop/0x0:0x0/705x500/data/photo/2019/09/27/5d8d352cd8a4e.jpg" alt="Klasemen Liga Italia, Rekor Conte dan Kesempurnaan Inter Milan">
+						</div>
+						<div class="photo__caption">Inter Milan vs Lazio berlangsung di Stadion Giuseppe Meazza, Rabu (25/9/2019). </div>
+					</div>
+					<div class="videos__player">
+						<div class="videos__ratio">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/6h8OEsCZjGs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+						<div class="videos__caption">Inter 1-0 Lazio | Inter maintain winning streak with 5th consecutive victory! | Serie A</div>
+					</div>
+					{{> read_paging_next}}
+				</article>
+
+				{{!> read_paging}}
+
+				<div class="read__credit bottom">
+					<div class="read__info__author">
+						<strong>Sumber:</strong> <a href="opini-author.html">Kompas.com</a>
+					</div>
+				</div>
+
+				<!-- tagging -->
+				<section class="read__tagging clearfix">
+					<div class="title2">
+						<span>Tag</span>
+					</div>
+					{{> read_tagging channel=read.bola.article}}
+				</section>
+
+				<!-- comment -->
+				<section class="read__comment clearfix">
+					<div class="title2">
+						<span>Komentar</span>
+					</div>
+					{{> read_comment}}
+				</section>
+			</div>
+			
+			<!-- latest -->
+			<section class="latest clearfix">
+				<h3 class="title">
+					<span>Berita Terkait</span>
+				</h3>
+				<div class="latest__wrap">
+					{{> latest channel=channel.bola.latest total=3 index_start=0 index_end=3}}
+				</div>
+			</section>
+
+			<!-- latest -->
+			<section class="latest clearfix">
+				<h3 class="title">
+					<span>Latest</span>
+					<a class="more" href="section.html">Lihat Semua <span class="icon icon-angle-right"></span></a>
+				</h3>
+				<div class="latest__wrap">
+					{{> latest channel=channel.bola.latest total=5 index_start=3 index_end=8}}
+				</div>
+			</section>
+
+			<div class="latest__more clearfix">
+				<a href="#" class="button -more">Semua Berita</a>
+			</div>
+			
+			<!-- ads bottom -->
+			{{> ads_skin}}
+			
+		</div>
+	</div>
+	
+	<!-- footer -->
+	{{> footer}}
+	
+	<!-- ads horizontal -->
+	{{> ads_tower}}
+
+	{{> js}}
+	
+</body>
+</html>

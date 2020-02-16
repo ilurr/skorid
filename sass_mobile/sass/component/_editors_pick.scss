@@ -1,0 +1,63 @@
+.editors {
+	position: relative;
+	background: #10254B;
+	margin: 15px -15px;
+	padding: 10px 0 20px;
+	&__scroll {
+		padding: 0;
+		position: relative;
+		white-space: nowrap;
+		overflow: hidden;
+		-webkit-overflow-scrolling: touch;
+	}
+	&__track {
+		position: relative;
+		padding: 0 10px;
+		overflow-x: scroll;
+		-webkit-scroll-snap-type: x mandatory;
+		-ms-scroll-snap-type: x mandatory;
+		scroll-snap-type: x mandatory;
+	}
+	&__item {
+		position: relative;
+		width: 260px;
+		display: inline-block;
+		padding: 0 5px;
+		vertical-align: top;
+		scroll-snap-align: start;
+		-ms-scroll-snap-align: start;
+		-webkit-scroll-snap-align: start;
+		scroll-snap-stop: always;
+	}
+	&__img {
+		border-radius: 5px;
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		height: 173px;
+		background: #d2d2d2;
+		img {
+			width: 100%;
+		}
+	}
+	&__box {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		z-index: 2;
+		padding: 60px 0 0;
+		background: linear-gradient(90deg,#000,transparent);
+		background: -webkit-linear-gradient(90deg,#000,transparent);
+	}
+	&__title {
+		margin: 10px 0;
+		padding: 0 10px;
+		white-space: normal;
+		@include font-pack(false, false, 500, false, #fff);
+		@include title_overflow(auto, 72px);
+	}
+	&__link {
+		display: block;
+	}
+}

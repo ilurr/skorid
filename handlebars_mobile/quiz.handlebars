@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	{{> head}}
+
+<body class="wp">
+	<!-- header -->
+	{{> header}}
+	
+	<!-- nav -->
+	{{>nav section="Home"}}
+	
+	<div class="row clearfix">
+		<div class="container clearfix">
+		
+			<!-- ads top -->
+			{{> ads_top}}
+			
+			<!-- quiz -->
+			<section class="quiz -page box clearfix">
+				{{> quiz page="login"}}
+			</section>
+			
+		</div>
+	</div>
+	
+	<!-- footer -->
+	{{> footer}}
+	
+	<!-- ads horizontal -->
+	{{> ads_tower}}
+
+	{{> js}}
+	
+</body>
+</html>

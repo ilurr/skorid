@@ -1,0 +1,144 @@
+.social {
+	position: relative;
+	&__block {
+		display: block;
+	}
+	&__item {
+		display: inline-block;
+		padding: 0 2px;
+	}
+	&__link {
+		display: inline-block;
+		width: 35px;
+		height: 35px;
+		border-radius: 100%;
+		padding: 9px 8px;
+		background: transparent;
+		color: #fff;
+		font-size: 18px;
+		line-height: 1;
+		text-align: center;
+		//span {
+		//	display: block;
+		//}
+		&--facebook {
+			background: $color-facebook;
+			&:hover {
+				//background: darken($color-facebook, 20%);
+			}
+		}
+		&--twitter {
+			background: $color-twitter;
+			&:hover {
+				//background: darken($color-twitter, 20%);
+			}
+		}
+		&--instagram {
+			background: $color-instagram;
+			&:hover {
+				//background: darken($color-instagram, 20%);
+			}
+		}
+		&--youtube {
+			background: $color-youtube;
+			&:hover {
+				//background: darken($color-youtube, 20%);
+			}
+		}
+		&--pinterest {
+			background: $color-pinterest;
+			&:hover {
+				//background: darken($color-pinterest, 20%);
+			}
+		}
+		&--whatsapp {
+			background: $color-whatsapp;
+			&:hover {
+				//background: darken($color-whatsapp, 20%);
+			}
+		}
+		&--line {
+			background: $color-line;
+			&:hover {
+				//background: darken($color-line, 20%);
+			}
+		}
+		&--linkedin {
+			background: $color-linkedin;
+			&:hover {
+				//background: darken($color-linkedin, 20%);
+			}
+		}
+		&--path {
+			background: $color-path;
+			&:hover {
+				//background: darken($color-path, 20%);
+			}
+		}
+		&--google-plus {
+			background: $color-google_plus;
+			&:hover {
+				//background: darken($color-google_plus, 20%);
+			}
+		}
+		&--rss {
+			background: $color-rss;
+			&:hover {
+				//background: darken($color-google_plus, 20%);
+			}
+		}
+		&--cookpad {
+			position: relative;
+			background-color: #f3983e;
+			&:hover {
+				//background: darken(#f3983e, 20%);
+			}
+		}
+		&--kaskus {
+			background-color: #faa61a;
+			&:hover {
+				//background: darken(#f3983e, 20%);
+			}
+		}
+		&--vidio {
+			background-color: #ed3838;
+			&:hover {
+				//background: darken(#f3983e, 20%);
+			}
+		}
+		&--heart {
+			background: #cd201f;
+			&:hover {
+				//background: darken(#cd201f, 20%);
+			}
+		}
+		&--comment-o {
+			background: #b3b2b2;
+			&:hover {
+				//background: darken(#b3b2b2, 20%);
+			}
+		}
+		&:hover {
+			color: #fff;
+			// background: #fff;
+			@include transform_scale(1.1);
+			//span {
+			//}
+		}
+	}
+	&--footer {
+		padding: 20px 0;
+	}
+	&--article {
+		padding: 10px 0;
+		text-align: center;
+		.social__link {
+			&:hover {				
+				//@include transform_scale(1.02);
+				//box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+				//background: $color_theme;
+				//color: #fff;
+			}
+		}
+	}
+}

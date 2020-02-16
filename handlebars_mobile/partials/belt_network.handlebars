@@ -1,0 +1,22 @@
+{{#each channel}}
+{{#gte @index compare=../index_start}}
+{{#gte @index compare=../index_end}}
+{{else}}
+<div class="network__item">
+	<h4 class="network__city"><a href="kanal.html">{{subtitle}}</a></h4>
+	<div class="network__img">
+		<a href="artikel.html">
+			<img src="https://asset.kompas.com/crop/0x0:0x0/220x130/data/photo/{{img}}" alt="{{title}}">
+		</a>
+	</div>
+	<div class="network__box">
+		<h2 class="network__title">
+			<a href="artikel.html" class="network__link">{{title}}</a>
+		</h2>
+		<date class="network__date">25 September 2019, 23:12 WIB</date>
+	</div>
+</div>
+{{/gte}}
+{{else}}
+{{/gte}}
+{{/each}}

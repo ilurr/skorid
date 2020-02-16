@@ -1,0 +1,21 @@
+<div class="hl__big">
+	{{#each channel}}
+	{{#gte @index compare=../index_start}}
+	{{#gte @index compare=../index_end}}
+	{{else}}
+	<div class="hl__b-item">
+		<a class="hl__link" href="artikel.html">
+			<div class="hl__b-img">
+				<div class="hl__b-cat">Headline</div>
+				<img src="{{img}}" alt="{{title}}">
+				<div class="hl__b-box">
+					<h1 class="hl__b-title">{{title}}</h1>
+				</div>
+			</div>
+		</a>
+	</div>
+	{{/gte}}
+	{{else}}
+	{{/gte}}
+	{{/each}}
+</div>

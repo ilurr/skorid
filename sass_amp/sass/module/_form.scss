@@ -1,0 +1,158 @@
+// reset form
+input,
+select,
+button,
+textarea,
+.button {
+	margin: 0;
+	padding: 6px 12px;
+	border-radius: 0;
+	box-shadow: 1px 2px 5px 0 rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+	//border: solid 1px #eee;
+	border: 1px solid #D5D5D5;
+	outline: 0;
+	@include transition(all .2s ease);
+	@include font-pack(false, 16px, 400, 1.42857143, $color_primary);
+	&:hover,
+	&:focus {
+		border: 1px solid darken(#D5D5D5, 20%);
+		box-shadow: 1px 2px 5px 0 rgba(0, 0, 0, 0.18);
+	}
+}
+
+select,
+input[type="text"],
+input[type="password"] {
+	height: 45px;
+}
+
+input[type="text"],
+input[type="password"] {
+	&:disabled {
+		background: #f4f4f4;
+		color: #C2BEBE;
+		&:hover,
+		&:focus {
+			border: solid 1px #C4C4C4;
+			box-shadow: inherit;
+		}
+	}
+}
+
+textarea {
+	min-height: 100px;
+	max-width: 100%;
+	display: block;
+	width: 100%;
+	resize: none;
+}
+
+button,
+input[type="checkbox"],
+input[type="radio"],
+input[type="submit"],
+input[type="reset"] {
+	cursor: pointer;
+}
+
+// style form
+.form {
+	&__attribute {
+		padding: 12px 0 0;
+	}
+	&__group {
+		position: relative;
+		display: block;
+		margin: 0 0 20px;
+		input,
+		select,
+		button,
+		textarea {
+			display: block;
+			width: 100%;
+		}
+		label {
+			display: inline-block;
+			padding: 5px 0;
+			font-size: 16px;
+		}
+		.error {
+			color: red;
+			padding: 2px 0;
+			font-size: 12px;
+			&:empty {
+				padding: 0;
+			}
+		}
+		&.select {
+			position: relative;
+			select {
+				background: transparent;
+				-moz-appearance: none;
+				-webkit-appearance: none;
+				appearance: none;
+			}
+			&:after {
+				content: '';
+				position: absolute;
+				top: 42px;
+				right: 15px;
+				width: 15px;
+				height: 15px;
+				border-left: 2px solid #a2a2a2;
+				border-bottom: 2px solid #a2a2a2;
+				transform: rotate(-45deg);
+				z-index: 1;
+				pointer-events: none;
+			}
+		}
+	}
+	&__radio {
+		padding: 13px 0 9px;
+		input[type="radio"] {
+			display: inline-block;
+			width: auto;
+			margin-right: 10px;
+		}
+		label {
+			display: block;
+		}
+	}
+	&__select {
+		position: relative;
+		background: transparent;
+		&:after {
+			content: '';
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 10px;
+			height: 10px;
+			border-bottom: 2px solid #000;
+			border-right: 2px solid #000;
+		}
+	}
+	&__button {
+		height: 45px;
+		background: $color_theme;
+		color: #fff;
+		font-weight: 500;
+		font-size: 16px;
+		border: 1px solid $color_theme;
+		text-transform: uppercase;
+		&:hover,
+		&:focus {
+			background: darken($color_theme, 5%);
+			border: 1px solid darken($color_theme, 5%);
+		}
+	}
+	&__footer {
+		padding: 10px 0;
+		position: relative;
+	}
+	&--hide {
+		visibility: hidden;
+		display: none;
+	}
+}

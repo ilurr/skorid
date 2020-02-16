@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+	{{> head}}
+
+<body class="wp">
+	<!-- header -->
+	{{> header}}
+	
+	<!-- nav -->
+	{{>nav section="Home"}}
+	
+	<div class="row clearfix">
+		<div class="container clearfix">
+		
+			<!-- ads top -->
+			{{> ads_top}}
+							
+			<!-- headline -->
+			<section class="hl -images clearfix">
+				<h3 class="title">
+					<span>Foto</span>
+				</h3>
+				{{> headline_images channel=channel.bola.photo total=1 index_start=5 index_end=6}}
+			</section>
+			
+			<!-- schedule -->
+			<section class="schedule clearfix">
+				<h3 class="title">
+					<span>Live Score</span>
+					<a class="more" href="livescore.html">Lihat Semua <span class="icon icon-angle-right"></span></a>
+				</h3>
+				<div class="schedule__scroll">
+					<div class="schedule__track">
+						{{> widget_salat channel=channel.bola.fixtures.inggris.rounds.[1] index_start=0 index_end=4}}
+						{{> widget_salat channel=channel.bola.fixtures.inggris.rounds.[0] index_start=0 index_end=4}}
+					</div>
+				</div>
+			</section>
+
+			<!-- latest -->
+			<section class="latest -images clearfix">
+				<h3 class="title">
+					<span>Latest</span>
+					<a class="more" href="section.html">Lihat Semua <span class="icon icon-angle-right"></span></a>
+				</h3>
+				<div class="latest__wrap">
+					{{> latest_images channel=channel.bola.photo total=5 index_start=0 index_end=5}}
+				</div>
+			</section>
+			
+			<!-- video -->
+			<section class="videos clearfix">
+				<h3 class="title">
+					<span>Video</span>
+					<a class="more" href="video.html">Lihat Semua <span class="icon icon-angle-right"></span></a>
+				</h3>
+				<div class="videos__wrap">
+					{{> belt_tv channel=channel.bola.video total=4 index_start=0 index_end=1}}
+				</div>
+			</section>
+			
+			<!-- latest -->
+			<section class="latest -images clearfix">
+				<div class="latest__wrap">
+					{{> latest_images channel=channel.bola.photo total=1 index_start=5 index_end=6}}
+					{{> latest_images channel=channel.bola.photo total=4 index_start=0 index_end=4}}
+				</div>
+			</section>
+			
+			<!-- most -->
+			<section class="most clearfix">
+				<h3 class="title">
+					<span>Trending</span>
+					<a class="more" href="section.html">Lihat Semua <span class="icon icon-angle-right"></span></a>
+				</h3>
+				<div class="most__scroll">
+					<div class="most__track">
+						{{> most channel=channel.bola.latest total=8 index_start=2 index_end=10}}
+					</div>
+				</div>
+			</section>
+			
+			<!-- latest -->
+			<section class="latest -images clearfix">
+				<div class="latest__wrap">
+					{{> latest_images channel=channel.bola.photo total=2 index_start=4 index_end=6}}
+					{{> latest_images channel=channel.bola.photo total=3 index_start=0 index_end=3}}
+				</div>
+			</section>
+			
+			<!-- ads square -->
+			{{> ads_square}}
+
+			<!-- latest -->
+			<section class="latest -images clearfix">
+				<div class="latest__wrap">
+					{{> latest_images channel=channel.bola.photo total=5 index_start=0 index_end=5}}
+				</div>
+			</section>
+						
+			{{> paging}}
+			
+			<!-- ads bottom -->
+			{{> ads_skin}}
+			
+		</div>
+	</div>
+	
+	<!-- footer -->
+	{{> footer}}
+	
+	<!-- ads horizontal -->
+	{{> ads_tower}}
+
+	{{> js}}
+	
+</body>
+</html>

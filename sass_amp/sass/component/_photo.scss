@@ -1,0 +1,39 @@
+.photo {
+	position: relative;
+	margin: 0 -15px;
+	margin-bottom: 10px;
+	img {
+		width: 100%;
+	}
+	&__author {
+		display: inline;
+		@include font-pack(false, 11px, 500, false, darken(#999,30%));
+		position: relative;
+		padding: 0 5px;
+	}
+	&__caption {
+		padding: 10px;
+		text-align: left;
+		//background: #f0f0f0;
+		@include font-pack(false, 12px, 400, false, #999);
+	}
+	&__wrap {
+		position: relative;
+	}
+	&__icon {
+		display: inline-block;
+		width: 40px;
+		height: 40px;
+		border-radius: 40px;
+		padding: 10px;
+		background: #fff;
+		text-align: center;
+   		@include font-pack(false, 20px, false, 1, #000);
+		&__expand {
+			position: absolute;
+			top: 15px;
+			right: 15px;
+			z-index: 1;
+		}
+	}
+}

@@ -1,0 +1,178 @@
+.quiz {
+	position: relative;
+    margin: 15px -15px;
+	background: #EFEFEF;
+    padding: 0 0 20px;
+	&.-page {
+	    background: #fff;
+		margin: 15px 0;
+		padding: 0;
+		//min-height: 50vh;
+		//height: 600px;
+		.title {
+			background: #000;
+			color: #fff;
+		}
+	}
+	&__wrap {
+		position: relative;
+		padding: 0 15px;
+	}
+	&__box {
+		position: relative;
+		background: #fff;
+		border-radius: 5px;
+		overflow: hidden;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+	}
+	&__img {
+		//height: 170px;
+		overflow: hidden;
+		position: relative;
+		img {
+			width: 100%;
+		}
+	}
+	&__footer {
+		position: relative;
+		text-align: center;
+		padding: 20px 15px;
+	}
+	&__title {
+		@include font-pack(false, 14px, 500, false, false);		
+	}
+	
+	// detail
+	&__detail {
+		position: relative;
+		margin: 0 auto;
+		padding: 20px 10px;
+		width: 100%;
+		//height: 100%;
+	}
+	&__layers {
+		position: relative;
+//		position: absolute;
+//		width: 100%;
+//		height: 100%;
+//		top: 0;
+//		left: 0;
+		overflow: hidden;
+		height: 0;
+		z-index: 1;
+		background: #fff;
+		&.-active {
+			height: auto;
+			z-index: 2;
+		}
+	}
+	&__login {
+		margin: 0 auto;
+	}
+	&__teaser {
+		text-align: left;
+		padding: 0;
+		@include font-pack(false, 14px, 400, false, false);		
+	}
+	&__question {
+		position: relative;
+		padding: 10px;
+		@include font-pack(false, 18px, 500, false, false);		
+	}
+	&__option  {
+		position: relative;
+		padding: 20px 0;
+		@include display-flex();
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: center;
+		&__item {
+			width: calc(100%);
+			position: relative;
+			vertical-align: top;
+			padding: 2px;
+			label {
+				position: relative;
+				border-radius: 5px;
+				display: block;
+				overflow: hidden;
+				text-align: left;
+				padding: 20px 20px 20px 45px;
+				//background: linear-gradient(-90deg,rgba(0,0,0,.8),rgba(0,0,0,.5));
+				//background: -webkit-linear-gradient(-90deg,rgba(0,0,0,.8),rgba(0,0,0,.5));
+				background: rgba(0,0,0,.7);
+				height: 120px;
+				cursor: pointer;
+				@include transition(all .2s ease);
+				&:hover {
+					//background: linear-gradient(-90deg,rgba(0,0,0,.5),rgba(0,0,0,.5));
+					//background: -webkit-linear-gradient(-90deg,rgba(0,0,0,.5),rgba(0,0,0,.5));
+					background: rgba(0,0,0,.5);
+				}
+				input[type="radio"] {
+					position: absolute;
+					z-index: 2;
+					top: 23px;
+					left: 20px;
+					&:before {
+						width: 18px;
+						height: 18px;
+					}
+				}
+			}
+			span {
+				display: block;
+				@include title_overflow(auto, 81px);
+				@include font-pack(false, 16px, 500, false, #fff);	
+			}
+		}
+	}
+	&__bg {
+		position: absolute;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		right: 0;
+		background-size: cover;
+		background-position: center center;		
+	}
+	&__result {
+		position: relative;
+		overflow: hidden;
+		width: auto;
+		text-align: left;
+		margin: 0 auto;
+		padding: 10px 15px;
+		background: #09509C;
+		color: #fff;
+		border-radius: 5px;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+		h4 {
+			@include font-pack(false, 20px, 700, false, false);	
+		}
+		&__img {
+			position: relative;
+			margin: -10px -15px 10px;
+			img {
+				width: 100%;
+			}
+		}
+	}
+	&__action {
+		position: relative;
+		padding: 20px 0;
+	}
+	&__button {
+		position: relative;
+		@include display-flex();
+		align-items: center;
+		&__item {
+			width: calc(100% / 2);
+			.form__button {
+				width: auto;
+				padding: 0 50px;
+			}
+		}
+	}
+}

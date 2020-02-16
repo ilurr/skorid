@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	{{> head}}
+
+<body class="wp">
+	<!-- header -->
+	{{> header}}
+	
+	<!-- nav -->
+	{{>nav section="Home"}}
+	
+	<div class="row clearfix">
+		<div class="container clearfix">
+		
+			{{> read_breadcrumb channel=read.about.article}}
+			
+			<div class="read__box">
+				<!-- header -->
+				<section class="read__header clearfix">
+					{{> read_header channel=read.about.article}}
+				</section>
+
+				<!-- content -->
+				<article class="read__content clearfix">
+					{{{read.about.article.content}}}
+				</article>
+
+			</div>
+						
+		</div>
+	</div>
+	
+	<!-- footer -->
+	{{> footer}}
+	
+	<!-- ads horizontal -->
+	{{> ads_tower}}
+
+	{{> js}}
+	
+</body>
+</html>

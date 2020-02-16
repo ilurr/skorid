@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	{{> head}}
+
+<body class="wp">
+	<!-- header -->
+	{{> header}}
+	
+	<!-- nav -->
+	{{>nav section="Home"}}
+	
+	<div class="row clearfix">
+		<div class="container clearfix">
+		
+			<!-- ads top -->
+			{{> ads_top}}
+							
+			<!-- topic list -->
+			<section class="hl -topic clearfix">
+				<h3 class="title">
+					<span>Topik Khusus</span>
+				</h3>
+				{{> headline_topic channel=channel.bola.headline total=1 index_start=0 index_end=1 detail=true}}
+			</section>
+
+			<!-- latest -->
+			<section class="latest clearfix">
+				<h3 class="title">
+					<span>All News</span>
+				</h3>
+				<div class="latest__wrap">
+					{{> latest channel=channel.bola.latest total=15 index_start=0 index_end=15}}
+				</div>
+			</section>
+					
+			{{> paging}}
+			
+			<!-- ads square -->
+			{{> ads_square}}
+
+			<!-- ads bottom -->
+			{{> ads_skin}}
+			
+		</div>
+	</div>
+	
+	<!-- footer -->
+	{{> footer}}
+	
+	<!-- ads horizontal -->
+	{{> ads_tower}}
+
+	{{> js}}
+	
+</body>
+</html>
+									

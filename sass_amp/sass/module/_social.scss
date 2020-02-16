@@ -1,0 +1,32 @@
+.social {
+	position: relative;
+	&__block {
+		display: block;
+	}
+	&__item {
+		display: inline-block;
+		padding: 0;
+		padding: 5px;
+		border-radius: 100%;
+		overflow: hidden;
+		amp-social-share {
+			vertical-align: top;
+		}
+		&.facebook {
+			background: #32529f;
+		}
+		&.twitter {
+			background: #1da1f2;
+		}
+		&.whatsapp {
+			background: #25d366;
+		}
+		&.line {
+			background: #52b448;
+		}
+	}
+	&--article {
+		padding: 10px 0;
+		text-align: center;
+	}
+}

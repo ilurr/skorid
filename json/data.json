@@ -1,0 +1,2002 @@
+{
+  "MainMenu": [
+    {
+      "title": "Home",
+      "link": "index.html",
+      "new": 0,
+      "ads": 0
+    },
+    {
+      "title": "Kompetisi",
+      "link": "kompetisi.html",
+      "new": 0,
+      "ads": 0
+    },
+    {
+      "title": "Bola Nasional",
+      "link": "section.html",
+      "new": 0,
+      "ads": 0,
+      "submenu": [
+        {
+          "title": "Liga 1",
+          "link": "section.html"
+        },
+        {
+          "title": "Liga 2",
+          "link": "section.html"
+        },
+        {
+          "title": "Nusantara",
+          "link": "section.html"
+        },
+        {
+          "title": "Timnas Indonesia",
+          "link": "section.html"
+        },
+        {
+          "title": "Liga Top Skor",
+          "link": "section.html"
+        }
+      ]
+    },
+    {
+      "title": "Bola Internasional",
+      "link": "livescore.html",
+      "new": 0,
+      "ads": 0,
+      "submenu": [
+        {
+          "title": "Liga Inggris",
+          "link": "section.html"
+        },
+        {
+          "title": "Liga Spanyol",
+          "link": "section.html"
+        },
+        {
+          "title": "Liga Italia",
+          "link": "section.html"
+        },
+        {
+          "title": "Liga Champions",
+          "link": "section.html"
+        },
+        {
+          "title": "Dunia",
+          "link": "section.html"
+        }
+      ]
+    },
+    {
+      "title": "Balap",
+      "link": "section.html",
+      "new": 0,
+      "ads": 0,
+      "submenu": [
+        {
+          "title": "Formula 1",
+          "link": "section.html"
+        },
+        {
+          "title": "MotoGp",
+          "link": "section.html"
+        }
+      ]
+    },
+    {
+      "title": "Basket",
+      "link": "section.html",
+      "new": 0,
+      "ads": 0,
+      "submenu": [
+        {
+          "title": "IBL",
+          "link": "section.html"
+        },
+        {
+          "title": "NBA",
+          "link": "section.html"
+        }
+      ]
+    },
+    {
+      "title": "Raket",
+      "link": "section.html",
+      "new": 0,
+      "ads": 0,
+      "submenu": [
+        {
+          "title": "Badminton",
+          "link": "section.html"
+        },
+        {
+          "title": "Tenis",
+          "link": "section.html"
+        }
+      ]
+    },
+    {
+      "title": "Fight",
+      "link": "klasemen.html",
+      "new": 0,
+      "ads": 0,
+      "submenu": [
+        {
+          "title": "Tinju",
+          "link": "section.html"
+        },
+        {
+          "title": "MMA",
+          "link": "section.html"
+        },
+        {
+          "title": "One\nChampionship",
+          "link": "section.html"
+        }
+      ]
+    },
+    {
+      "title": "Olahraga Lainnya",
+      "link": "section.html",
+      "new": 0,
+      "ads": 0
+    },
+    {
+      "title": "E-Sports",
+      "link": "section.html",
+      "new": 0,
+      "ads": 0
+    },
+    {
+      "title": "Entertainment",
+      "link": "section.html",
+      "new": 0,
+      "ads": 0,
+      "submenu": [
+        {
+          "title": "Selebriti",
+          "link": "section.html"
+        },
+        {
+          "title": "Gosip",
+          "link": "section.html"
+        }
+      ]
+    },
+    {
+      "title": "Galeri",
+      "link": "section.html",
+      "new": 0,
+      "ads": 0,
+      "submenu": [
+        {
+          "title": "Foto",
+          "link": "images.html"
+        },
+        {
+          "title": "Video",
+          "link": "video.html"
+        }
+      ]
+    }
+  ],
+  "read": {
+    "pedoman": {
+      "article": {
+        "channel": "Pedoman Media Siber",
+        "subchannel": "Pedoman Media Siber",
+        "subtitle": "",
+        "title": "Pedoman Media Siber",
+        "dates": "",
+        "author_img": "",
+        "author": "",
+        "editor": "",
+        "source": "",
+        "source_img": "",
+        "partner": "",
+        "ads": 0,
+        "img": "",
+        "img_author": "",
+        "img_caption": "",
+        "content": "<p>Kemerdekaan berpendapat, kemerdekaan berekspresi, dan kemerdekaan pers adalah hak asasi manusia yang dilindungi Pancasila, Undang-Undang Dasar 1945, dan Deklarasi Universal Hak Asasi Manusia PBB. Keberadaan media siber di Indonesia juga merupakan bagian dari kemerdekaan berpendapat, kemerdekaan berekspresi, dan kemerdekaan pers.</p>\n<p>Media siber memiliki karakter khusus sehingga memerlukan pedoman agar pengelolaannya dapat dilaksanakan secara profesional, memenuhi fungsi, hak, dan kewajibannya sesuai Undang-Undang Nomor 40 Tahun 1999 tentang Pers dan Kode Etik Jurnalistik. Untuk itu Dewan Pers bersama organisasi pers, pengelola media siber, dan masyarakat menyusun Pedoman Pemberitaan Media Siber sebagai berikut:</p>\n<p>1. Ruang Lingkup</p>\n<p>Media Siber adalah segala bentuk media yang menggunakan wahana internet dan melaksanakan kegiatan jurnalistik, serta memenuhi persyaratan Undang-Undang Pers dan Standar Perusahaan Pers yang ditetapkan Dewan Pers.</p>\n<p>Isi Buatan Pengguna (User Generated Content) adalah segala isi yang dibuat dan atau dipublikasikan oleh pengguna media siber, antara lain, artikel, gambar, komentar, suara, video dan berbagai bentuk unggahan yang melekat pada media siber, seperti blog, forum, komentar pembaca atau pemirsa, dan bentuk lain.</p>\n<p>2. Verifikasi dan keberimbangan berita</p>\n<p>Pada prinsipnya setiap berita harus melalui verifikasi.</p>\n<p>Berita yang dapat merugikan pihak lain memerlukan verifikasi pada berita yang sama untuk memenuhi prinsip akurasi dan keberimbangan.</p>\n<p>Ketentuan dalam butir (a) di atas dikecualikan, dengan syarat:</p>\n<p>Berita benar-benar mengandung kepentingan publik yang bersifat mendesak;</p>\n<p>Sumber berita yang pertama adalah sumber yang jelas disebutkan identitasnya, kredibel dan kompeten;</p>\n<p>Subyek berita yang harus dikonfirmasi tidak diketahui keberadaannya dan atau tidak dapat diwawancarai;</p>\n<p>Media memberikan penjelasan kepada pembaca bahwa berita tersebut masih memerlukan verifikasi lebih lanjut yang diupayakan dalam waktu secepatnya. Penjelasan dimuat pada bagian akhir dari berita yang sama, di dalam kurung dan menggunakan huruf miring.</p>\n<p>Setelah memuat berita sesuai dengan butir (c), media wajib meneruskan upaya verifikasi, dan setelah verifikasi didapatkan, hasil verifikasi dicantumkan pada berita pemutakhiran (update) dengan tautan pada berita yang belum terverifikasi.</p>\n<p>3. Isi Buatan Pengguna (User Generated Content)</p>\n<p>Media siber wajib mencantumkan syarat dan ketentuan mengenai Isi Buatan Pengguna yang tidak bertentangan dengan Undang-Undang No. 40 tahun 1999 tentang Pers dan Kode Etik Jurnalistik, yang ditempatkan secara terang dan jelas.</p>\n<p>Media siber mewajibkan setiap pengguna untuk melakukan registrasi keanggotaan dan melakukan proses log-in terlebih dahulu untuk dapat mempublikasikan semua bentuk Isi Buatan Pengguna. Ketentuan mengenai log-in akan diatur lebih lanjut.</p>\n<p>Dalam registrasi tersebut, media siber mewajibkan pengguna memberi persetujuan tertulis bahwa Isi Buatan Pengguna yang dipublikasikan:</p>\n<p>Tidak memuat isi bohong, fitnah, sadis dan cabul;</p>\n<p>Tidak memuat isi yang mengandung prasangka dan kebencian terkait dengan suku, agama, ras, dan antargolongan (SARA), serta menganjurkan tindakan kekerasan;</p>\n<p>Tidak memuat isi diskriminatif atas dasar perbedaan jenis kelamin dan bahasa, serta tidak merendahkan martabat orang lemah, miskin, sakit, cacat jiwa, atau cacat jasmani.</p>\n<p>Media siber memiliki kewenangan mutlak untuk mengedit atau menghapus Isi Buatan Pengguna yang bertentangan dengan butir (c).</p>\n<p>Media siber wajib menyediakan mekanisme pengaduan Isi Buatan Pengguna yang dinilai melanggar ketentuan pada butir (c). Mekanisme tersebut harus disediakan di tempat yang dengan mudah dapat diakses pengguna.</p>\n<p>Media siber wajib menyunting, menghapus, dan melakukan tindakan koreksi setiap Isi Buatan Pengguna yang dilaporkan dan melanggar ketentuan butir (c), sesegera mungkin secara proporsional selambat-lambatnya 2 x 24 jam setelah pengaduan diterima.</p>\n<p>Media siber yang telah memenuhi ketentuan pada butir (a), (b), (c), dan (f) tidak dibebani tanggung jawab atas masalah yang ditimbulkan akibat pemuatan isi yang mel</p>\n<p>anggar ketentuan pada butir (c).</p>\n<p>Media siber bertanggung jawab atas Isi Buatan Pengguna yang dilaporkan bila tidak mengambil tindakan koreksi setelah batas waktu sebagaimana tersebut pada butir (f).</p>\n<p>4. Ralat, Koreksi, dan Hak Jawab</p>\n<p>Ralat, koreksi, dan hak jawab mengacu pada Undang-Undang Pers, Kode Etik Jurnalistik, dan Pedoman Hak Jawab yang ditetapkan Dewan Pers.</p>\n<p>Ralat, koreksi dan atau hak jawab wajib ditautkan pada berita yang diralat, dikoreksi atau yang diberi hak jawab.</p>\n<p>Di setiap berita ralat, koreksi, dan hak jawab wajib dicantumkan waktu pemuatan ralat, koreksi, dan atau hak jawab tersebut.</p>\n<p>Bila suatu berita media siber tertentu disebarluaskan media siber lain, maka:</p>\n<p>Tanggung jawab media siber pembuat berita terbatas pada berita yang dipublikasikan di media siber tersebut atau media siber yang berada di bawah otoritas teknisnya;</p>\n<p>Koreksi berita yang dilakukan oleh sebuah media siber, juga harus dilakukan oleh media siber lain yang mengutip berita dari media siber yang dikoreksi itu;</p>\n<p>Media yang menyebarluaskan berita dari sebuah media siber dan tidak melakukan koreksi atas berita sesuai yang dilakukan oleh media siber pemilik dan atau pembuat berita tersebut, bertanggung jawab penuh atas semua akibat hukum dari berita yang tidak dikoreksinya itu.</p>\n<p>Sesuai dengan Undang-Undang Pers, media siber yang tidak melayani hak jawab dapat dijatuhi sanksi hukum pidana denda paling banyak Rp500.000.000 (Lima ratus juta rupiah).</p>\n<p>5. Pencabutan Berita</p>\n<p>Berita yang sudah dipublikasikan tidak dapat dicabut karena alasan penyensoran dari pihak luar redaksi, kecuali terkait masalah SARA, kesusilaan, masa depan anak, pengalaman traumatik korban atau berdasarkan pertimbangan khusus lain yang ditetapkan Dewan Pers.</p>\n<p>Media siber lain wajib mengikuti pencabutan kutipan berita dari media asal yang telah dicabut.</p>\n<p>Pencabutan berita wajib disertai dengan alasan pencabutan dan diumumkan kepada publik.</p>\n<p>6. Iklan</p>\n<p>Media siber wajib membedakan dengan tegas antara produk berita dan iklan.</p>\n<p>Setiap berita/artikel/isi yang merupakan iklan dan atau isi berbayar wajib mencantumkan keterangan 'advertorial', 'iklan', 'ads', 'sponsored', atau kata lain yang menjelaskan bahwa berita/artikel/isi tersebut adalah iklan.</p>\n<p>7. Hak Cipta</p>\n<p>Media siber wajib menghormati hak cipta sebagaimana diatur dalam peraturan perundang-undangan yang berlaku.</p>\n<p>8. Pencantuman Pedoman</p>\n<p>Media siber wajib mencantumkan Pedoman Pemberitaan Media Siber ini di medianya secara terang dan jelas.</p>\n<p>9. Sengketa</p>\n<p>Penilaian akhir atas sengketa mengenai pelaksanaan Pedoman Pemberitaan Media Siber ini diselesaikan oleh Dewan Pers.</p>\n<p> </p>\n<p>Jakarta, 3 Februari 2012</p>\n<p> </p>\n<p>(Pedoman ini ditandatangani oleh Dewan Pers dan komunitas pers di Jakarta, 3 Februari 2012).</p>",
+        "source_link": ""
+      }
+    },
+    "about": {
+      "article": {
+        "channel": "About Us",
+        "subchannel": "About Us",
+        "subtitle": "",
+        "title": "About Us",
+        "dates": "",
+        "author_img": "",
+        "author": "",
+        "editor": "",
+        "source": "",
+        "source_img": "",
+        "partner": "",
+        "ads": 0,
+        "img": "",
+        "img_author": "",
+        "img_caption": "",
+        "content": "<p>We live and breathe sports, all across the archipelago, 24/7.</p>\n<p>We cover all of your favorites, from Liga 1 Indonesia to the English Premier League, from badminton to esports, motorsports and boxing.</p>\n<p>We create original content at source to deliver the news from the leagues, competitions, teams and players that matter.</p>\n<p>Beyond the news, we have in depth coverage of Indonesia's top talents, video content with statistics, interesting facts and analysis from renowned local pundits.</p>",
+        "source_link": ""
+      }
+    },
+    "bola": {
+      "article": {
+        "channel": "Bola",
+        "subchannel": "Liga Italia",
+        "subtitle": "",
+        "title": "Klasemen Liga Italia, Rekor Conte dan Kesempurnaan Inter Milan",
+        "dates": "26/11/2016, 08:31 WIB",
+        "author_img": "profile/872c8ee83496cfd3df7933c69aa3334f.jpg",
+        "author_title": "Penulis",
+        "author": "Gloria Setyvani Putri",
+        "editor": "Jalu Wisnu Wirajati",
+        "source": "BolaSport",
+        "source_img": "",
+        "partner": "",
+        "ads": 0,
+        "img": "2019/09/27/5d8d352cd8a4e.jpg",
+        "img_author": "AFP/MARCO BERTORELLO",
+        "img_caption": "Inter Milan vs Lazio berlangsung di Stadion Giuseppe Meazza, Rabu (25/9/2019). ",
+        "related2": [
+          {
+            "title": "Bologna Vs Inter, Lukaku Samai Rekor Ronaldo",
+            "lead": "Dua gol Lukaku dalam laga Bologna vs Inter merupakan gol kedelapan dan kesembilannya di Serie A.",
+            "img": "2019/11/03/5dbddbbc3a1e5.jpg"
+          },
+          {
+            "title": "Inter Milan Vs Verona, 3 Poin Bawa Nerazurri Gusur Juventus",
+            "lead": "Juventus harus turun ke peringkat dua klasemen Liga Italia setelah laga Inter Milan vs Hellas Verona berakhir.",
+            "img": "2019/11/10/5dc704b945338.jpg"
+          }
+        ],
+        "related": [
+          "Bologna Vs Inter, Lukaku Samai Rekor Ronaldo",
+          "Inter Milan Vs Verona, 3 Poin Bawa Nerazurri Gusur Juventus"
+        ],
+        "topic": [
+          "Liga Italia"
+        ],
+        "tag": [
+          "Inter Milan",
+          "Serie A",
+          "Lazio",
+          "Liga Italia"
+        ],
+        "content": "<p><strong>KOMPAS.com</strong> -  <a target='_self' class='inner-link-tag' href='https://www.kompas.com/tag/Inter-Milan' style='color:#428bca;'>Inter Milan</a> berada di puncak klasemen  <a target='_self' class='inner-link-tag' href='https://www.kompas.com/tag/Liga-Italia' style='color:#428bca;'>Liga Italia</a> setelah meraih hasil sempurna dalam lima pekan pertama  <a target='_self' class='inner-link-tag' href='https://www.kompas.com/tag/Serie-A' style='color:#428bca;'>Serie A</a>. </p><p>Selain itu,  <a target='_self' class='inner-link-tag' href='https://www.kompas.com/tag/Antonio-Conte' style='color:#428bca;'>Antonio Conte</a> juga mencatat rekor tersendiri sebagai pelatih Inter Milan pada lima laga pertamanya di kasta teratas Liga Italia. </p><p>Antonio Conte berhasil membukukan satu rekor prestisius saat timnya menang 1-0 atas Lazio di Stadion Giuseppe Meazza, Rabu (25/9/2019) waktu setempat.</p><!-- (ads.paragraph.4) --><p><strong>Baca juga: <a href=\"https://bola.kompas.com/read/2019/09/26/04354588/inter-vs-lazio-perkasa-inter-raih-5-kemenangan-beruntun\" class=\"inner-link-baca-juga\" target=\"_self\">Inter Vs Lazio, Perkasa, Inter Raih 5 Kemenangan Beruntun</a></strong></p><p>I Nerazzurri - julukan Inter Milan - berhasil menang atas Lazio berkat gol Danilo D'Ambrosio pada menit ke-23.</p><p>Hasil tersebut membuat tim asuhan Antonio Conte mampu meraih lima kemenangan beruntun pada awal Liga Italia musim 2019-2020.</p><p>Dilansir dari Opta, Conte menjadi pelatih pertama yang mampu membawa Inter Milan meriah catatan ini sepanjang sejarah klub.</p><p>Kemenangan lima kali secara beruntun menjadi pertanda bagus bagi peluang Inter Milan menjuarai Liga Italia musim ini.</p><p>Saat ini, anak-anak asuhan Conte tersebut memuncaki klasemen sementara dengan koleksi 15 poin.</p><p>Mereka unggul unggul dua poin atas Juventus yang menghuni posisi kedua.</p><p><strong>Baca juga: <a href=\"https://bola.kompas.com/read/2019/09/25/04243848/brescia-vs-juventus-si-nyonya-besar-raih-kemenangan-meski-tanpa-ronaldo\" class=\"inner-link-baca-juga\" target=\"_self\">Brescia Vs Juventus, Si Nyonya Besar Raih Kemenangan meski Tanpa Ronaldo</a></strong></p><!-- (ads.paralax) --><p>Atalanta menyeruak ke posisi ke-3 dengan koleksi 10 poin setelah secara mengejutkan menang di kandang AS Roma. <div id=\"page2\" style=\"position:relative;top:-120px\"></div></p><p>Itulah kekalahan pertama AS Roma di Serie A musim ini. </p><p>Cagliari, Torino, dan Napoli mengekor di belakang Atalanta dengan merangkum 9 poin. </p><p>AS Roma dan Bologna terlempar dari enam besar karena baru mengumpulkan 8 poin dari lima pertandingan. </p><p>Rival sekota Inter Milan, AC Milan, tertahan di papan tengah, posisi ke-10 dengan 6 poin, berselisih satu angka dengan Lazio di atasnya. </p><p><strong> <a target='_self' class='inner-link-tag' href='https://www.kompas.com/tag/Hasil-Liga-Italia' style='color:#428bca;'>Hasil Liga Italia</a>, pekan ke-5 Serie A: </strong></p><p>Hellas Verona 0-0 Udinese<br />Brescia 1-<strong>2 Juventus</strong> (Alfredo Donnarumma 4'; Jhon Chancellor 40'-bd, Miralem Pjanic 63')<br />AS Roma 0-<strong>2 Atalanta</strong> (Duvan Zapata 71', Marten De Roon 90')<br />Fiorentina 2-1 Sampdoria (German Pezzella 31', Federico Chiesa 57'; Federico Bonazzoli 79')<br />Genoa 0-0 Bologna<br /><strong>Inter 1</strong>-0 Lazio (Danilo D'Ambrosio 23')<br /><strong>Parma 1</strong>-0 Sassuolo (Mehdi Bourabia 90'-bd)<br />Napoli 0-<strong>1 Cagliari</strong> (Lucas Castro 87')<br />SPAL 1-<strong>3 Lecce</strong> (Federico Di Francesco 17'; Marco Mancosu 11'-pen, 73'-pen, Marco Calderoni 47')<br /><strong>Torino 2</strong>-1 AC Milan (Andre Belotti 71', 76' ; Krzysztof Piatek 19'-pen)</p>",
+        "source_link": "http://www.bolasport.com/"
+      },
+      "photo": {
+        "channel": "Foto Pilihan",
+        "subchannel": "Foto",
+        "subtitle": "",
+        "title": "Timnas U23 Indonesia Lolos Semifinal SEA Games 2019",
+        "dates": "26/11/2016, 08:31 WIB",
+        "author": "Mochamad Sadheli ",
+        "editor": "Roderick Adrian                        ",
+        "source": "",
+        "source_img": "",
+        "partner": "",
+        "ads": 0,
+        "video": "https://www.youtube.com/embed/k4jrb9CGrvY?rel=0&modestbranding=1",
+        "img": "2019/12/05/5de8e9b3175f6.jpg",
+        "img_author": "KOMPAS.com/GARRY ANDREW LOTULUNG",
+        "img_caption": "Pemain Timnas U-23 Indonesia, Osvaldo Haay melakukan selebrasi seusai mencetak gol ke gawang Laos dalam pertandingan Grup B SEA Games 2019 di Stadion Sepak Bola City Of Imus Granstand, Filipina, Kamis (5/12/2019). Timnas Indonesia menang 4-0 dari Laos.",
+        "img_other": [
+          {
+            "title": "Pemain Timnas U-23 Indonesia, Osvaldo Haay melakukan selebrasi seusai mencetak gol ke gawang Laos dalam pertandingan Grup B SEA Games 2019 di Stadion Sepak Bola City Of Imus Granstand, Filipina, Kamis (5/12/2019). Timnas Indonesia menang 4-0 dari Laos.",
+            "img": "2019/12/05/5de8e9a7905ac.jpg",
+            "author": "KOMPAS.com/GARRY ANDREW LOTULUNG"
+          },
+          {
+            "title": "Pemain Timnas U-23 Indonesia, Osvaldo Haay melakukan selebrasi seusai mencetak gol ke gawang Laos dalam pertandingan Grup B SEA Games 2019 di Stadion Sepak Bola City Of Imus Granstand, Filipina, Kamis (5/12/2019). Timnas Indonesia menang 4-0 dari Laos.",
+            "img": "2019/12/03/5de68044a9f4c.jpg",
+            "author": "KOMPAS.com/GARRY ANDREW LOTULUNG"
+          },
+          {
+            "title": "Pemain Timnas U-23 Indonesia, Osvaldo Haay melakukan selebrasi seusai mencetak gol ke gawang Laos dalam pertandingan Grup B SEA Games 2019 di Stadion Sepak Bola City Of Imus Granstand, Filipina, Kamis (5/12/2019). Timnas Indonesia menang 4-0 dari Laos.",
+            "img": "2019/12/03/5de6804dd5ae0.jpg",
+            "author": "KOMPAS.com/GARRY ANDREW LOTULUNG"
+          },
+          {
+            "title": "Pemain Timnas U-23 Indonesia, Osvaldo Haay melakukan selebrasi seusai mencetak gol ke gawang Laos dalam pertandingan Grup B SEA Games 2019 di Stadion Sepak Bola City Of Imus Granstand, Filipina, Kamis (5/12/2019). Timnas Indonesia menang 4-0 dari Laos.",
+            "img": "2019/12/05/5de8bf28e1998.jpeg",
+            "author": "KOMPAS.com/GARRY ANDREW LOTULUNG"
+          },
+          {
+            "title": "Pemain Timnas U-23 Indonesia, Osvaldo Haay melakukan selebrasi seusai mencetak gol ke gawang Laos dalam pertandingan Grup B SEA Games 2019 di Stadion Sepak Bola City Of Imus Granstand, Filipina, Kamis (5/12/2019). Timnas Indonesia menang 4-0 dari Laos.",
+            "img": "2019/11/28/5ddfca4c05abf.jpg",
+            "author": "MAULANA MAHARDHIKA"
+          }
+        ],
+        "related": [],
+        "topic": [],
+        "tag": [
+          "SEA Games 2019",
+          "Indonesia",
+          "Osvaldo Haay",
+          "#TimnasDay",
+          "Indonesia U-23"
+        ],
+        "content": "<p><strong>KOMPAS.com</strong> - Timnas U23 Indonesia sukses mengalahkan Laos pada laga pamungkas Grup B SEA Games 2019.</p><p>Laga timnas 23 Indonesia vs Laos berlangsung di Stadion Imus, Filipina, pada Kamis (5/12/2019) berakhir dengan skor 4-0.</p><p>Empat gol timnas U23 Indonesia dicetak oleh tiga pemain berbeda, yakni Saddil Ramdani (4'), Osvaldo Haay (46', 90+4'), dan tendangan penalti Bagas Adi Nugroho (72').</p><!-- (ads.paragraph.4) --><p>Dengan kemenangan ini, Indonesia mengumpulkan 12 poin dari lima pertandingan, yakni empat kali menang dan sekali tumbang.</p><p><strong>Baca juga: Timnas U23 Indonesia Vs Laos, Garuda Muda Menang 4-0 dan Lolos Semifinal</strong></p>"
+      }
+    }
+  },
+  "channel": {
+    "balap": {
+      "channel_title": "Balap",
+      "motogp": [
+        {
+          "name": "Marc Márquez",
+          "team": "Repsol Honda",
+          "nat": "esp",
+          "no": 93
+        },
+        {
+          "name": "Valentino Rossi",
+          "team": "Yamaha",
+          "nat": "ita",
+          "no": 46
+        },
+        {
+          "name": "Andrea Dovizioso",
+          "team": "Ducati",
+          "nat": "ita",
+          "no": 4
+        },
+        {
+          "name": "Maverick Viñales",
+          "team": "Yamaha",
+          "nat": "esp",
+          "no": 12
+        },
+        {
+          "name": "Álex Rins",
+          "team": "Suzuki",
+          "nat": "esp",
+          "no": 42
+        },
+        {
+          "name": "Fabio Quartararo",
+          "team": "Yamaha",
+          "nat": "fra",
+          "no": 20
+        },
+        {
+          "name": "Danilo Petrucci",
+          "team": "Ducati",
+          "nat": "ita",
+          "no": 9
+        },
+        {
+          "name": "Jack Miller",
+          "team": "Ducati",
+          "nat": "aus",
+          "no": 43
+        },
+        {
+          "name": "Cal Crutchlow",
+          "team": "Repsol Honda",
+          "nat": "gbr",
+          "no": 35
+        },
+        {
+          "name": "Jorge Lorenzo",
+          "team": "Repsol Honda",
+          "nat": "esp",
+          "no": 48
+        }
+      ],
+      "f1": [
+        {
+          "name": "Lewis Hamilton",
+          "team": "Mercedes",
+          "nat": "gbr",
+          "no": 44
+        },
+        {
+          "name": "Valtteri Bottas",
+          "team": "Mercedes",
+          "nat": "fin",
+          "no": 77
+        },
+        {
+          "name": "Max Verstappen",
+          "team": "Red Bull",
+          "nat": "ned",
+          "no": 33
+        },
+        {
+          "name": "Charles Leclerc",
+          "team": "Ferrari",
+          "nat": "mon",
+          "no": 16
+        },
+        {
+          "name": "Sebastian Vettel",
+          "team": "Ferrari",
+          "nat": "ger",
+          "no": 5
+        },
+        {
+          "name": "Carlos Sainz Jr.",
+          "team": "McLaren",
+          "nat": "esp",
+          "no": 55
+        },
+        {
+          "name": "Pierre Gasly",
+          "team": "Toro Rosso",
+          "nat": "fra",
+          "no": 10
+        },
+        {
+          "name": "Alexander Albon",
+          "team": "Red Bull",
+          "nat": "tha",
+          "no": 23
+        },
+        {
+          "name": "Daniel Ricciardo",
+          "team": "Renault",
+          "nat": "aus",
+          "no": 3
+        },
+        {
+          "name": "Kimi Räikkönen",
+          "team": "Alfa Romeo",
+          "nat": "fin",
+          "no": 7
+        }
+      ]
+    },
+    "basket": {
+      "channel_title": "Basket",
+      "team": {
+        "nba": {
+          "name": "NBA",
+          "clubs": [
+            {
+              "teamId": 1610612737,
+              "abbreviation": "ATL",
+              "teamName": "Atlanta Hawks",
+              "simpleName": "Hawks",
+              "location": "Atlanta"
+            },
+            {
+              "teamId": 1610612738,
+              "abbreviation": "BOS",
+              "teamName": "Boston Celtics",
+              "simpleName": "Celtics",
+              "location": "Boston"
+            },
+            {
+              "teamId": 1610612751,
+              "abbreviation": "BKN",
+              "teamName": "Brooklyn Nets",
+              "simpleName": "Nets",
+              "location": "Brooklyn"
+            },
+            {
+              "teamId": 1610612766,
+              "abbreviation": "CHA",
+              "teamName": "Charlotte Hornets",
+              "simpleName": "Hornets",
+              "location": "Charlotte"
+            },
+            {
+              "teamId": 1610612741,
+              "abbreviation": "CHI",
+              "teamName": "Chicago Bulls",
+              "simpleName": "Bulls",
+              "location": "Chicago"
+            },
+            {
+              "teamId": 1610612739,
+              "abbreviation": "CLE",
+              "teamName": "Cleveland Cavaliers",
+              "simpleName": "Cavaliers",
+              "location": "Cleveland"
+            },
+            {
+              "teamId": 1610612742,
+              "abbreviation": "DAL",
+              "teamName": "Dallas Mavericks",
+              "simpleName": "Mavericks",
+              "location": "Dallas"
+            },
+            {
+              "teamId": 1610612743,
+              "abbreviation": "DEN",
+              "teamName": "Denver Nuggets",
+              "simpleName": "Nuggets",
+              "location": "Denver"
+            },
+            {
+              "teamId": 1610612765,
+              "abbreviation": "DET",
+              "teamName": "Detroit Pistons",
+              "simpleName": "Pistons",
+              "location": "Detroit"
+            },
+            {
+              "teamId": 1610612744,
+              "abbreviation": "GSW",
+              "teamName": "Golden State Warriors",
+              "simpleName": "Warriors",
+              "location": "Golden State"
+            },
+            {
+              "teamId": 1610612745,
+              "abbreviation": "HOU",
+              "teamName": "Houston Rockets",
+              "simpleName": "Rockets",
+              "location": "Houston"
+            },
+            {
+              "teamId": 1610612754,
+              "abbreviation": "IND",
+              "teamName": "Indiana Pacers",
+              "simpleName": "Pacers",
+              "location": "Indiana"
+            },
+            {
+              "teamId": 1610612746,
+              "abbreviation": "LAC",
+              "teamName": "Los Angeles Clippers",
+              "simpleName": "Clippers",
+              "location": "Los Angeles"
+            },
+            {
+              "teamId": 1610612747,
+              "abbreviation": "LAL",
+              "teamName": "Los Angeles Lakers",
+              "simpleName": "Lakers",
+              "location": "Los Angeles"
+            },
+            {
+              "teamId": 1610612763,
+              "abbreviation": "MEM",
+              "teamName": "Memphis Grizzlies",
+              "simpleName": "Grizzlies",
+              "location": "Memphis"
+            },
+            {
+              "teamId": 1610612748,
+              "abbreviation": "MIA",
+              "teamName": "Miami Heat",
+              "simpleName": "Heat",
+              "location": "Miami"
+            },
+            {
+              "teamId": 1610612749,
+              "abbreviation": "MIL",
+              "teamName": "Milwaukee Bucks",
+              "simpleName": "Bucks",
+              "location": "Milwaukee"
+            },
+            {
+              "teamId": 1610612750,
+              "abbreviation": "MIN",
+              "teamName": "Minnesota Timberwolves",
+              "simpleName": "Timberwolves",
+              "location": "Minnesota"
+            },
+            {
+              "teamId": 1610612740,
+              "abbreviation": "NOP",
+              "teamName": "New Orleans Pelicans",
+              "simpleName": "Pelicans",
+              "location": "New Orleans"
+            },
+            {
+              "teamId": 1610612752,
+              "abbreviation": "NYK",
+              "teamName": "New York Knicks",
+              "simpleName": "Knicks",
+              "location": "New York"
+            },
+            {
+              "teamId": 1610612760,
+              "abbreviation": "OKC",
+              "teamName": "Oklahoma City Thunder",
+              "simpleName": "Thunder",
+              "location": "Oklahoma City"
+            },
+            {
+              "teamId": 1610612753,
+              "abbreviation": "ORL",
+              "teamName": "Orlando Magic",
+              "simpleName": "Magic",
+              "location": "Orlando"
+            },
+            {
+              "teamId": 1610612755,
+              "abbreviation": "PHI",
+              "teamName": "Philadelphia 76ers",
+              "simpleName": "76ers",
+              "location": "Philadelphia"
+            },
+            {
+              "teamId": 1610612756,
+              "abbreviation": "PHX",
+              "teamName": "Phoenix Suns",
+              "simpleName": "Suns",
+              "location": "Phoenix"
+            },
+            {
+              "teamId": 1610612757,
+              "abbreviation": "POR",
+              "teamName": "Portland Trail Blazers",
+              "simpleName": "Trail Blazers",
+              "location": "Portland"
+            },
+            {
+              "teamId": 1610612758,
+              "abbreviation": "SAC",
+              "teamName": "Sacramento Kings",
+              "simpleName": "Kings",
+              "location": "Sacramento"
+            },
+            {
+              "teamId": 1610612759,
+              "abbreviation": "SAS",
+              "teamName": "San Antonio Spurs",
+              "simpleName": "Spurs",
+              "location": "San Antonio"
+            },
+            {
+              "teamId": 1610612761,
+              "abbreviation": "TOR",
+              "teamName": "Toronto Raptors",
+              "simpleName": "Raptors",
+              "location": "Toronto"
+            },
+            {
+              "teamId": 1610612762,
+              "abbreviation": "UTA",
+              "teamName": "Utah Jazz",
+              "simpleName": "Jazz",
+              "location": "Utah"
+            },
+            {
+              "teamId": 1610612764,
+              "abbreviation": "WAS",
+              "teamName": "Washington Wizards",
+              "simpleName": "Wizards",
+              "location": "Washington"
+            }
+          ]
+        }
+      }
+    },
+    "bola": {
+      "channel_title": "bola",
+      "headline": [
+        {
+          "title": "Kalahkan Kroasia, Perancis Raih Gelar Juara Piala Dunia 2018",
+          "subtitle": "Internasional",
+          "lead": "Timnas Perancis menang 4-2 atas timnas Kroasia pada babak final Piala Dunia 2018.",
+          "img": "2018/07/15/30335776.jpg",
+          "link": "artikel-bola.html",
+          "dates": "26/11/2016, 08:31 WIB",
+          "duration": "",
+          "ads": ""
+        },
+        {
+          "title": "Piala Dunia 2018, Luka Modric Pemain Terbaik, Courtois Kiper Terbaik",
+          "subtitle": "Internasional",
+          "lead": "Modric berhasil menyisihkan pemain Belgia, Eden Hazard, dan pemain Perancis, Antoine Griezmann.",
+          "img": "2018/07/13/2515129055.jpg",
+          "link": "artikel-bola.html",
+          "dates": "26/11/2016, 08:31 WIB",
+          "duration": "",
+          "ads": ""
+        },
+        {
+          "title": "Sepatu Emas Piala Dunia 2018 Jadi Pembuktian Kualitas Harry Kane",
+          "subtitle": "Internasional",
+          "lead": "\"Ini adalah pencapaian besar dalam karier saya. Tidak banyak pemain yang berhasil meraih gelar 'top scorer' Piala Dunia,\" ucap Harry Kane. ",
+          "img": "2018/07/03/2560133415.jpg",
+          "link": "artikel-bola.html",
+          "dates": "26/11/2016, 08:31 WIB",
+          "duration": "",
+          "ads": ""
+        },
+        {
+          "title": "10 Fakta Piala Dunia 2018, Hanya Satu Laga Berakhir Tanpa Gol",
+          "subtitle": "BrandzView",
+          "lead": "Dari 64 pertandingan yang terjadi pada Piala Dunia 2018, hanya satu laga yang berakhir imbang tanpa gol.",
+          "img": "2018/07/15/3236085258.jpg",
+          "link": "artikel-advertorial.html",
+          "dates": "26/11/2016, 08:31 WIB",
+          "duration": "",
+          "ads": 1
+        }
+      ],
+      "latest": [
+        {
+          "title": "Nadal Lolos ke Babak 8 Besar Grand Slam untuk Ke-40 Kalinya",
+          "subtitle": "Olahraga",
+          "lead": "Petenis nomor dua dunia, Rafael Nadal memastikan langkahnya ke perempat final setelah menang di babak 16 besar US Open 2019.",
+          "img": "2019/08/28/5d6604bdae2d7.jpg",
+          "link": "artikel-bola.html",
+          "dates": "26/11/2016, 08:31 WIB",
+          "duration": "",
+          "ads": ""
+        },
+        {
+          "title": "Ikuti berita terkini & terlengkap Bola Rusia 2018",
+          "subtitle": "BrandzView",
+          "lead": "Siapa saja yang mendapatkan penghargaan dalam Piala Dunia 2018 dan berapa besaran hadiahnya?",
+          "img": "2018/07/16/1540356162.jpg",
+          "link": "artikel-brandzview.html",
+          "dates": "26/11/2016, 08:31 WIB",
+          "duration": "",
+          "ads": 1
+        },
+        {
+          "title": "Timnas Indonesia Kalah Lagi, Salah Siapa?",
+          "subtitle": "Indonesia",
+          "lead": "Ada begitu banyak faktor yang ditengarai menjadi penyebab terpuruknya timnas Indonesia di Kualifikasi Piala Dunia 2022.",
+          "img": "2019/10/16/5da5fca9e2cc8.jpg",
+          "link": "artikel-bola.html",
+          "dates": "26/11/2016, 08:31 WIB",
+          "duration": "",
+          "ads": ""
+        },
+        {
+          "title": "Perancis Juara Piala Dunia 2018, Griezmann Senang sampai Bingung",
+          "subtitle": "Internasional",
+          "lead": "\"Saya tidak tahu berada di mana! Saya sangat senang,\" ucap Antoine Griezmann seusai Perancis memastikan diri menjadi juara Piala Dunia 2018.",
+          "img": "2018/07/15/1676128012.jpg",
+          "link": "artikel-bola.html",
+          "dates": "26/11/2016, 08:31 WIB",
+          "duration": "",
+          "ads": ""
+        },
+        {
+          "title": "Hendra Setiawan Pastikan Belum Ingin Gantung Raket",
+          "subtitle": "Olahraga",
+          "lead": "Hendra Setiawan memang tak lagi muda. Usianya sudah 35 tahun, tetapi dia tak bilang ingin gantung raket.",
+          "img": "2019/08/26/5d633d3396ebd.jpg",
+          "link": "artikel-bola.html",
+          "dates": "26/11/2016, 08:31 WIB",
+          "duration": "",
+          "ads": ""
+        },
+        {
+          "title": "Indonesia Vs Malaysia, Evan Dimas Ungkap Kelebihan Harimau Malaya",
+          "subtitle": "Liga Indonesia",
+          "lead": "Gelandag Tim Nasional Indonesia, Evan Dimas, mewanti-wanti timnya jelang pertandingan antara Indonesia vs Malaysia pada laga Grup G Kualifikasi Piala Dunia 2022 zona Asia di Jakarta, Kamis (5/9/2019).",
+          "img": "2019/06/15/100351085.jpg",
+          "link": "artikel-bola.html",
+          "dates": "26/11/2016, 08:31 WIB",
+          "duration": "",
+          "ads": ""
+        },
+        {
+          "title": "Kostum Ronaldo Terjual Setiap Satu Menit",
+          "subtitle": "Liga Italia",
+          "lead": "Belum mulai bermain, Cristiano Ronaldo sudah memberikan keuntungan finansial yang dahsyat untuk Juventus.",
+          "img": "2019/05/19/903934684.jpg",
+          "link": "artikel-bola.html",
+          "dates": "26/11/2016, 08:31 WIB",
+          "duration": "",
+          "ads": ""
+        },
+        {
+          "title": "Alasan Bejo Beri Supriadi Lakukan Debut Saat Persebaya Lawan Persija",
+          "subtitle": "Liga Indonesia",
+          "lead": "Mochammad Supriadi menjalani laga debutnya sebagai pemain Persebaya Surabaya dalam laga kontra Persija Jakarta di Stadion Gelora Bung Tomo, Sabtu (24/8/2019).",
+          "img": "2019/08/25/5d62368a70612.jpg",
+          "link": "artikel-bola.html",
+          "dates": "26/11/2016, 08:31 WIB",
+          "duration": "",
+          "ads": ""
+        },
+        {
+          "title": "Real Madrid Klarifikasi Kabar Transfer Neymar dari PSG",
+          "subtitle": "Liga Spanyol",
+          "lead": "Real Madrid membantah tengah melakukan pendekatan terhadap Neymar.",
+          "img": "2018/02/15/3507632090.jpg",
+          "link": "artikel-bola.html",
+          "dates": "26/11/2016, 08:31 WIB",
+          "duration": "",
+          "ads": ""
+        },
+        {
+          "title": "Ikut Maurizio Sarri, Jorginho Resmi Bergabung dengan Chelsea",
+          "subtitle": "Liga Inggris",
+          "lead": "Gelandang Napoli, Jorginho, resmi bergabung dengan Chelsea mengikuti jejak Maurizio Sarri.",
+          "img": "2018/07/14/2157885286.jpg",
+          "link": "artikel-bola.html",
+          "dates": "26/11/2016, 08:31 WIB",
+          "duration": "",
+          "ads": ""
+        },
+        {
+          "title": "Uccio Salucci Yakin Rossi Dapat Membalap hingga 2022",
+          "subtitle": "Olahraga",
+          "lead": "Uccio Salucci yang merupakan sahabat karib Valentino Rossi, menilai teman baiknnya itu masih bisa membalap dan berkompetisi di kelas utama hingga musim 2022.",
+          "img": "2019/06/17/1267950637.jpg",
+          "link": "artikel-bola.html",
+          "dates": "26/11/2016, 08:31 WIB",
+          "duration": "",
+          "ads": ""
+        },
+        {
+          "title": "Eden Hazard Buka Pintu Lebar Untuk Real Madrid",
+          "subtitle": "Liga Inggris",
+          "lead": "Eden Hazard mengaku dirinya bisa meninggalkan Chelsea untuk bergabung dengan tim impiannya, Real Madrid di musim depan.",
+          "img": "2018/07/14/103265694.jpg",
+          "link": "artikel-bola.html",
+          "dates": "26/11/2016, 08:31 WIB",
+          "duration": "",
+          "ads": ""
+        },
+        {
+          "title": "Coutinho Tak Sabar Raih Banyak Trofi Bersama Bayern Muenchen",
+          "subtitle": "Liga Jerman",
+          "lead": "Philippe Coutinho bertekad mempersembahkan banyak trofi untuk klub anyarnya, Bayern Muenchen.",
+          "img": "2019/08/21/5d5d62dc4e730.jpg",
+          "link": "artikel-bola.html",
+          "dates": "26/11/2016, 08:31 WIB",
+          "duration": "",
+          "ads": ""
+        },
+        {
+          "title": "Sudah Pulih, Petugas Korban Sambaran Petir di Kejuaraan Golf Atlanta",
+          "subtitle": "Olahraga",
+          "lead": "Petugas yang terkena sambaran petir saat penyelenggaraan PGA Tour Championship di Atlanta, AS, sudah pulih.",
+          "img": "2015/04/29/1318417shutterstock-golf780x390.jpg",
+          "link": "artikel-bola.html",
+          "dates": "26/11/2016, 08:31 WIB",
+          "duration": "",
+          "ads": ""
+        },
+        {
+          "title": "Resmi, Emre Can Bergabung dengan Juventus",
+          "subtitle": "Liga Italia",
+          "lead": "Berakhirlah kisah transfer Emre Can. Pemain internasional Jerman tersebut akhirnya resmi bergabung dengan Juventus mulai musim 2018-2019.",
+          "img": "2018/06/21/3334426512.jpg",
+          "link": "artikel-bola.html",
+          "dates": "26/11/2016, 08:31 WIB",
+          "duration": "",
+          "ads": ""
+        },
+        {
+          "title": "Trofi Liga Champions Jadi Alasan Riyad Mahrez ke Manchester City",
+          "subtitle": "Liga Champions",
+          "lead": "Riyad Mahrez sendiri mengatakan bahwa salah satu motivasinya memilih bergabung dengan Manchester City adalah untuk memenangi Liga Champions.",
+          "img": "2018/07/10/2249629156.jpg",
+          "link": "artikel-bola.html",
+          "dates": "26/11/2016, 08:31 WIB",
+          "duration": "",
+          "ads": ""
+        },
+        {
+          "title": "Pele Antusias Sambut Prestasi Kylian Mbappe di Final Piala Dunia",
+          "subtitle": "Internasional",
+          "lead": "Pilar Paris Saint-Germain (PSG), Kylian Mbappe, menjadi remaja kedua yang bisa mencetak gol pada final Piala Dunia setelah Pele.",
+          "img": "2018/07/15/3311487914.jpg",
+          "link": "artikel-bola.html",
+          "dates": "26/11/2016, 08:31 WIB",
+          "duration": "",
+          "ads": ""
+        },
+        {
+          "title": "Indra Sjafri Bicara soal Egy Maulana dan Semifinal Piala AFF U-19",
+          "subtitle": "Liga Indonesia",
+          "lead": "Sang pelatih pun menilai bahwa kekalahan didapat oleh timnas U-19 Indonesia bukan disebabkan oleh salahnya strategi atau soal performa Egy Maulana.",
+          "img": "2018/07/13/3947370450.jpg",
+          "link": "artikel-bola.html",
+          "dates": "26/11/2016, 08:31 WIB",
+          "duration": "",
+          "ads": ""
+        },
+        {
+          "title": "Alexis Sanchez Berambisi Bawa Inter Milan Juara Serie A Italia",
+          "subtitle": "Liga Italia",
+          "lead": "Alexis Sanchez berambisi membawa Inter Milan meraih juara Serie A Italia setelah 10 tahun puasa gelar.",
+          "img": "2019/09/04/5d6f613749f2c.png",
+          "link": "artikel-bola.html",
+          "dates": "26/11/2016, 08:31 WIB",
+          "duration": "",
+          "ads": ""
+        },
+        {
+          "title": "Distribusi Gelar dan Hadiah Piala Dunia 2018, Panggung Modric-Mbappe",
+          "subtitle": "Internasional",
+          "lead": "Luka Modric berhasil menyabet gelar Golden Ball atau Pemain Terbaik Piala Dunia 2018. Adapun Mbappe meraih gelar Pemain Muda Terbaik.",
+          "img": "2018/07/15/30335776.jpg",
+          "link": "artikel-bola.html",
+          "dates": "26/11/2016, 08:31 WIB",
+          "duration": "",
+          "ads": ""
+        }
+      ],
+      "photo": [
+        {
+          "title": "Tundukkan Kroasia, Perancis Juarai Piala Dunia 2018",
+          "subtitle": "Foto",
+          "lead": "-",
+          "img": "2018/07/15/30335776.jpg",
+          "link": "images-artikel-photo.html",
+          "dates": "26/11/2016, 08:31 WIB",
+          "duration": 9,
+          "ads": ""
+        },
+        {
+          "title": "Slavia Praha Vs Inter, Lukaku Gemilang, Nerazzurri Menang",
+          "subtitle": "Foto",
+          "lead": "-",
+          "img": "2019/11/28/5ddee7853d193.jpg",
+          "link": "images-artikel-photo.html",
+          "dates": "26/11/2016, 08:31 WIB",
+          "duration": 12,
+          "ads": ""
+        },
+        {
+          "title": "Taklukkan Inggris, Kroasia Melaju ke Final Piala Dunia 2018",
+          "subtitle": "Foto",
+          "lead": "-",
+          "img": "2018/07/08/2863156532.jpg",
+          "link": "images-artikel-photo.html",
+          "dates": "26/11/2016, 08:31 WIB",
+          "duration": 11,
+          "ads": ""
+        },
+        {
+          "title": "Bekuk Malaysia, Indonesia Pertahankan Emas Bulu Tangkis Beregu Putra SEA Games",
+          "subtitle": "Foto",
+          "lead": "-",
+          "img": "2019/12/04/5de7683a948d2.jpg",
+          "link": "images-artikel-photo.html",
+          "dates": "26/11/2016, 08:31 WIB",
+          "duration": 11,
+          "ads": ""
+        },
+        {
+          "title": "SEA Games 2019, Indonesia Menang Telak 8-0 atas Brunei Darussalam",
+          "subtitle": "Foto",
+          "lead": "-",
+          "img": "2019/12/05/5de8e9b69a314.jpg",
+          "link": "images-artikel-photo.html",
+          "dates": "26/11/2016, 08:31 WIB",
+          "duration": 11,
+          "ads": ""
+        },
+        {
+          "title": "Timnas U-23 Indonesia Kalahkan Laos 4-0",
+          "subtitle": "Foto",
+          "lead": "-",
+          "img": "2019/12/05/5de8e9b3175f6.jpg",
+          "link": "images-artikel-photo.html",
+          "dates": "26/11/2016, 08:31 WIB",
+          "duration": 11,
+          "ads": ""
+        }
+      ],
+      "video": [
+        {
+          "title": "Renovasi Stadion Utama Gelora Bung Karno",
+          "subtitle": "Indonesia",
+          "lead": "-",
+          "video": "https://www.youtube.com/embed/JMG9rOcg28g",
+          "img": "https://img.youtube.com/vi/JMG9rOcg28g/0.jpg",
+          "link": "artikel.html",
+          "dates": "26/11/2016, 08:31 WIB",
+          "duration": 9,
+          "ads": ""
+        },
+        {
+          "title": "Konferensi Pers Jelang Laga Inter - Roma",
+          "subtitle": "Italia",
+          "lead": "-",
+          "video": "https://www.youtube.com/embed/Gm1v60A0KCY",
+          "img": "https://img.youtube.com/vi/Gm1v60A0KCY/0.jpg",
+          "link": "artikel.html",
+          "dates": "26/11/2016, 08:31 WIB",
+          "duration": "04:37",
+          "ads": ""
+        },
+        {
+          "title": "Cuplikan Pertandingan Madura United FC vs Persebaya",
+          "subtitle": "Indonesia",
+          "lead": "-",
+          "video": "https://www.youtube.com/embed/GMUk_gNvNi4",
+          "img": "https://img.youtube.com/vi/GMUk_gNvNi4/0.jpg",
+          "link": "artikel.html",
+          "dates": "26/11/2016, 08:31 WIB",
+          "duration": 12,
+          "ads": ""
+        },
+        {
+          "title": "Kalahkan Brunei, Indonesia Rebut Posisi Semi Final SEA GAMES 2019",
+          "subtitle": "Sea Games 2019",
+          "lead": "-",
+          "video": "https://www.youtube.com/embed/k4jrb9CGrvY",
+          "img": "https://img.youtube.com/vi/k4jrb9CGrvY/0.jpg",
+          "link": "artikel.html",
+          "dates": "26/11/2016, 08:31 WIB",
+          "duration": 12,
+          "ads": ""
+        },
+        {
+          "title": "Kevin/Marcus Kalahkan Ahsan/Hendra di Final Indonesia Open 2019",
+          "subtitle": "Badminton",
+          "lead": "-",
+          "video": "https://www.youtube.com/embed/3RMEtOGx1QE",
+          "img": "https://img.youtube.com/vi/3RMEtOGx1QE/0.jpg",
+          "link": "artikel.html",
+          "dates": "26/11/2016, 08:31 WIB",
+          "duration": "02:54",
+          "ads": ""
+        }
+      ],
+      "fixtures": {
+        "inggris": {
+          "name": "English Premier League 2019/20",
+          "code": "premier-league",
+          "rounds": [
+            {
+              "name": "Matchday 12",
+              "date": "8 Nov 2019",
+              "matches": [
+                {
+                  "date": "2019-11-08",
+                  "time": "9.00 PM",
+                  "team1": {
+                    "key": "mancity",
+                    "name": "Man City",
+                    "code": "MCI"
+                  },
+                  "team2": {
+                    "key": "watford",
+                    "name": "Watford",
+                    "code": "WAT"
+                  },
+                  "score1": 4,
+                  "score2": 2
+                },
+                {
+                  "date": "2019-11-09",
+                  "time": "9.00 PM",
+                  "team1": {
+                    "key": "chelsea",
+                    "name": "Chelsea",
+                    "code": "CHE"
+                  },
+                  "team2": {
+                    "key": "crystalpalace",
+                    "name": "Crystal Palace",
+                    "code": "CRY"
+                  },
+                  "score1": 2,
+                  "score2": 0
+                },
+                {
+                  "date": "2019-11-09",
+                  "time": "9.00 PM",
+                  "team1": {
+                    "key": "leicester",
+                    "name": "Leicester City",
+                    "code": "LEI"
+                  },
+                  "team2": {
+                    "key": "arsenal",
+                    "name": "Arsenal",
+                    "code": "ARS"
+                  },
+                  "score1": 2,
+                  "score2": 0
+                },
+                {
+                  "date": "2019-11-09",
+                  "time": "9.00 PM",
+                  "team1": {
+                    "key": "burnley",
+                    "name": "Burnley",
+                    "code": "BUR"
+                  },
+                  "team2": {
+                    "key": "westham",
+                    "name": "West Ham",
+                    "code": "WHU"
+                  },
+                  "score1": 3,
+                  "score2": 0
+                },
+                {
+                  "date": "2019-11-09",
+                  "time": "9.00 PM",
+                  "team1": {
+                    "key": "newcastle",
+                    "name": "Newcastle Utd",
+                    "code": "NEW"
+                  },
+                  "team2": {
+                    "key": "bournemouth",
+                    "name": "Bournemouth",
+                    "code": "BOU"
+                  },
+                  "score1": 2,
+                  "score2": 1
+                },
+                {
+                  "date": "2019-11-09",
+                  "time": "9.00 PM",
+                  "team1": {
+                    "key": "southampton",
+                    "name": "Southampton",
+                    "code": "SOU"
+                  },
+                  "team2": {
+                    "key": "everton",
+                    "name": "Everton",
+                    "code": "EVE"
+                  },
+                  "score1": 1,
+                  "score2": 2
+                },
+                {
+                  "date": "2019-11-09",
+                  "time": "9.00 PM",
+                  "team1": {
+                    "key": "tottenham",
+                    "name": "Tottenham",
+                    "code": "TOT"
+                  },
+                  "team2": {
+                    "key": "sheffieldunitedfc",
+                    "name": "Sheffield United",
+                    "code": "SHU"
+                  },
+                  "score1": 1,
+                  "score2": 1
+                },
+                {
+                  "date": "2019-11-10",
+                  "time": "9.00 PM",
+                  "team1": {
+                    "key": "liverpool",
+                    "name": "Liverpool",
+                    "code": "LIV"
+                  },
+                  "team2": {
+                    "key": "norwich",
+                    "name": "Norwich City",
+                    "code": "NOR"
+                  },
+                  "score1": 3,
+                  "score2": 1
+                }
+              ]
+            },
+            {
+              "name": "Matchday 13",
+              "date": "23 Nov 2019",
+              "matches": [
+                {
+                  "date": "2019-11-23",
+                  "time": "9.00 PM",
+                  "team1": {
+                    "key": "arsenal",
+                    "name": "Arsenal",
+                    "code": "ARS"
+                  },
+                  "team2": {
+                    "key": "manutd",
+                    "name": "Man United",
+                    "code": "MUN"
+                  },
+                  "score1": "",
+                  "score2": ""
+                },
+                {
+                  "date": "2019-11-23",
+                  "time": "9.00 PM",
+                  "team1": {
+                    "key": "crystalpalace",
+                    "name": "Crystal Palace",
+                    "code": "CRY"
+                  },
+                  "team2": {
+                    "key": "liverpool",
+                    "name": "Liverpool",
+                    "code": "LIV"
+                  },
+                  "score1": "",
+                  "score2": ""
+                },
+                {
+                  "date": "2019-11-23",
+                  "time": "9.00 PM",
+                  "team1": {
+                    "key": "everton",
+                    "name": "Everton",
+                    "code": "EVE"
+                  },
+                  "team2": {
+                    "key": "norwich",
+                    "name": "Norwich City",
+                    "code": "NOR"
+                  },
+                  "score1": "",
+                  "score2": ""
+                },
+                {
+                  "date": "2019-11-23",
+                  "time": "9.00 PM",
+                  "team1": {
+                    "key": "westham",
+                    "name": "West Ham",
+                    "code": "WHU"
+                  },
+                  "team2": {
+                    "key": "tottenham",
+                    "name": "Tottenham",
+                    "code": "TOT"
+                  },
+                  "score1": "",
+                  "score2": ""
+                },
+                {
+                  "date": "2019-11-23",
+                  "time": "9.00 PM",
+                  "team1": {
+                    "key": "mancity",
+                    "name": "Man City",
+                    "code": "MCI"
+                  },
+                  "team2": {
+                    "key": "chelsea",
+                    "name": "Chelsea",
+                    "code": "CHE"
+                  },
+                  "score1": "",
+                  "score2": ""
+                },
+                {
+                  "date": "2019-11-23",
+                  "time": "9.00 PM",
+                  "team1": {
+                    "key": "watford",
+                    "name": "Watford",
+                    "code": "WAT"
+                  },
+                  "team2": {
+                    "key": "burnley",
+                    "name": "Burnley",
+                    "code": "BUR"
+                  },
+                  "score1": "",
+                  "score2": ""
+                },
+                {
+                  "date": "2019-11-23",
+                  "time": "9.00 PM",
+                  "team1": {
+                    "key": "bournemouth",
+                    "name": "Bournemouth",
+                    "code": "BOU"
+                  },
+                  "team2": {
+                    "key": "wolverhamptonwanderersfc",
+                    "name": "Wolves",
+                    "code": "WLV"
+                  },
+                  "score1": "",
+                  "score2": ""
+                },
+                {
+                  "date": "2019-11-23",
+                  "time": "9.00 PM",
+                  "team1": {
+                    "key": "brightonhovealbionfc",
+                    "name": "Brighton",
+                    "code": "BRH"
+                  },
+                  "team2": {
+                    "key": "leicester",
+                    "name": "Leicester City",
+                    "code": "LEI"
+                  },
+                  "score1": "",
+                  "score2": ""
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "team": {
+        "inggris": {
+          "name": "English Premier League 2019/20",
+          "code": "premier-league",
+          "clubs": [
+            {
+              "pos": "ucl",
+              "key": "liverpool",
+              "name": "Liverpool",
+              "code": "LIV"
+            },
+            {
+              "pos": "ucl",
+              "key": "leicester",
+              "name": "Leicester City",
+              "code": "LEI"
+            },
+            {
+              "pos": "ucl",
+              "key": "mancity",
+              "name": "Man City",
+              "code": "MCI"
+            },
+            {
+              "pos": "ucl",
+              "key": "chelsea",
+              "name": "Chelsea",
+              "code": "CHE"
+            },
+            {
+              "pos": "eul",
+              "key": "tottenham",
+              "name": "Tottenham",
+              "code": "TOT"
+            },
+            {
+              "pos": "",
+              "key": "manutd",
+              "name": "Man United",
+              "code": "MUN"
+            },
+            {
+              "pos": "",
+              "key": "arsenal",
+              "name": "Arsenal",
+              "code": "ARS"
+            },
+            {
+              "pos": "",
+              "key": "sheffieldunitedfc",
+              "name": "Sheffield United",
+              "code": "SHU"
+            },
+            {
+              "pos": "",
+              "key": "wolverhamptonwanderersfc",
+              "name": "Wolves",
+              "code": "WLV"
+            },
+            {
+              "pos": "",
+              "key": "westham",
+              "name": "West Ham",
+              "code": "WHU"
+            },
+            {
+              "pos": "",
+              "key": "crystalpalace",
+              "name": "Crystal Palace",
+              "code": "CRY"
+            },
+            {
+              "pos": "",
+              "key": "everton",
+              "name": "Everton",
+              "code": "EVE"
+            },
+            {
+              "pos": "",
+              "key": "newcastle",
+              "name": "Newcastle Utd",
+              "code": "NEW"
+            },
+            {
+              "pos": "",
+              "key": "astonvilla",
+              "name": "Aston Villa",
+              "code": "AVL"
+            },
+            {
+              "pos": "",
+              "key": "southampton",
+              "name": "Southampton",
+              "code": "SOU"
+            },
+            {
+              "pos": "",
+              "key": "bournemouth",
+              "name": "Bournemouth",
+              "code": "BOU"
+            },
+            {
+              "pos": "",
+              "key": "burnley",
+              "name": "Burnley",
+              "code": "BUR"
+            },
+            {
+              "pos": "deg",
+              "key": "norwich",
+              "name": "Norwich City",
+              "code": "NOR"
+            },
+            {
+              "pos": "deg",
+              "key": "watford",
+              "name": "Watford",
+              "code": "WAT"
+            },
+            {
+              "pos": "deg",
+              "key": "brightonhovealbionfc",
+              "name": "Brighton & Hove Albion",
+              "code": "BRH"
+            }
+          ]
+        },
+        "italia": {
+          "name": "Serie A 2019/20",
+          "code": "serie-a",
+          "clubs": [
+            {
+              "pos": "ucl",
+              "key": "inter",
+              "name": "Inter Milan",
+              "code": "INT"
+            },
+            {
+              "pos": "ucl",
+              "key": "juventus",
+              "name": "Juventus",
+              "code": "JUV"
+            },
+            {
+              "pos": "ucl",
+              "key": "lazio",
+              "name": "Lazio",
+              "code": "LAZ"
+            },
+            {
+              "pos": "ucl",
+              "key": "roma",
+              "name": "AS Roma",
+              "code": "ROM"
+            },
+            {
+              "pos": "eul",
+              "key": "atalanta",
+              "name": "Atalanta",
+              "code": "ATA"
+            },
+            {
+              "pos": "eulq",
+              "key": "cagliari",
+              "name": "Cagliari",
+              "code": "CAG"
+            },
+            {
+              "pos": "",
+              "key": "parma",
+              "name": "Parma",
+              "code": "PAR"
+            },
+            {
+              "pos": "",
+              "key": "napoli",
+              "name": "Napoli",
+              "code": "NAP"
+            },
+            {
+              "pos": "",
+              "key": "bologna",
+              "name": "Bologna",
+              "code": "BOL"
+            },
+            {
+              "pos": "",
+              "key": "torino",
+              "name": "Torino",
+              "code": "TOR"
+            },
+            {
+              "pos": "",
+              "key": "milan",
+              "name": "AC Milan",
+              "code": "MIL"
+            },
+            {
+              "pos": "",
+              "key": "hellasverona",
+              "name": "Verona",
+              "code": "HEL"
+            },
+            {
+              "pos": "",
+              "key": "sassuolo",
+              "name": "Sassuolo",
+              "code": "SAS"
+            },
+            {
+              "pos": "",
+              "key": "udinese",
+              "name": "Udinese",
+              "code": "UDI"
+            },
+            {
+              "pos": "",
+              "key": "fiorentina",
+              "name": "Fiorentina",
+              "code": "FIO"
+            },
+            {
+              "pos": "",
+              "key": "lecce",
+              "name": "Lecce",
+              "code": "LEC"
+            },
+            {
+              "pos": "",
+              "key": "sampdoria",
+              "name": "Sampdoria",
+              "code": "SAM"
+            },
+            {
+              "pos": "deg",
+              "key": "brescia",
+              "name": "Brescia",
+              "code": "BRE"
+            },
+            {
+              "pos": "deg",
+              "key": "spal",
+              "name": "SPAL",
+              "code": "SPA"
+            },
+            {
+              "pos": "deg",
+              "key": "genoa",
+              "name": "Genoa",
+              "code": "GEN"
+            }
+          ]
+        },
+        "jerman": {
+          "name": "Deutsche Bundesliga 2019/20",
+          "code": "bundesliga",
+          "clubs": [
+            {
+              "pos": "ucl",
+              "key": "leipzig",
+              "name": "RB Leipzig",
+              "code": "RBL"
+            },
+            {
+              "pos": "ucl",
+              "key": "mgladbach",
+              "name": "Mönchengladbach",
+              "code": "BMG"
+            },
+            {
+              "pos": "ucl",
+              "key": "bayern",
+              "name": "Bayern München",
+              "code": "FCB"
+            },
+            {
+              "pos": "ucl",
+              "key": "dortmund",
+              "name": "Borussia Dortmund",
+              "code": "BVB"
+            },
+            {
+              "pos": "eul",
+              "key": "leverkusen",
+              "name": "Bayer Leverkusen",
+              "code": "B04"
+            },
+            {
+              "pos": "eulq",
+              "key": "schalke",
+              "name": "Schalke 04",
+              "code": "S04"
+            },
+            {
+              "pos": "",
+              "key": "frankfurt",
+              "name": "Eintracht Frankfurt",
+              "code": "FFM"
+            },
+            {
+              "pos": "",
+              "key": "hoffenheim",
+              "name": "1899 Hoffenheim",
+              "code": "HOF"
+            },
+            {
+              "pos": "",
+              "key": "freiburg",
+              "name": "SC Freiburg",
+              "code": "SCF"
+            },
+            {
+              "pos": "",
+              "key": "wolfsburg",
+              "name": "VfL Wolfsburg",
+              "code": "WOB"
+            },
+            {
+              "pos": "",
+              "key": "augsburg",
+              "name": "FC Augsburg",
+              "code": "FCA"
+            },
+            {
+              "pos": "",
+              "key": "unionberlin",
+              "name": "Union Berlin",
+              "code": "FCU"
+            },
+            {
+              "pos": "",
+              "key": "herthabsc",
+              "name": "Hertha BSC",
+              "code": "BSC"
+            },
+            {
+              "pos": "",
+              "key": "mainz",
+              "name": "1. FSV Mainz 05",
+              "code": "M05"
+            },
+            {
+              "pos": "",
+              "key": "koeln",
+              "name": "1. FC Köln",
+              "code": "KOE"
+            },
+            {
+              "pos": "deg",
+              "key": "duesseldorf",
+              "name": "Fortuna Düsseldorf",
+              "code": "F95"
+            },
+            {
+              "pos": "deg",
+              "key": "bremen",
+              "name": "Werder Bremen",
+              "code": "BRE"
+            },
+            {
+              "pos": "deg",
+              "key": "paderborn",
+              "name": "SC Paderborn",
+              "code": "SCP"
+            }
+          ]
+        },
+        "spanyol": {
+          "name": "La Liga 2019/20",
+          "code": "laliga",
+          "clubs": [
+            {
+              "pos": "ucl",
+              "key": "barcelona",
+              "name": "Barcelona",
+              "code": "BAR"
+            },
+            {
+              "pos": "ucl",
+              "key": "madrid",
+              "name": "Real Madrid",
+              "code": "RMD"
+            },
+            {
+              "pos": "ucl",
+              "key": "sevilla",
+              "name": "Sevilla",
+              "code": "SEV"
+            },
+            {
+              "pos": "ucl",
+              "key": "atletico",
+              "name": "Atlético Madrid",
+              "code": "ATL"
+            },
+            {
+              "pos": "eul",
+              "key": "realsociedad",
+              "name": "Real Sociedad",
+              "code": "RSO"
+            },
+            {
+              "pos": "eulq",
+              "key": "getafe",
+              "name": "Getafe CF",
+              "code": "GET"
+            },
+            {
+              "pos": "",
+              "key": "athletic",
+              "name": "Athletic Bilbao",
+              "code": "ATH"
+            },
+            {
+              "pos": "",
+              "key": "valencia",
+              "name": "Valencia",
+              "code": "VAL"
+            },
+            {
+              "pos": "",
+              "key": "levante",
+              "name": "Levante",
+              "code": "LEV"
+            },
+            {
+              "pos": "",
+              "key": "villareal",
+              "name": "Villarreal",
+              "code": "VLL"
+            },
+            {
+              "pos": "",
+              "key": "granada",
+              "name": "Granada CF",
+              "code": "GRA"
+            },
+            {
+              "pos": "",
+              "key": "osasuna",
+              "name": "CA Osasuna",
+              "code": "OSA"
+            },
+            {
+              "pos": "",
+              "key": "betis",
+              "name": "Real Betis",
+              "code": "BET"
+            },
+            {
+              "pos": "",
+              "key": "valladolid",
+              "name": "Real Valladolid",
+              "code": "VID"
+            },
+            {
+              "pos": "",
+              "key": "alaves",
+              "name": "Alavés",
+              "code": "ALA"
+            },
+            {
+              "pos": "",
+              "key": "eibar",
+              "name": "Eibar",
+              "code": "EIB"
+            },
+            {
+              "pos": "",
+              "key": "mallorca",
+              "name": "RCD Mallorca",
+              "code": "MLL"
+            },
+            {
+              "pos": "deg",
+              "key": "celta",
+              "name": "Celta Vigo",
+              "code": "CEL"
+            },
+            {
+              "pos": "deg",
+              "key": "leganes",
+              "name": "Leganés",
+              "code": "LEG"
+            },
+            {
+              "pos": "deg",
+              "key": "espanyol",
+              "name": "Espanyol",
+              "code": "ESP"
+            }
+          ]
+        },
+        "indonesia": {
+          "name": "Liga 1 2019/20",
+          "code": "liga-1",
+          "clubs": [
+            {
+              "pos": "ucl",
+              "key": "baliunited",
+              "name": "Bali United",
+              "code": "BAL"
+            },
+            {
+              "pos": "eul",
+              "key": "psby",
+              "name": "Persebaya",
+              "code": "PSB"
+            },
+            {
+              "pos": "",
+              "key": "persipura",
+              "name": "Persipura",
+              "code": "PSP"
+            },
+            {
+              "pos": "",
+              "key": "bhayangkara",
+              "name": "Bhayangkara FC",
+              "code": "BHA"
+            },
+            {
+              "pos": "",
+              "key": "madura",
+              "name": "Madura United",
+              "code": "MDR"
+            },
+            {
+              "pos": "",
+              "key": "persib",
+              "name": "Persib",
+              "code": "PRB"
+            },
+            {
+              "pos": "",
+              "key": "borneo",
+              "name": "Borneo",
+              "code": "BOR"
+            },
+            {
+              "pos": "",
+              "key": "pss",
+              "name": "PSS Sleman",
+              "code": "PSS"
+            },
+            {
+              "pos": "",
+              "key": "arema",
+              "name": "Arema",
+              "code": "AFC"
+            },
+            {
+              "pos": "",
+              "key": "persija",
+              "name": "Persija",
+              "code": "PSJ"
+            },
+            {
+              "pos": "",
+              "key": "persela",
+              "name": "Persela",
+              "code": "PSL"
+            },
+            {
+              "pos": "",
+              "key": "psm",
+              "name": "PSM Makassar",
+              "code": "psm"
+            },
+            {
+              "pos": "",
+              "key": "baritoputera",
+              "name": "Barito Putera",
+              "code": "BRP"
+            },
+            {
+              "pos": "",
+              "key": "psis",
+              "name": "PSIS Semarang",
+              "code": "SMG"
+            },
+            {
+              "pos": "",
+              "key": "trkabo",
+              "name": "TIRA-KABO",
+              "code": "TRK"
+            },
+            {
+              "pos": "deg",
+              "key": "badaklampung",
+              "name": "Badak Lampung",
+              "code": "BDK"
+            },
+            {
+              "pos": "deg",
+              "key": "semenpadang",
+              "name": "Semen Padang",
+              "code": "SMP"
+            },
+            {
+              "pos": "deg",
+              "key": "kaltengputra",
+              "name": "Kalteng Putra",
+              "code": "KAL"
+            }
+          ]
+        }
+      },
+      "competition": [
+        {
+          "name": "Internasional",
+          "list": [
+            {
+              "name": "Dunia",
+              "list": [
+                "Kejuaraan Klub Dunia",
+                "Piala Dunia",
+                "Piala Dunia Wanita"
+              ]
+            },
+            {
+              "name": "Asia",
+              "list": [
+                "Piala Asia",
+                "AFC Champions League",
+                "AFC Cup"
+              ]
+            },
+            {
+              "name": "Eropa",
+              "list": [
+                "EURO",
+                "Champions League",
+                "Europa League"
+              ]
+            },
+            {
+              "name": "Amerika Selatan",
+              "list": [
+                "Copa America",
+                "Copa Libertadores"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Klub",
+          "list": [
+            {
+              "name": "Inggris",
+              "list": [
+                "Premier League",
+                "FA Cup",
+                "League Cup"
+              ]
+            },
+            {
+              "name": "Italia",
+              "list": [
+                "Serie A",
+                "Coppa Italia",
+                "Super Copa"
+              ]
+            },
+            {
+              "name": "Indonesia",
+              "list": [
+                "Liga 1",
+                "Liga 2",
+                "Piala Indonesia"
+              ]
+            },
+            {
+              "name": "Spanyol",
+              "list": [
+                "La Liga",
+                "Copa del Rey"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

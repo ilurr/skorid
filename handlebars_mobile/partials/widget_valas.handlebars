@@ -1,0 +1,57 @@
+<div class="standing__league">
+	{{#eq indeks compare=true}}
+	<h3 class="title -{{lowercase league}}">
+		<div class="title__logo">
+			<img src="./asset/images/logo-liga-{{lowercase league}}.png" alt="Liga {{league}}">
+		</div>
+		<span>Liga {{league}}</span>
+	</h3>
+	{{/eq}}
+	<div class="standing__scroll">
+	<div class="standing__table{{#eq detail compare=true}} detail{{/eq}}">
+		<div class="t-head">
+			<span>#</span>
+			<span class="wide">Klub</span>
+			<span>M</span>
+			<span>M</span>
+			<span>S</span>
+			<span>K</span>
+			{{#eq detail compare=true}}
+			<span>GM</span>
+			<span>GK</span>
+			<span>SG</span>
+			{{/eq}}
+			<span>P</span>
+		</div>
+		<div class="t-body">
+			{{#each channel.clubs}}
+			{{#gte @index compare=../index_start}}
+			{{#gte @index compare=../index_end}}
+			{{else}}
+			<div class="t-row pos {{pos}}">
+				<span>{{add @index 1}}</span>
+				<span class="wide"><div class="img"><img src="./asset/images/team/{{../dir}}/{{lowercase code}}.png" alt="{{name}}"></div>{{name}}</span>
+				<span>12</span>
+				<span>10</span>
+				<span>9</span>
+				<span>3</span>
+				{{#eq ../detail compare=true}}
+				<span>20</span>
+				<span>9</span>
+				<span>+12</span>
+				{{/eq}}
+				<span>34</span>
+			</div>
+			{{/gte}}
+			{{else}}
+			{{/gte}}
+			{{/each}}
+		</div>
+	</div>
+	</div>
+	{{#eq indeks compare=true}}
+	<div class="t-footer">
+		<a href="kompetisi-klasemen.html" class="more">Selengkapnya</a>
+	</div>
+	{{/eq}}
+</div>

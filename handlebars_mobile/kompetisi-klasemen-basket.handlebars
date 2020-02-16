@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	{{> head}}
+
+<body class="wp">
+	<!-- header -->
+	{{> header}}
+	
+	<!-- nav -->
+	{{>nav section="Home"}}
+	
+	<div class="row clearfix">
+		<div class="container clearfix">
+		
+			<!-- ads top -->
+			{{> ads_top}}
+			
+			<section class="competition clearfix">
+				<h3 class="title">
+					<span>Basket</span>
+				</h3>
+			</section>
+
+			<!-- tabs -->
+			<section class="tab -page box clearfix">
+				<div class="tab__menu clearfix">
+					<div class="tab__item">
+						<a href="kompetisi-detail-basket.html" class="tab__link"><div class="title"><span>Pertandingan</span></div></a>
+					</div>
+					<div class="tab__item">
+						<a href="kompetisi-klasemen-basket.html" class="tab__link -active"><div class="title"><span>Klasemen</span></div></a>
+					</div>
+				</div>
+				<div class="tab__content">
+					<div class="tab__content__item">
+
+						<!-- standing -->
+						<section class="tab__content__box standing table -detail box clearfix">
+							{{> widget_table_basket channel=channel.basket.team.nba.clubs index_start=0 index_end=15 detail=true league="Wilayah Timur"}}
+						</section>
+
+						<!-- standing -->
+						<section class="tab__content__box standing table -detail box clearfix">
+							{{> widget_table_basket channel=channel.basket.team.nba.clubs index_start=15 index_end=30 detail=true league="Wilayah Barat"}}
+						</section>
+
+					</div>
+				</div>
+			</section>
+
+
+			<!-- ads bottom -->
+			{{> ads_skin}}
+			
+		</div>
+	</div>
+	
+	<!-- footer -->
+	{{> footer}}
+	
+	<!-- ads horizontal -->
+	{{> ads_tower}}
+
+	{{> js}}
+	
+</body>
+</html>

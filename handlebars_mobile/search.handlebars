@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	{{> head}}
+
+<body>
+	<!-- header -->
+	{{> header}}
+	
+	<!-- nav -->
+	{{>nav section="Home"}}
+	
+	<div class="row clearfix">
+		<div class="container clearfix">
+		
+			<!-- ads top -->
+			{{> ads_top}}
+				
+			<!-- page -->
+			<section class="page clearfix">
+				<h3 class="title">
+					<span>Pencarian</span>
+				</h3>
+				<div class="page__teaser">
+					Hasil pencarian dengan kata kunci <strong>"Piala Dunia"</strong>
+				</div>
+			</section>
+			
+			<!-- search -->
+			<section class="latest clearfix">
+				<div class="latest__wrap">
+					{{> latest channel=channel.bola.latest total=15 index_start=0 index_end=15}}
+				</div>
+			</section>
+					
+			{{> paging}}
+			
+			<!-- ads square -->
+			{{> ads_square}}
+
+			<!-- ads bottom -->
+			{{> ads_skin}}
+			
+		</div>
+	</div>
+	
+	<!-- footer -->
+	{{> footer}}
+	
+	<!-- ads horizontal -->
+	{{> ads_tower}}
+
+	{{> js}}
+	
+</body>
+</html>

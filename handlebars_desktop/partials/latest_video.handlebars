@@ -1,0 +1,23 @@
+{{#each channel}}
+{{#gte @index compare=../index_start}}
+{{#gte @index compare=../index_end}}
+{{else}}
+<div class="latest__item clearfix">
+	<div class="latest__img">
+		<a href="artikel-video.html">
+			<span class="icon icon-play"></span>				
+			<img src="{{img}}" alt="{{title}}">
+		</a>
+	</div>
+	<div class="latest__right">
+		<h4 class="latest__subtitle"><a class="latest__link" href="section.html">{{subtitle}}</a></h4> <date class="latest__date">3 menit yang lalu</date>
+		<h2 class="latest__title">
+			<a href="artikel-video.html" class="latest__link">{{title}}</a>
+		</h2>
+		<div class="latest__lead">12:23</div>
+	</div>
+</div>
+{{/gte}}
+{{else}}
+{{/gte}}
+{{/each}}

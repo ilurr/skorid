@@ -1,0 +1,23 @@
+{{#each channel}}
+{{#gte @index compare=../index_start}}
+{{#gte @index compare=../index_end}}
+{{else}}
+<div class="topic__item">
+	<div class="topic__img">
+		<a href="topik-khusus-detail.html">
+			<img src="https://asset.kompas.com/crop/0x0:0x0/480x290/data/photo/{{img}}" alt="{{title}}">
+		</a>
+	</div>
+	<div class="topic__box clearfix">
+		<h2 class="topic__title">
+			<a href="topik-khusus-detail.html" class="topic__link">{{title}}</a>
+		</h2>
+		{{#eq ../index compare=true}}
+		<date class="topic__date">25 September 2019, 23:12 WIB</date>
+		{{/eq}}
+	</div>
+</div>
+{{/gte}}
+{{else}}
+{{/gte}}
+{{/each}}

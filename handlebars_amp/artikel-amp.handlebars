@@ -1,0 +1,272 @@
+<!doctype html>
+<html ⚡ lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,minimum-scale=1">
+		<meta name="description" content="This is the AMP Boilerplate.">
+		<link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
+		<link rel="preconnect dns-prefetch" href="https://fonts.gstatic.com/" crossorigin>
+		<script async src="https://cdn.ampproject.org/v0.js"></script>
+		<!-- Import other AMP Extensions here -->
+
+		<script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+		<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+		<script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+		<script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,400i,500,600,700,700i&display=swap" rel="stylesheet">
+		<style amp-custom></style>
+		<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+		<link rel="canonical" href=".">
+
+		<title>Skor.id</title>
+	</head>
+	
+	<body>
+
+		<!-- header -->
+		<header class="header">
+			<div class="header__top">
+				<div class="logo">
+					<a href="index.html">
+						<amp-img src="./asset/images/logo-skorid.jpg" alt="Skor.id" height="50" width="167"></amp-img>
+					</a>
+				</div>
+				<div class="menu menu--right clearfix">
+					<div class="menu__item">
+						<div class="menu__link icon-bar">
+							<i></i>
+						</div>
+					</div>
+				</div>
+				
+				<!-- nav -->
+				<nav class="nav -hide">
+					<div class="nav__close">
+						<div class="menu--close clearfix">
+							<div class="menu__item">
+								<div class="menu__link icon-bar active">
+									<i></i>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="nav__scroll">
+						<ul class="nav__wrap">
+							{{#each MainMenu}}
+							<li>
+								<a href="{{link}}"{{#eq ../section compare=title}} class="active"{{/eq}}>{{title}}</a>
+								{{#if submenu}}
+								<ul class="nav__submenu">
+									{{#each submenu}}
+									<li><a href="{{link}}">{{title}}</a></li>
+									{{/each}}
+								</ul>
+								{{/if}}
+							</li>
+							{{/each}}
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+		
+		
+		<!-- content -->
+		<div class="row clearfix">
+			<div class="container clearfix">
+			
+				<!-- ads top -->
+				<div class="ads__top">
+					<amp-ad width=300 height=50 type="criteo" data-tagtype="passback" data-zone="567890"></amp-ad>
+				</div>
+				
+				<!-- breadcrumb -->
+				<div class="breadcrumb clearfix">
+					<ul class="breadcrumb__wrap">
+						<li class="breadcrumb__item"><a class="breadcrumb__link" href="index.html">Home</a></li>
+						<li class="breadcrumb__item"><a class="breadcrumb__link" href="section.html">{{read.bola.article.channel}}</a></li>
+					</ul>
+				</div>
+
+				<div class="read__box">
+					<!-- read header -->
+					<section class="read__header clearfix">
+						<div class="adv__title">Advertorial</div>
+
+						<h1 class="read__title">{{read.bola.article.title}}</h1>
+
+						<div class="read__info__date">
+							Senin, 24 September 2019 | 23:34 WIB
+						</div>
+
+						<div class="social social--article clearfix">
+							<div class="social__item facebook">
+								<amp-social-share class="rounded" width="29" height="29" type="facebook"></amp-social-share>
+							</div>
+							<div class="social__item twitter">
+								<amp-social-share class="rounded" width="29" height="29" type="twitter"></amp-social-share>
+							</div>
+							<div class="social__item whatsapp">
+								<amp-social-share class="rounded" width="29" height="29" type="whatsapp"></amp-social-share>
+							</div>
+							<div class="social__item line">
+								<amp-social-share class="rounded" width="29" height="29" type="line"></amp-social-share>
+							</div>
+						</div>
+
+						<!-- photo main -->
+						<div class="photo">
+							<div class="photo__img">
+								<amp-img src="https://asset.kompas.com/crop/0x0:0x0/750x500/data/photo/{{read.bola.article.img}}" alt="{{read.bola.article.title}}" width="750" height="500" layout="responsive"></amp-img>
+							</div>
+							<div class="photo__caption">{{read.bola.article.img_caption}}</div>
+						</div>
+
+						<div class="read__info">
+							<div class="read__info__img">
+								<amp-img src="https://asset.kompas.com/crop/0x0:0x0/100x100/left/data/photo/profile/872c8ee83496cfd3df7933c69aa3334f.jpg" layout="responsive" width="100" height="100"></amp-img>
+							</div>
+							<div class="read__info__col">
+								<div class="read__info__author">
+									<strong>Penulis:</strong> <a href="opini-author.html">{{read.bola.article.author}}</a>
+								</div>
+								<div class="read__info__author">
+									<strong>Editor:</strong> <a href="opini-author.html">{{read.bola.article.editor}}</a>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<!-- content -->
+					<article class="read__content clearfix">
+						{{{read.bola.article.content}}}
+						<div class="read__next">
+							<div class="read__next__info"><span>2 dari 3 halaman</span></div>
+							<a href="#" class="read__next__button">Selanjutnya: Jalannya Pertandingan...</a>
+						</div>
+					</article>
+
+					<div class="read__credit bottom">
+						<div class="read__info__author">
+							<strong>Sumber:</strong> <a href="opini-author.html">Kompas.com</a>
+						</div>
+					</div>
+
+					<!-- ads square -->
+					<div class="ads mt2 clearfix">
+						<amp-ad width=300 height=250 type="criteo" data-tagtype="passback" data-zone="567890"></amp-ad>
+					</div>
+
+					<!-- tagging -->
+					<section class="read__tagging clearfix">
+						<div class="title2">
+							<span>Tag</span>
+						</div>
+						<div class="tag tag--article clearfix">
+							<ul class="tag__list">
+								{{#each read.bola.article.tag as |tagging|}}
+								<li>
+									<h4><a href="tagging.html">{{tagging}}</a></h4>
+								</li>
+								{{/each}}
+							</ul>
+						</div>
+					</section>
+				</div>
+			
+				<!-- latests -->
+				<section class="latest clearfix">
+					<h3 class="title">
+						<span>Berita Terkait</span>
+					</h3>
+					<div class="latest__wrap">
+						{{#each channel.bola.latest}}
+						{{#gte @index compare=5}}
+						{{#gte @index compare=8}}
+						{{else}}
+						<div class="latest__item clearfix">
+							<div class="latest__img">
+								<a href="artikel.html">
+									<amp-img src="https://asset.kompas.com/crop/0x0:0x0/120x120/data/photo/{{img}}" alt="{{title}}" layout="responsive" width="120" height="120"></amp-img>
+								</a>
+							</div>
+							<div class="latest__right">
+								{{#eq ads compare=1}}
+								<h4 class="latest__subtitle ads__subtitle">Sponsored</h4>
+								{{else}}
+								<h4 class="latest__subtitle"><a class="latest__link" href="section.html">{{subtitle}}</a></h4>
+								{{/eq}}
+								<h2 class="latest__title">
+									<a href="artikel.html" class="latest__link">{{title}}</a>
+								</h2>
+								<div class="latest__date">3 menit yang lalu</div>
+							</div>
+						</div>
+						{{/gte}}
+						{{else}}
+						{{/gte}}
+						{{/each}}
+					</div>
+				</section>
+
+				<!-- latests -->
+				<section class="latest clearfix">
+					<h3 class="title">
+						<span>Latest</span>
+					</h3>
+					<div class="latest__wrap">
+						{{#each channel.bola.latest}}
+						{{#gte @index compare=10}}
+						{{#gte @index compare=20}}
+						{{else}}
+						<div class="latest__item clearfix">
+							<div class="latest__img">
+								<a href="artikel.html">
+									<amp-img src="https://asset.kompas.com/crop/0x0:0x0/120x120/data/photo/{{img}}" alt="{{title}}" layout="responsive" width="120" height="120"></amp-img>
+								</a>
+							</div>
+							<div class="latest__right">
+								{{#eq ads compare=1}}
+								<h4 class="latest__subtitle ads__subtitle">Sponsored</h4>
+								{{else}}
+								<h4 class="latest__subtitle"><a class="latest__link" href="section.html">{{subtitle}}</a></h4>
+								{{/eq}}
+								<h2 class="latest__title">
+									<a href="artikel.html" class="latest__link">{{title}}</a>
+								</h2>
+								<div class="latest__date">3 menit yang lalu</div>
+							</div>
+						</div>
+						{{/gte}}
+						{{else}}
+						{{/gte}}
+						{{/each}}
+					</div>
+				</section>
+
+				<!-- ads square -->
+				<div class="ads clearfix">
+					<amp-ad width=300 height=250 type="criteo" data-tagtype="passback" data-zone="567890"></amp-ad>
+				</div>
+			
+			</div>
+		</div>		
+
+		<!-- footer -->
+		<footer class="footer">
+			<div class="row footer__top container clearfix">
+				<div class="footer__logo">
+					<a href="index.html">
+						<amp-img src="./asset/images/logo-skorid-black.jpg" alt="Skor.id" height="60" width="200"></amp-img>
+					</a>
+				</div>
+				<div class="footer__copyright">
+					<p>&copy; SKOR ID. All Right Reserved. 2019</p>
+				</div>
+			</div>
+		</footer>
+		
+	</body>
+</html>

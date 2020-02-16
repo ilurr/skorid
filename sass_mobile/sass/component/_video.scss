@@ -1,0 +1,116 @@
+// belt video
+.videos {
+    position: relative;
+    padding: 0 0 20px;
+    margin: 15px -15px;
+    background: #EFEFEF;
+	&__wrap {
+		position: relative;
+		margin: 0;
+		padding: 0 15px;
+	}
+	&__img {
+		position: relative;
+		width: 100%;
+		height: 0;
+		padding-bottom: 56.25%; /* 16:9 */
+		overflow: hidden;
+		background: #000;
+		z-index: 2;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+		img {
+			position: absolute;
+			width: 100%;
+			//max-width: unset;
+			height: auto;
+			left: 50%;
+			top: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+			opacity: .7;
+			@include transition(all .2s ease);
+		}
+		.icon {
+			position: absolute;
+			left: 50%;
+			top: calc(50% - 20px);
+			z-index: 2;
+			color: #fff;
+			font-size: 55px;
+			@include transition(all .2s ease);
+			-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+		}
+		&:hover {
+			.icon {
+				-webkit-transform: translate(-50%, -50%) scale(1.1);
+			    transform: translate(-50%, -50%) scale(1.1);
+			}
+			img {
+				opacity: .9;
+			}
+		}
+	}
+	&__info {
+		position: relative;
+		text-transform: uppercase;
+		padding: 5px 0;
+		@include font-pack($font_secondary, 10px, 400, false, #9C9C9C);
+		//border-bottom: 1px solid #E5E5E5;
+	}
+	&__box {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		z-index: 2;
+		padding: 60px 0 0;
+		background: linear-gradient(90deg,#000,transparent);
+		background: -webkit-linear-gradient(90deg,#000,transparent);
+	}
+	&__title {
+		margin: 15px 0;
+		padding: 0 15px;
+		@include font-pack(false, false, 500, false, #fff);
+		@include title_overflow(auto, 54px);
+	}
+	&__link {
+		display: block;
+	}
+	&__item {
+		position: relative;
+		padding: 0;
+		border-radius: 5px;
+		background: #fff;
+		overflow: hidden;
+		box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
+	}
+	
+	// read
+	&__player {
+		position: relative;
+		margin: 0 -15px 20px;
+	}
+	&__caption {
+		padding: 10px 0;
+		text-align: left;
+		//background: #f0f0f0;
+		@include font-pack(false, 12px, 400, false, #999);
+	}
+	&__ratio {
+		position: relative;
+		padding-bottom: 56.25%; /* 16:9 */
+	//	padding-top: 25px;
+	//	height: 0;
+		img {
+			width: 100%;
+		}
+		iframe {	
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}	
+}

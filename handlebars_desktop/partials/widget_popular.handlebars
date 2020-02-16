@@ -1,0 +1,16 @@
+{{#if channel}}
+<div class="widget__popular">
+	<ul class="tag__list">
+		{{#each channel.tag as |tagging|}}
+		<li>
+			<h4><a href="tagging.html">{{tagging}}</a></h4>
+		</li>
+		{{/each}}
+		{{#each channel.tag as |tagging|}}
+		<li>
+			<h4><a href="tagging.html">{{tagging}}</a></h4>
+		</li>
+		{{/each}}
+	</ul>
+</div>
+{{/if}}

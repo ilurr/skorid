@@ -1,0 +1,220 @@
+// artikel
+.photo {
+	position: relative;
+	margin-bottom: 20px;
+	&__main {		
+		width: $screen-lg-desktop;
+		@include min-responsive($screen-lg-desktop) {
+			width: 100%;
+		}
+	}
+	img {
+		width: 100%;
+	}
+	&__author {
+		display: inline;
+		@include font-pack(false, 11px, 500, false, darken(#999,30%));
+		position: relative;
+		padding: 0 5px;
+	}
+	&__caption {
+		padding: 10px 0;
+		text-align: left;
+		//background: #f0f0f0;
+		@include font-pack(false, 12px, 400, false, #999);
+	}
+	&__wrap {
+		position: relative;
+	}
+	&__icon {
+		display: inline-block;
+		width: 40px;
+		height: 40px;
+		border-radius: 40px;
+		padding: 10px;
+		background: #fff;
+		text-align: center;
+   		@include font-pack(false, 20px, false, 1, #000);
+		&__expand {
+			position: absolute;
+			top: 15px;
+			right: 15px;
+			z-index: 1;
+		}
+	}
+}
+
+// belt images
+.photos {
+	position: relative;
+	padding: 0;
+	&__img {
+		position: relative;
+		overflow: hidden;
+		background: #000;
+		border-radius: 5px;
+		height: calc((260px - 20px) / 2);
+		.icon {
+			position: absolute;
+			z-index: 1;
+			left: 50%;
+			top: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+			color: #fff;
+			font-size: 25px;
+			opacity: 0;
+			@include transition(all .2s ease);
+		}
+		img {
+			width: 100%;
+			opacity: .7;
+			@include transition(all .2s ease);
+		}
+		&:hover {
+			.photos__title {
+				opacity: 1;
+			}
+			.icon {
+				opacity: 1;
+				-webkit-transform: translate(-50%, -50%) scale(1.1);
+			    transform: translate(-50%, -50%) scale(1.1);
+			}
+			img {
+				opacity: .4;
+			}
+		}
+	}
+	&__wrap {
+		position: relative;
+		@include display-flex();
+		flex-wrap: wrap;
+		padding: 25px 25px;
+		margin: 0;
+	}
+	&__row {
+		position: relative;
+		margin: 0 -10px;
+	}
+	&__box {
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+	}
+	&__title {
+		opacity: 0;
+		padding: 10px;
+		@include font-pack(false, 12px, 500, false, #fff);
+		@include transition(all .2s ease);
+	}
+	&__link {
+		display: block;
+	}
+	&__item {
+		position: relative;
+		padding: 0 10px 20px;
+		width: calc(100% / 3);
+		float: right;
+		&.-big {
+			width: calc((100%) - (100% / 3));
+			float: left;
+			.photos__img {
+				height: 260px;
+			}
+			.photos__title {
+				font-size: 18px;
+				padding: 20px;
+			}
+		}
+	}
+	&__icon {
+		&__box {
+			position: absolute;
+			left: 50px;
+			bottom: 50px;
+			z-index: 2;
+			background: $color_theme;
+			padding: 10px;
+			border-radius: 5px;
+			color: #fff;
+			font-size: 30px;
+			font-weight: 400;
+			line-height: 1;
+			letter-spacing: -1px;
+			.icon {
+				display: inline-block;
+				vertical-align: middle;
+				margin-right: 5px;
+			}
+		}
+		&__count {
+			vertical-align: middle;
+			display: inline-block;
+			span {
+				font-weight: 500;
+				font-size: 16px;
+				display: inline-block;
+				padding: 0 0 0 5px;
+			}
+		}
+	}
+}
+
+// gallery
+.gallery {
+	position: relative;
+	&__cover {
+		position: relative;
+		margin: 0 -15px 20px;
+		&:after {
+			content: '';
+			position: absolute;
+			z-index: 1;
+			right: 0;
+			bottom: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0,0,0,1);
+			opacity: 0;
+			@include transition(all .2s ease);
+		}
+		&:hover {
+			&:after {
+				opacity: .5;
+			}
+		}
+	}
+	&__item {
+		cursor: pointer;
+	}
+	&__list {
+		position: relative;
+	}
+}
+
+.mfp-gallery {
+	.arrow {
+		top: calc(50% - (39px / 2));
+		color: #fff;
+		background: transparent;
+		font-size: 35px;
+		border: none;
+		box-shadow: none;
+		padding: 0 13.6px;
+		position: fixed;
+		.icon {
+			pointer-events: none;
+		}
+	}
+	.arrow--left {
+		left: 10px;
+	}
+	.arrow--right {
+		right: 10px;
+	}
+	.mfp-close {
+		position: fixed;
+	}
+}

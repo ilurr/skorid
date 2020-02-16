@@ -1,0 +1,45 @@
+.header {
+	position: relative;
+	padding: 0;
+	z-index: 9;
+	background: #fff;
+	width: $screen-lg-desktop;
+	@include min-responsive($screen-lg-desktop) {
+		width: 100%;
+	}
+	&__top {
+		position: relative;
+		padding: 0;
+	}
+	&__bottom {
+		background: #fff;
+		position: relative;
+	}
+}
+
+.logo {
+	position: relative;
+	padding: 10px 0;
+	img {
+		width: auto;
+		height: 60px;
+	}
+	&__link,
+	a {
+		display: inline-block;
+	}
+}
+
+.is--scroll {
+	.header__bottom {
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 99;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, .2);
+		width: $screen-lg-desktop;
+		@include min-responsive($screen-lg-desktop) {
+			width: 100%;
+		}
+	}
+}

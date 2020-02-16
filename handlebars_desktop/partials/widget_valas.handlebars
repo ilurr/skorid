@@ -1,0 +1,75 @@
+<div class="standing__league">
+	<h3 class="title{{#eq indeks compare=true}}{{else}} -center{{/eq}} -{{lowercase league}}">
+		<div class="title__logo">
+			<img src="./asset/images/logo-liga-{{lowercase league}}.png" alt="Liga {{league}}">
+		</div>
+		<span>Liga {{league}}</span>
+		{{#eq detail compare=true}}
+		{{!
+		<div class="form__group select standing__form">
+			<select name="league" id="">
+				<option value="">Pilih Liga</option>
+				<option value="">Liga Indonesia</option>
+				<option value="">Liga Inggris</option>
+				<option value="">Liga Italia</option>
+				<option value="">Liga Spanyol</option>
+				<option value="">Liga Jerman</option>
+				<option value="">Liga Perancis</option>
+			</select>
+		</div>
+		}}
+		{{/eq}}
+	</h3>
+	<div class="standing__table{{#eq detail compare=true}} detail{{/eq}}">
+		<div class="t-head">
+			<span>#</span>
+			<span class="wide">Klub</span>
+			<span>M</span>
+			<span>M</span>
+			<span>S</span>
+			<span>K</span>
+			<span>GM</span>
+			<span>GK</span>
+			{{#eq detail compare=true}}
+			<span>SG</span>
+			{{/eq}}
+			<span>P</span>
+		</div>
+		<div class="t-body">
+			{{#each channel.clubs}}
+			{{#gte @index compare=../index_start}}
+			{{#gte @index compare=../index_end}}
+			{{else}}
+			<div class="t-row pos {{pos}}">
+				<span>{{add @index 1}}</span>
+				<span class="wide"><div class="img"><img src="./asset/images/team/{{../channel.code}}/{{lowercase code}}.png" alt="{{code}}"></div>{{name}}</span>
+				<span>12</span>
+				<span>10</span>
+				<span>9</span>
+				<span>3</span>
+				<span>20</span>
+				<span>9</span>
+				{{#eq ../detail compare=true}}
+				<span>+12</span>
+				{{/eq}}
+				<span>34</span>
+			</div>
+			{{/gte}}
+			{{else}}
+			{{/gte}}
+			{{/each}}
+		</div>
+		{{#eq detail compare=true}}
+		{{else}}
+		<div class="t-footer">
+			<a href="klasemen.html" class="more">Selengkapnya</a>
+		</div>
+		{{/eq}}
+		{{#eq indeks compare=true}}
+		<div class="t-footer">
+			<a href="kompetisi-klasemen.html" class="more">Selengkapnya</a>
+		</div>
+		{{else}}
+		{{/eq}}
+	</div>
+</div>

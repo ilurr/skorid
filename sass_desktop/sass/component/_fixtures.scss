@@ -1,0 +1,193 @@
+.schedule {
+	position: relative;
+	&__container {
+		position: relative;
+		padding: 10px 50px;
+		height: 160px;
+		overflow: hidden;
+		.arrow {
+			top: 30px;
+			font-size: 60px;
+			color: #E5E5E5;
+			background: transparent;
+			&:hover {
+				color: #000;
+				background: transparent;
+			}
+		}
+		.arrow--left {
+			left: -45px;
+		}
+		.arrow--right {
+			right: -45px;
+		}
+	}
+	&__indeks {
+		position: relative;
+		.arrow {
+			top: 11px;
+			background: transparent;
+			&:hover {
+				color: $color_theme;
+				background: transparent;
+			}
+			&.slick-disabled {
+				color: #f0f0f0;
+			}
+		}
+		.arrow--left {
+			left: 30%;
+		}
+		.arrow--right {
+			right: 30%;
+		}
+	}
+	&__box {
+		position: relative;
+		@include display-flex();
+		align-items: stretch;
+		justify-content: center;
+		padding: 10px 0;
+	}
+	&__top {
+		position: relative;
+		//text-align: center;
+		@include display-flex();
+		justify-content: center;
+		align-items: center;
+	}
+	&__arrow {
+		display: inline-block;
+		padding: 0 15px;
+		font-size: 30px;
+		vertical-align: middle;
+	}
+	&__date {
+		position: relative;
+		display: inline-block;
+		// margin: 0 auto;
+		// position: absolute;
+		// width: 100%;
+		// top: 0;
+		// left: 0;
+		// text-align: center;
+		// z-index: 1;
+		span {
+			display: inline-block;
+			padding: 5px 15px;
+			border-radius: 5px;
+			background: $color_theme;
+			@include font-pack(false, 12px, 700, 1, #fff);
+		}
+	}
+	&__matches {
+		position: relative;
+		@include display-flex();
+		align-items: center;
+		vertical-align: top;
+		padding: 10px 10px;
+		width: calc(100% / 4);
+		&:after {
+			content: '';
+			position: absolute;
+			border-left: 1px solid #f0f0f0;
+			height: calc(100% - 40px);
+			right: -1px;
+			top: 10px;
+			z-index: 1;
+		}
+		&:last-child {
+			&:after {
+				border-left: transparent;
+			}
+		}
+		.s-col {
+			width: calc(100% / 3);
+			vertical-align: top;
+			text-align: center;
+		}
+		.img {
+			height: 50px;
+			margin-bottom: 5px;
+			img {
+				height: 100%;
+				margin: 0 auto;
+			}
+		}
+		.time {
+			text-transform: uppercase;
+			letter-spacing: -1px;
+			margin-top: -10px;
+			@include font-pack($font_secondary, 11px, 700, 1, #9C9C9C);
+			span {
+				font-weight: 600;
+				color: $color_theme;
+			}
+		}
+		.score {
+			position: relative;
+			padding: 5px 0;
+			letter-spacing: -3px;
+			@include font-pack($font_secondary, 32px, 700, 1, false);
+		}
+		.agg {
+			@include font-pack($font_secondary, 12px, 400, 1, #9C9C9C);
+		}
+		.name {
+			@include font-pack(false, 12px, 500, false, false);
+			@include title_overflow(30px, 30px);
+		}
+	}
+	
+	// livescroe
+	&__gameweek {
+		position: relative;
+		padding: 0;
+		.schedule__top {
+			padding: 10px 0 0;
+		}
+		.schedule__box {
+			flex-wrap: wrap;
+			justify-content: flex-start;
+		}
+		.schedule__date {
+			padding: 5px 20px;
+		}
+		.schedule__date span {
+			font-size: 14px;
+		}
+		.schedule__matches {
+			width: calc(100%);
+			//border-right: 1px solid #f0f0f0;
+			border-top: 1px solid #f0f0f0;
+			padding: 12px 10px;
+			align-items: center;
+		}
+		.schedule__matches .time {
+			margin-top: 0;
+			font-size: 14px;
+			letter-spacing: 1px;
+		}
+		.schedule__matches .name {
+			font-size: 14px;
+		}
+		.schedule__matches .score {
+			padding: 2px 0;
+		}
+		// .schedule__matches:nth-of-type(odd) {
+		// 	border-right: transparent;
+		// }
+		.schedule__matches:after {
+			border-left: transparent;
+		}
+	}
+	
+	// .slick-list {
+	// 	//overflow: inherit;
+	// }
+	// &.box {
+	// 	//overflow: inherit;
+	// }
+
+
+}

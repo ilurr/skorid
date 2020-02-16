@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+	{{> head}}
+
+<body class="wp">
+	<!-- header -->
+	{{> header}}
+	
+	<!-- nav -->
+	{{>nav section="Home"}}
+	
+	<div class="row clearfix">
+		<div class="container clearfix">
+		
+			<!-- ads top -->
+			{{> ads_top}}
+							
+			<!-- headline -->
+			<section class="hl clearfix">
+				{{> headline channel=channel.bola.headline total=4 index_start=0 index_end=4}}
+			</section>
+			
+			<!-- editors pick -->
+			<section class="editors clearfix">
+				<h3 class="title -white">
+					<span>Pilihan Editor</span>
+					<a href="section.html" class="title__idx">
+						<span class="icon icon-angle-right"></span>
+					</a>
+				</h3>
+				<div class="editors__scroll">
+					<div class="editors__track">
+						{{> editor_pick channel=channel.bola.latest total=6 index_start=10 index_end=16}}
+					</div>
+				</div>
+			</section>
+
+			<!-- latest -->
+			<section class="latest clearfix">
+				<h3 class="title">
+					<span>Latest</span>
+					<a class="more" href="section.html">Lihat Semua <span class="icon icon-angle-right"></span></a>
+				</h3>
+				<div class="latest__wrap">
+					{{> latest channel=channel.bola.latest total=5 index_start=0 index_end=5}}
+				</div>
+			</section>
+			
+			<!-- video -->
+			<section class="videos clearfix">
+				<h3 class="title">
+					<span>Video</span>
+					<a class="more" href="video.html">Lihat Semua <span class="icon icon-angle-right"></span></a>
+				</h3>
+				<div class="videos__wrap">
+					{{> belt_tv channel=channel.bola.video total=4 index_start=0 index_end=1}}
+				</div>
+			</section>
+			
+			<!-- latest -->
+			<section class="latest clearfix">
+				<div class="latest__wrap">
+					{{> latest channel=channel.bola.latest total=3 index_start=5 index_end=8}}
+				</div>
+			</section>
+			
+			<!-- schedule -->
+			<section class="schedule clearfix">
+				<h3 class="title">
+					<span>Live Score</span>
+					<a class="more" href="kompetisi-pertandingan.html">Lihat Semua <span class="icon icon-angle-right"></span></a>
+				</h3>
+				<div class="schedule__scroll">
+					<div class="schedule__track">
+						{{> widget_salat channel=channel.bola.fixtures.inggris.rounds.[1] index_start=0 index_end=4 dir="premier-league"}}
+						{{> widget_salat channel=channel.bola.fixtures.inggris.rounds.[0] index_start=0 index_end=4 dir="premier-league"}}
+					</div>
+				</div>
+			</section>
+			
+			<!-- latest -->
+			<section class="latest clearfix">
+				<div class="latest__wrap">
+					{{> latest channel=channel.bola.latest total=3 index_start=8 index_end=11}}
+				</div>
+			</section>
+			
+			<!-- quiz -->
+			<section class="quiz clearfix">
+				<h3 class="title"><span>Quiz</span></h3>
+				<div class="quiz__wrap">
+					{{> widget_mail}}
+				</div>
+			</section>
+			
+			<!-- latest -->
+			<section class="latest clearfix">
+				<div class="latest__wrap">
+					{{> latest channel=channel.bola.latest total=3 index_start=11 index_end=14}}
+				</div>
+			</section>
+			
+			<!-- most -->
+			<section class="most clearfix">
+				<h3 class="title">
+					<span>Trending</span>
+					<a class="more" href="section.html">Lihat Semua <span class="icon icon-angle-right"></span></a>
+				</h3>
+				<div class="most__scroll">
+					<div class="most__track">
+						{{> most channel=channel.bola.latest total=8 index_start=2 index_end=10}}
+					</div>
+				</div>
+			</section>
+			
+			<!-- ads square -->
+			{{> ads_square}}
+
+			<!-- latest -->
+			<section class="latest clearfix">
+				<div class="latest__wrap">
+					{{> latest channel=channel.bola.latest total=3 index_start=14 index_end=17}}
+				</div>
+			</section>
+			
+			<!-- foto -->
+			<section class="photos clearfix">
+				<h3 class="title">
+					<span>Foto Pilihan</span>
+					<a class="more" href="images.html">Lihat Semua <span class="icon icon-angle-right"></span></a>
+				</h3>
+				<div class="photos__wrap">
+					{{> belt_images channel=channel.bola.photo total=1 index_start=5 index_end=6}}
+				</div>
+			</section>
+			
+			<!-- latest -->
+			<section class="latest clearfix">
+				<div class="latest__wrap">
+					{{> latest channel=channel.bola.latest total=3 index_start=17 index_end=20}}
+				</div>
+			</section>
+			
+			<!-- topik -->
+			<section class="topic clearfix">
+				<h3 class="title">
+					<span>Topik Khusus</span>
+					<a href="topik.html" class="title__idx">
+						<span class="icon icon-angle-right"></span>
+					</a>
+				</h3>
+				<div class="topic__scroll">
+					<div class="topic__track">
+						<div class="topic__topicitem">
+							{{> latest_topik channel=channel.bola.latest total=4 index_start=0 index_end=4 topic=true}}
+						</div>
+						<div class="topic__topicitem">
+							{{> latest_topik channel=channel.bola.latest total=4 index_start=0 index_end=4 topic=true noimg=true}}
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<!-- latest -->
+			<section class="latest clearfix">
+				<div class="latest__wrap">
+					{{> latest channel=channel.bola.latest total=3 index_start=10 index_end=13}}
+				</div>
+			</section>
+			
+			<div class="latest__more clearfix">
+				<a href="#" class="button -more">Berita Berikutnya</a>
+			</div>
+			
+			<!-- ads bottom -->
+			{{> ads_skin}}
+			
+		</div>
+	</div>
+	
+	<!-- footer -->
+	{{> footer}}
+	
+	<!-- ads horizontal -->
+	{{> ads_tower}}
+
+	{{> js}}
+	
+</body>
+</html>

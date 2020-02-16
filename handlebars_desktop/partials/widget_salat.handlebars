@@ -1,0 +1,53 @@
+{{#if channel}}
+<div class="schedule__top">
+	{{#eq details compare=true}}
+	<a href="kompetisi-pertandingan.html" class="schedule__arrow -left"><span class="icon icon-angle-left"></span></a>
+	{{/eq}}
+	<div class="schedule__date"><span>{{uppercase channel.date}}</span></div>
+	{{#eq details compare=true}}
+	<a href="kompetisi-pertandingan.html" class="schedule__arrow -right"><span class="icon icon-angle-right"></span></a>
+	{{/eq}}
+</div>
+<div class="schedule__box">
+	{{#each channel.matches}}
+	{{#gte @index compare=../index_start}}
+	{{#gte @index compare=../index_end}}
+	{{else}}
+	<div class="schedule__matches">
+		<div class="s-col">
+			<div class="team">
+				<div class="img"><img src="./asset/images/team/premier-league/{{lowercase team1.code}}.png" alt="{{team1.code}}"></div>
+				<div class="name">{{team1.name}}</div>
+			</div>
+		</div>
+		<div class="s-col">
+			{{#if score1}}
+			<div class="time">FT</div>
+			<div class="score">{{score1}} - {{score2}}</div>
+			{{#eq @index compare=0}}
+			<div class="agg">Agg (2-0)</div>
+			{{else}}
+			{{/eq}}
+			{{else}}
+			{{#eq @index compare=0}}
+			<div class="time"><span>Live</span> 23'</div>
+			<div class="score">0 - 0</div>
+			{{else}}
+			<div class="time">{{time}}</div>
+			<div class="score">-</div>
+			{{/eq}}
+			{{/if}}
+		</div>
+		<div class="s-col">
+			<div class="team">
+				<div class="img"><img src="./asset/images/team/premier-league/{{lowercase team2.code}}.png" alt="{{team2.code}}"></div>
+				<div class="name">{{team2.name}}</div>
+			</div>
+		</div>
+	</div>
+	{{/gte}}
+	{{else}}
+	{{/gte}}
+	{{/each}}
+</div>
+{{/if}}

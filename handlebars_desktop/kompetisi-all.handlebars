@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	{{> head}}
+
+<body>
+	<!-- header -->
+	{{> header section_name="Kompetisi"}}
+	
+	<!-- ads skin -->
+	{{!> ads_skin}}
+	
+	<div class="row clearfix">
+		<div class="container clearfix">
+			<!-- ads top -->
+			{{> ads_top}}
+		</div>
+	</div>
+
+	<!-- title -->
+	<div class="row clearfix">
+		<div class="container clearfix">
+			<div class="col-offset-fluid clearfix">
+				<div class="col-bs10-10">
+			
+					<div class="title3">
+						<span>Kompetisi</span>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- content -->
+	<div class="row clearfix">
+		<div class="container clearfix">
+			<div class="col-offset-fluid clearfix">
+				
+				<div class="col-bs10-7">
+				
+					{{> widget_epaper channel=channel.bola.competition}}
+
+				</div>
+				
+				<div class="col-bs10-3">
+				
+					<!-- ads giant -->
+					{{> ads_giant}}
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- footer -->
+	{{> footer}}
+	
+	<!-- ads horizontal -->
+	{{> ads_horizontal}}
+
+	{{> js}}
+	
+</body>
+</html>

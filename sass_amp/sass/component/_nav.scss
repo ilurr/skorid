@@ -1,0 +1,157 @@
+.menu {
+	position: relative;
+	padding: 0;
+	&--left,
+	&--right {
+		top: 15px;
+		position: absolute;
+		z-index: 1;
+	}
+	&--left {
+		left: 5px;
+	}
+	&--right {
+		right: 5px;
+	}
+	&__item {
+		display: inline-block;
+		vertical-align: top;
+		position: relative;
+		padding: 0px;
+	}
+	&__link {
+		display: inline-block;
+		padding: 8px 9px;
+		color: #000;
+		&:hover {
+			color: $color_theme;
+		}
+		span {
+			font-size: 25px;
+		}
+	}
+}
+.nav {
+	z-index: 8;
+	padding: 0;
+	@include transition(all .2s ease);
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	z-index: 9;
+	&__close {
+		position: relative;
+		height: 64px;
+		width: 100%;
+		.menu--close {
+			top: 15px;
+			position: absolute;
+			z-index: 1;
+			right: 5px;
+			background: #fff;
+		}
+	}
+	&__scroll {
+		background: #000;
+		position: relative;
+		height: calc(100% - 40px);
+		width: 100%;
+		overflow-y: scroll;
+		//top: 0;
+		//left: 0;
+		padding: 10px 0 40px;
+	}
+	&__wrap {
+		position: relative;
+		@include display-flex();
+		justify-content: flex-start;
+		margin: 0;
+		padding: 10px 0 80px;
+		flex-wrap: wrap;
+		@include transition(all .2s ease);
+		li {
+			display: block;
+			width: 100%;
+			margin-bottom: 1px;
+		}
+		li a {
+			position: relative;
+			display: block;
+			padding: 15px 20px;
+			text-transform: uppercase;
+			letter-spacing: .1px;
+			background: #1d1d1d;
+			@include font-pack(false, 14px, 700, false, #fff);
+			&:after {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 5%;
+				border-bottom: 1px solid #1f1f1f;
+				width: 90%;
+			}
+			&:before {
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 5px;
+				height: 100%;
+				background: $color_theme;
+			}
+			.icon {
+				display: inline-block;
+				width: 16px;
+				height: 16px;
+				background-size: 100%;
+				background-position: center center;
+				background-repeat: no-repeat;
+				vertical-align: bottom;
+			}
+			&.active,
+			&:hover {
+				color: $color_theme;
+			}
+		}
+	}
+	&__submenu {
+		position: relative;
+		padding: 0 0 0 20px;
+		li {
+			margin-bottom: 0;
+			a {
+				font-size: 12px;
+				padding: 10px 20px;
+				font-weight: 400;
+				background: transparent;
+				&:after {
+					border-bottom: 1px solid #1f1f1f;
+				}
+				&:before {
+					background: transparent;
+				}
+			}
+			&:last-child {
+				a:after {
+				border-bottom: transparent;
+				}
+			}
+		}
+	}
+	&.-hide {
+		opacity: 0;
+		visibility: hidden;
+		@include transform(translateX(100%));
+	}
+}
+.menu {
+	&--right {
+		&:hover ~ .nav {
+			opacity: 1;
+			visibility: visible;
+			@include transform(translateX(0%));
+		}
+	}
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	{{> head}}
+
+<body class="wp">
+	<!-- header -->
+	{{> header}}
+	
+	<!-- nav -->
+	{{>nav section="Home"}}
+	
+	<div class="row clearfix">
+		<div class="container clearfix">
+		
+			<!-- ads top -->
+			{{> ads_top}}
+							
+			<!-- topic list -->
+			<section class="hl -topic clearfix">
+				<h3 class="title">
+					<span>Topik Khusus</span>
+				</h3>
+				{{> headline_topic channel=channel.bola.headline total=1 index_start=0 index_end=1}}
+			</section>
+
+			<section class="hl -topic clearfix">
+				{{> headline_topic channel=channel.bola.headline total=1 index_start=1 index_end=2 noimg=true}}
+			</section>
+
+			<section class="hl -topic clearfix">
+				{{> headline_topic channel=channel.bola.headline total=1 index_start=2 index_end=3}}
+			</section>
+
+			<section class="hl -topic clearfix">
+				{{> headline_topic channel=channel.bola.headline total=1 index_start=3 index_end=4}}
+			</section>
+
+			<section class="hl -topic clearfix">
+				{{> headline_topic channel=channel.bola.headline total=1 index_start=0 index_end=1}}
+			</section>
+
+			{{> paging}}
+			
+			<!-- ads square -->
+			{{> ads_square}}
+
+			<!-- ads bottom -->
+			{{> ads_skin}}
+			
+		</div>
+	</div>
+	
+	<!-- footer -->
+	{{> footer}}
+	
+	<!-- ads horizontal -->
+	{{> ads_tower}}
+
+	{{> js}}
+	
+</body>
+</html>

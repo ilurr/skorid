@@ -1,0 +1,61 @@
+.paging {
+	position: relative;
+	&__wrap {
+		position: relative;
+		padding: 0;
+		//@include display-flex();
+	}
+	&__teaser {
+		padding: 0 0 10px;
+		@include font-pack($font_secondary, 16px, 700, false, false);
+	}
+	&__all {    
+		margin: 5px 2px;
+		float: right;
+		padding-left: 20px;
+	}
+	&__item {
+		display: inline-block;
+		vertical-align: middle;
+		margin: 5px 2px;
+	}
+	&__link {
+		padding: 10px 14px;
+		display: block;
+		line-height: 1;
+		border-radius: 20px;
+		background: #D2D2D2;
+		@include font-pack($font_secondary, 14px, 400, false, #000);
+		&--prev,
+		&--next {
+			@include font-pack($font_secondary, 14px, 300, false, #000);
+		}
+		&--active,
+		&:hover {
+			background: $color_theme;
+			color: #fff;
+		}
+	}
+	&--article {
+		padding: 5px 0;
+		position: relative;
+		//@include display-flex();
+		//.paging__wrap {
+		//	width: calc(100% - 80px);
+		//}
+	}
+	&--page {
+		position: relative;
+		padding: 10px 0;
+		margin: 20px 0;
+		.paging__wrap {
+			text-align: center;
+		}
+		.paging__link {
+			//padding: 11px 15px;
+			padding: 12px 15px;
+			min-width: 38px;
+			//background: #ececec;
+		}
+	}
+}

@@ -1,0 +1,16 @@
+{{#if channel}}
+<!-- gallery -->
+<div class="gallery__list js--gallery">
+	<a href="https://asset.kompas.com/crop/0x0:0x0/900x600/data/photo/{{channel.img}}" class="gallery__item" title="{{channel.title}}">
+		<div class="gallery__cover">
+			<img src="https://asset.kompas.com/crop/0x0:0x0/900x600/data/photo/{{channel.img}}" alt="{{channel.title}}">
+			<div class="photos__icon__box">
+				<span class="icon icon-photo"></span> <div class="photos__icon__count">Slideshow <span>12 foto</span></div>				
+			</div>
+		</div>
+	</a>
+	{{#each channel.img_other}}
+	<a href="https://asset.kompas.com/crop/0x0:0x0/900x600/data/photo/{{img}}" class="gallery__item" title="{{title}} ({{uppercase author}})"></a>
+	{{/each}}
+</div>
+{{/if}}

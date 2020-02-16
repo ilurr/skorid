@@ -1,0 +1,29 @@
+
+// photo wp
+.arrow {
+	position: absolute;
+	top: 33.333%;
+	z-index: 1;
+	font-size: 30px;
+	line-height: 1;
+	color: #2a2a2a;
+	border-radius: 100%;
+	background: #fff;
+	padding: 0 11.4px;
+	&:hover {
+		background: $color_theme;
+		color: #fff;
+	}
+	&--left {
+		left: -10px;
+		@include min-responsive($screen-lg-desktop) {
+			left: -12px;
+		}
+	}
+	&--right {
+		right: -10px;
+		@include min-responsive($screen-lg-desktop) {
+			right: -12px;
+		}
+	}
+}

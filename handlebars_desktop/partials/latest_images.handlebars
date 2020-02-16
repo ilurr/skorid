@@ -1,0 +1,23 @@
+{{#each channel}}
+{{#gte @index compare=../index_start}}
+{{#gte @index compare=../index_end}}
+{{else}}
+<div class="latest__item clearfix">
+	<div class="latest__img">
+		<a href="artikel-images.html">
+			<span class="icon icon-photo"></span>				
+			<img src="https://asset.kompas.com/crop/0x0:0x0/220x155/data/photo/{{img}}" alt="{{title}}">
+		</a>
+	</div>
+	<div class="latest__right">
+		<h4 class="latest__subtitle"><a class="latest__link" href="section.html">{{subtitle}}</a></h4> <date class="latest__date">3 menit yang lalu</date>
+		<h2 class="latest__title">
+			<a href="artikel-images.html" class="latest__link">{{title}}</a>
+		</h2>
+		<div class="latest__lead">12 Foto</div>
+	</div>
+</div>
+{{/gte}}
+{{else}}
+{{/gte}}
+{{/each}}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+	{{> head}}
+
+<body class="wp">
+	<!-- header -->
+	{{> header}}
+	
+	<!-- nav -->
+	{{>nav section="Home"}}
+	
+	<div class="row clearfix">
+		<div class="container clearfix">
+		
+			<!-- ads top -->
+			{{> ads_top}}
+			
+			<!-- schedule -->
+			<section class="schedule clearfix">
+				<h3 class="title">
+					<span>Live Score</span>
+					<a class="more" href="livescore.html">Lihat Semua <span class="icon icon-angle-right"></span></a>
+				</h3>
+				<div class="schedule__scroll">
+					<div class="schedule__track">
+						{{> widget_salat channel=channel.bola.fixtures.inggris.rounds.[1] index_start=0 index_end=4}}
+						{{> widget_salat channel=channel.bola.fixtures.inggris.rounds.[0] index_start=0 index_end=4}}
+					</div>
+				</div>
+			</section>
+
+			{{> read_breadcrumb channel=read.bola.photo}}
+			
+			<div class="read__box">
+				<!-- header -->
+				<section class="read__header clearfix">
+					{{> read_header channel=read.bola.photo type="gallery"}}
+				</section>
+
+				<!-- content -->
+				<article class="read__content clearfix">
+					{{{read.bola.photo.content}}}
+				</article>
+
+				{{> read_paging}}
+
+				<div class="read__credit bottom">
+					<div class="read__info__author">
+						<strong>Sumber:</strong> <a href="opini-author.html">Kompas.com</a>
+					</div>
+				</div>
+
+				<!-- tagging -->
+				<section class="read__tagging clearfix">
+					<div class="title2">
+						<span>Tag</span>
+					</div>
+					{{> read_tagging channel=read.bola.photo}}
+				</section>
+
+				<!-- comment -->
+				<section class="read__comment clearfix">
+					<div class="title2">
+						<span>Komentar</span>
+					</div>
+					{{> read_comment}}
+				</section>
+			</div>
+			
+			<!-- latest -->
+			<section class="latest -images clearfix">
+				<h3 class="title">
+					<span>Foto Terkait</span>
+				</h3>
+				<div class="latest__wrap">
+					{{> latest_images channel=channel.bola.photo total=3 index_start=0 index_end=3}}
+				</div>
+			</section>
+
+			<!-- latest -->
+			<section class="latest clearfix">
+				<h3 class="title">
+					<span>Latest</span>
+					<a class="more" href="section.html">Lihat Semua <span class="icon icon-angle-right"></span></a>
+				</h3>
+				<div class="latest__wrap">
+					{{> latest channel=channel.bola.latest total=5 index_start=3 index_end=8}}
+				</div>
+			</section>
+
+			<!-- ads bottom -->
+			{{> ads_skin}}
+			
+		</div>
+	</div>
+	
+	<!-- footer -->
+	{{> footer}}
+	
+	<!-- ads horizontal -->
+	{{> ads_tower}}
+
+	{{> js}}
+	
+</body>
+</html>

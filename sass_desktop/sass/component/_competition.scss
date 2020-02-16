@@ -1,0 +1,75 @@
+.competition {
+	position: relative;
+	&__box {
+		position: relative;
+		padding: 20px 20px;
+	}
+	&__list {
+		position: relative;
+	}
+	&__item {
+		position: relative;
+		overflow: hidden;
+		margin: 0 0 20px;
+		background: #f0f0f0;
+		border-radius: 5px;
+		height: 50px;
+		@include transition(all .2s ease);
+		&.active .icon-angle-down:before {
+			content: "\f106";
+		}
+	}
+	&__title {
+		display: block;
+		padding: 15px 20px;
+		background: #ccc;
+		border-radius: 5px;
+		height: 50px;
+		@include font-pack(false, 16px, 500, false, false);
+		.icon {
+			float: right;
+			font-size: 30px;
+			margin-top: -5px;
+		}
+	}
+	&__sublist {
+		position: relative;
+		padding: 10px 10px;
+		//display: none;
+	}
+	&__subtitle {
+		display: block;
+		position: relative;
+		padding: 12px 10px;
+	}
+	&__option {
+		position: relative;
+		@include display-flex();
+		flex-wrap: nowrap;
+		.title {
+			background: $color_theme;
+		}
+		&__col {
+			width: 100%;
+		}
+	}
+	&__form {
+		display: block;
+		//float: right;
+		//width: 100%;
+		margin: 5px 0;
+		background: #fff;
+		border-radius: 5px;
+		select {
+			border: transparent;
+			//height: 30px !important;
+			font-size: 16px;
+		}
+		&.form__group.select:after {
+			top: calc(50% - 7px);
+			right: 15px;
+			width: 10px;
+			height: 10px;
+		}
+	}
+}

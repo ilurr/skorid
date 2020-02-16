@@ -1,0 +1,25 @@
+{{#each channel}}
+{{#gte @index compare=../index_start}}
+{{#gte @index compare=../index_end}}
+{{else}}
+<div class="videos__item">
+	<div class="videos__img">
+		<a href="artikel-video.html">
+			<span class="icon icon-play"></span>
+			<img src="{{img}}" alt="{{title}}">
+		</a>
+	</div>
+	{{#eq @index compare=0}}
+	{{else}}
+	<div class="videos__box">
+		<h2 class="videos__title">
+			<a href="artikel-video.html" class="videos__link">{{title}}</a>
+		</h2>
+		<div class="videos__info">{{subtitle}} | 12:23 WIB</div>
+	</div>
+	{{/eq}}
+</div>
+{{/gte}}
+{{else}}
+{{/gte}}
+{{/each}}

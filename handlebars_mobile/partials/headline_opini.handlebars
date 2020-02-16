@@ -1,0 +1,24 @@
+<div class="hl__big js--big">
+	{{#each channel}}
+	{{#gte @index compare=../index_start}}
+	{{#gte @index compare=../index_end}}
+	{{else}}
+	<div class="hl__b-item">
+		<div class="hl__b-img">
+			<div class="hl__b-cat">Headline</div>
+			<img src="https://asset.kompas.com/crop/0x0:0x0/640x384/data/photo/{{img}}" alt="{{title}}">
+		</div>
+		<div class="hl__b-box">
+			<div class="hl__b-author__img">
+				<img src="{{author_img}}" alt="{{author}}">
+			</div>
+			<h4 class="hl__b-author"><a class="hl__link" href="opini-author.html">{{author}}</a></h4>
+			<h1 class="hl__b-title"><a class="hl__link" href="artikel-opini.html">{{title}}</a></h1>
+			<date class="hl__b-date">23 September 2019, 11:29 WIB</date>
+		</div>
+	</div>
+	{{/gte}}
+	{{else}}
+	{{/gte}}
+	{{/each}}
+</div>

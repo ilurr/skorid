@@ -1,0 +1,72 @@
+
+.mt1 {
+	margin-top: 10px;
+}
+.mt2 {
+	margin-top: 20px;
+}
+.mt3 {
+	margin-top: 30px;
+}
+.mt4 {
+	margin-top: 40px;
+}
+.mt5 {
+	margin-top: 50px;
+}
+.mt6 {
+	margin-top: 60px;
+}
+.mt7 {
+	margin-top: 70px;
+}
+
+.display-table {
+	display: table;
+	@include display_full();
+	position: relative;
+	z-index: 1;
+}
+.display-center {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	@include display_full();
+}
+.text-left {
+	text-align: left;
+}
+.text-right {
+	text-align: right;
+}
+.text-center {
+	text-align: center;
+}
+
+.divider {
+	padding: 2px 0;
+	background: #f0f0f0;
+	margin: 40px 0;
+}
+.pull-right {
+	float: right;
+}
+.belt .box {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+// override
+.tab {
+	&__hide {
+		opacity: 0;
+		visibility: hidden;
+		height: 0;
+		//width: 0;
+		overflow: hidden;
+	}
+}
+.mfp-gallery {
+	.arrow {
+		z-index: 1045;
+	}
+}

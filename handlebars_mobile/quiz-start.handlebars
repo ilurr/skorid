@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	{{> head}}
+
+<body class="wp">
+	<!-- header -->
+	{{> header}}
+	
+	<!-- nav -->
+	{{>nav section="Home"}}
+	
+	<div class="row clearfix">
+		<div class="container clearfix">
+		
+			<!-- ads top -->
+			{{> ads_top}}
+			
+			<!-- quiz -->
+			<section class="quiz -page box clearfix">
+				{{> quiz page="q"}}
+			</section>
+			
+		</div>
+	</div>
+	
+	<!-- footer -->
+	{{> footer}}
+	
+	<!-- ads horizontal -->
+	{{> ads_tower}}
+
+	{{> js}}
+	<script>
+	$(document).ready(function() {
+		var w = document.querySelectorAll('.quiz__layers');
+		var b = document.querySelectorAll('.js-btn');
+		//console.log(w.length);
+		
+		for(var i=0;i<b.length;i++) {
+			b[i].addEventListener('click', function(e) {
+				var d = this.getAttribute('data-target');
+				switchPage(d);
+			});
+		}
+		function switchPage(e) {
+			var s = document.getElementById(e);
+			if(!!s){
+				//console.log(s);
+				for(var i=0;i<w.length;i++){
+					w[i].classList.remove('-active');
+				}
+				s.classList.add('-active');
+				window.scrollTo(0, 0);
+			}
+		}
+	});
+	</script>
+	
+</body>
+</html>

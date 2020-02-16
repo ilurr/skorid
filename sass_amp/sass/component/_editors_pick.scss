@@ -1,0 +1,50 @@
+.editors {
+	position: relative;
+	padding: 10px 20px 15px;
+	margin: 0 -15px;
+	//border: 1px solid #D2D2D2;
+	background: #F1F1F1;
+	&__wrap {
+		position: relative;
+		@include display-flex();
+		flex-wrap: wrap;
+		margin: 0 -5px;
+	}
+	&__item {
+		width: 33.333333%;
+		padding: 0 5px;
+	}
+	&__img {
+		position: relative;
+		img {
+			width: 100%;
+		}
+	}
+	&__box {
+		position: relative;
+		padding: 5px 0 10px;
+	}
+	&__subtitle {
+		display: inline-block;
+		padding: 0;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		@include font-pack(false, 10px, false, false, $color_theme);
+	}
+	&__title {
+		margin: 5px 0;
+		@include font-pack(false, 16px, 700, false, false);
+		@include title_overflow(auto, 60px);
+	}
+	&__date {
+		letter-spacing: 1.2px;
+		@include font-pack(false, 11px, false, false, #000);
+	}
+	&__link {
+		display: block;
+	}
+	.arrow {
+		top: 12.5%;
+		box-shadow: 0px 0px 8px rgba(0, 0, 0, .2);
+	}
+}

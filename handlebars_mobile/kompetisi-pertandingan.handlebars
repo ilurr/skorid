@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	{{> head}}
+
+<body class="wp">
+	<!-- header -->
+	{{> header}}
+	
+	<!-- nav -->
+	{{>nav section="Home"}}
+	
+	<div class="row clearfix">
+		<div class="container clearfix">
+		
+			<!-- ads top -->
+			{{> ads_top}}
+			
+			<section class="tab -page clearfix">
+				<h3 class="title">
+					<span>Liga Inggris</span>
+				</h3>
+				<div class="tab__menu clearfix">
+					<div class="tab__item">
+						<a href="kompetisi-detail.html" class="tab__link -active"><div class="title"><span>Pertandingan</span></div></a>
+					</div>
+					<div class="tab__item">
+						<a href="kompetisi-klasemen.html" class="tab__link"><div class="title"><span>Klasemen</span></div></a>
+					</div>
+				</div>
+				<div class="tab__content">
+					<div class="tab__content__item">
+
+						<!-- schedule -->
+						<div class="schedule__gameweek">
+							{{> widget_salat channel=channel.bola.fixtures.inggris.rounds.[0] index_start=0 index_end=4 dir="premier-league" detail=true}}
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<!-- ads bottom -->
+			{{> ads_skin}}
+			
+		</div>
+	</div>
+	
+	<!-- footer -->
+	{{> footer}}
+	
+	<!-- ads horizontal -->
+	{{> ads_tower}}
+
+	{{> js}}
+	
+</body>
+</html>

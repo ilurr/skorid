@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+	{{> head}}
+
+<body>
+	<!-- header -->
+	{{> header section_name="Bola"}}
+	
+	<!-- ads skin -->
+	{{!> ads_skin}}
+	
+	<div class="row clearfix">
+		<div class="container clearfix">
+			<!-- ads top -->
+			{{> ads_top}}
+		</div>
+	</div>
+
+	<!-- belt schedule -->
+	<div class="row belt clearfix">
+		<div class="container clearfix">
+			<div class="col-offset-fluid clearfix">
+				<div class="col-bs10-10">
+				
+					<!-- schedule -->
+					<section class="schedule box clearfix">
+						<div class="schedule__container">
+							<div class="schedule__wrap js--schedule">
+								<div class="schedule__item">
+									{{> widget_salat channel=channel.bola.fixtures.inggris.rounds.[0] index_start=0 index_end=4}}
+								</div>
+								<div class="schedule__item">
+									{{> widget_salat channel=channel.bola.fixtures.inggris.rounds.[1] index_start=0 index_end=4}}
+								</div>
+							</div>
+						</div>
+					</section>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- content -->
+	<div class="row clearfix">
+		<div class="container clearfix">
+			<div class="col-offset-fluid clearfix">
+				
+				<div class="col-bs10-7">
+				
+					<!-- headline -->
+					<section class="hl -images clearfix">
+						{{> headline_images channel=channel.bola.headline total=1 index_start=2 index_end=3}}
+					</section>
+					
+				</div>
+				
+				<div class="col-bs10-3">
+				
+					<!-- ads giant -->
+					{{> ads_giant}}
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- content -->
+	<div class="row clearfix">
+		<div class="container clearfix">
+			<div class="col-offset-fluid clearfix">
+				<div class="col-bs10-7">
+				
+					<!-- latest -->
+					<section class="latest -images box clearfix">
+						<h3 class="title">
+							<span>Latest</span>
+							<a class="more" href="section.html">Lihat Semua</a>
+						</h3>
+						<div class="latest__wrap">
+							{{> latest_images channel=channel.bola.photo total=5 index_start=0 index_end=6}}
+						</div>
+					</section>
+					
+				</div>
+				
+				<div class="col-bs10-3">
+				
+					<!-- most -->
+					<section class="most box clearfix">
+						<h3 class="title -center"><span>Trending</span></h3>
+						<div class="most__wrap">
+							{{> most channel=channel.bola.latest total=8 index_start=2 index_end=10}}
+						</div>
+					</section>
+					
+					<!-- ads square -->
+					{{> ads_square}}
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- belt -->
+	<div class="row belt clearfix">
+		<div class="container clearfix">
+			<div class="col-offset-fluid clearfix">
+				<div class="col-bs10-10">
+				
+					<!-- video -->
+					<section class="videos box clearfix">
+						<h3 class="title">
+							<span>Video</span>
+							<a class="more" href="video.html">Lihat Semua</a>
+						</h3>
+						<div class="videos__wrap clearfix">
+							{{> belt_tv channel=channel.bola.video total=4 index_start=0 index_end=4}}
+						</div>
+					</section>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- content -->
+	<div class="row clearfix">
+		<div class="container clearfix">
+			<div class="col-offset-fluid clearfix">
+				<div class="col-bs10-7">
+				
+					<!-- latest -->
+					<section class="latest -images box clearfix">
+						<div class="latest__wrap">
+							{{> latest_images channel=channel.bola.latest total=3 index_start=0 index_end=3}}
+						</div>
+					</section>
+					
+				</div>
+				
+				<div class="col-bs10-3">
+				
+					<!-- standing -->
+					<section class="standing box clearfix">
+						<div class="standing__wrap js--standing">
+							<div class="standing__item">
+								{{> widget_valas channel=channel.bola.team.inggris index_start=0 index_end=10 league="Inggris"}}
+							</div>
+							<div class="standing__item">
+								{{> widget_valas channel=channel.bola.team.inggris index_start=0 index_end=10 league="Indonesia"}}
+							</div>
+							<div class="standing__item">
+								{{> widget_valas channel=channel.bola.team.inggris index_start=0 index_end=10 league="Spanyol"}}
+							</div>
+							<div class="standing__item">
+								{{> widget_valas channel=channel.bola.team.inggris index_start=0 index_end=10 league="Italia"}}
+							</div>
+							<div class="standing__item">
+								{{> widget_valas channel=channel.bola.team.inggris index_start=0 index_end=10 league="Jerman"}}
+							</div>
+						</div>
+					</section>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- belt -->
+	<div class="row belt clearfix">
+		<div class="container clearfix">
+			<div class="col-offset-fluid clearfix">
+				<div class="col-bs12-4">
+					<section class="topic box clearfix">
+						<h3 class="title -center -inggris">
+							<div class="title__logo -fixed">
+								<img src="./asset/images/logo-liga-inggris.png" alt="Liga Inggris">
+							</div>
+							<span>Liga Inggris</span>
+							<a href="section.html" class="title__idx">
+								<span class="icon icon-angle-right"></span>
+							</a>
+						</h3>
+						<div class="topic__wrap">
+							{{> latest_league channel=channel.bola.latest total=4 index_start=4 index_end=8}}
+						</div>
+					</section>
+				</div>
+				<div class="col-bs12-4">
+					<section class="topic box clearfix">
+						<h3 class="title -center -indonesia">
+							<div class="title__logo -fixed">
+								<img src="./asset/images/logo-liga-indonesia.png" alt="Liga Indonesia">
+							</div>
+							<span>Liga Indonesia</span>
+							<a href="section.html" class="title__idx">
+								<span class="icon icon-angle-right"></span>
+							</a>
+						</h3>
+						<div class="topic__wrap">
+							{{> latest_league channel=channel.bola.latest total=4 index_start=8 index_end=12}}
+						</div>
+					</section>
+				</div>
+				<div class="col-bs12-4">
+					<section class="topic box clearfix">
+						<h3 class="title -center -spanyol">
+							<div class="title__logo -fixed">
+								<img src="./asset/images/logo-liga-spanyol.png" alt="Liga Spanyol">
+							</div>
+							<span>Liga Spanyol</span>
+							<a href="section.html" class="title__idx">
+								<span class="icon icon-angle-right"></span>
+							</a>
+						</h3>
+						<div class="topic__wrap">
+							{{> latest_league channel=channel.bola.latest total=4 index_start=12 index_end=16}}
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- content -->
+	<div class="row clearfix">
+		<div class="container clearfix">
+			<div class="col-offset-fluid clearfix">
+				<div class="col-bs10-7">
+				
+					<!-- latest -->
+					<section class="latest -images box clearfix">
+						<div class="latest__wrap">
+							{{> latest_images channel=channel.bola.latest total=3 index_start=3 index_end=6}}
+						</div>
+					</section>
+					
+					{{> paging}}
+					
+				</div>
+				
+				<div class="col-bs10-3">
+				
+					<!-- ads square -->
+					{{> ads_square}}
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- footer -->
+	{{> footer}}
+	
+	<!-- ads horizontal -->
+	{{> ads_horizontal}}
+
+	{{> js}}
+	
+</body>
+</html>

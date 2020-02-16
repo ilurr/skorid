@@ -1,0 +1,51 @@
+.most {
+	position: relative;
+	&__wrap {
+		padding: 10px 0;
+	}
+	&__img {
+		width: 90px;
+		height: 80px;
+		position: relative;
+		overflow: hidden;
+		float: left;
+		padding-right: 10px;
+		background: #fff;
+		z-index: 2;
+		img {
+			border-radius: 5px;
+		}
+	}
+	&__right {
+		position: relative;
+	}
+	&__title {
+		margin: 0;
+		@include font-pack(false, 14px, 500, false, false);
+		@include title_overflow(54px, 54px);
+		@include transition(all .2s ease);
+	}
+	&__info {
+		position: relative;
+		text-transform: uppercase;
+		padding: 5px 0;
+		@include font-pack($font_secondary, 10px, 400, false, #9C9C9C);
+		border-bottom: 1px solid #E5E5E5;
+	}
+	&__link {
+		display: block;
+		&:hover {
+			color: inherit;
+		}
+	}
+	&__item {
+		position: relative;
+		margin: 0;
+		padding: 9px 15px;
+		&:hover {
+			.most__title {
+				color: $color_theme;
+			}
+		}
+	}
+}

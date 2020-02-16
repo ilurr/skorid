@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+	{{> head}}
+
+<body>
+	<!-- header -->
+	{{> header section_name="Kompetisi"}}
+	
+	<!-- ads skin -->
+	{{!> ads_skin}}
+	
+	<div class="row clearfix">
+		<div class="container clearfix">
+			<!-- ads top -->
+			{{> ads_top}}
+		</div>
+	</div>
+
+	<!-- title -->
+	<div class="row clearfix">
+		<div class="container clearfix">
+			<div class="col-offset-fluid clearfix">
+				<div class="col-bs10-10">
+			
+					<div class="title3">
+						<span>Kompetisi</span>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- content -->
+	<div class="row clearfix">
+		<div class="container clearfix">
+			<div class="col-offset-fluid clearfix">
+				
+				<div class="col-bs10-7">
+				
+					<section class="competition box clearfix">
+						<div class="competition__option">
+							<div class="competition__option__col">
+								<h3 class="title">
+									<div class="form__group select competition__form">
+										<select name="league" id="">
+											<option value="">Sport</option>
+											<option value="">Sepak Bola</option>
+											<option value="">Basket</option>
+											<option value="">Balap</option>
+										</select>
+									</div>
+								</h3>
+							</div>
+							<div class="competition__option__col">
+								<h3 class="title">
+									<div class="form__group select competition__form">
+										<select name="league" id="">
+											<option value="">Liga</option>
+											<option value="">Liga Indonesia</option>
+											<option value="">Liga Inggris</option>
+											<option value="">Liga Italia</option>
+											<option value="">Liga Spanyol</option>
+											<option value="">Liga Jerman</option>
+											<option value="">Liga Perancis</option>
+										</select>
+									</div>
+								</h3>
+							</div>
+						</div>
+					</section>
+
+					<!-- standing -->
+					<section class="standing box -indeks clearfix">
+						<div class="standing__league">
+							<h3 class="title">
+								<div class="title__logo">
+									<img src="./asset/images/logo-motogp.png" alt="">
+								</div>
+								<span>MotoGP</span>
+							</h3>
+							{{> widget_table_motogp channel=channel.balap.motogp index_start=0 index_end=5 detail=true indeks=true}}
+						</div>
+					</section>
+
+					<!-- standing -->
+					<section class="standing box -indeks clearfix">
+						<div class="standing__league">
+							<h3 class="title">
+								<div class="title__logo">
+									<img src="./asset/images/logo-f1.png" alt="">
+								</div>
+								<span>Formula 1</span>
+							</h3>
+							{{> widget_table_motogp channel=channel.balap.f1 index_start=0 index_end=5 detail=true indeks=true}}
+						</div>
+					</section>
+
+				</div>
+				
+				<div class="col-bs10-3">
+				
+					<!-- ads giant -->
+					{{> ads_giant}}
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- footer -->
+	{{> footer}}
+	
+	<!-- ads horizontal -->
+	{{> ads_horizontal}}
+
+	{{> js}}
+	
+</body>
+</html>

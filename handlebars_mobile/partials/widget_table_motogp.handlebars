@@ -1,0 +1,53 @@
+<div class="standing__league">
+	{{#eq indeks compare=true}}
+	{{else}}
+	<h3 class="title">
+		<span>{{league}}</span>
+	</h3>
+	{{/eq}}
+	<div class="standing__scroll">
+	<div class="standing__table {{#eq detail compare=true}} detail{{/eq}}">
+		<div class="t-head">
+			<span>#</span>
+			<span class="wide">Pembalap</span>
+			<span class="half">Team</span>
+			{{#eq detail compare=true}}
+			<span>Wins</span>
+			<span>Podiums</span>
+			{{/eq}}
+			<span>Points</span>
+		</div>
+		<div class="t-body">
+			{{#each channel}}
+			{{#gte @index compare=../index_start}}
+			{{#gte @index compare=../index_end}}
+			{{else}}
+			<div class="t-row pos {{pos}}">
+				<span>{{add @index 1}}</span>
+				<span class="wide"><div class="flag"><img src="./asset/images/flag/{{nat}}.svg" alt="{{nat}}"></div>{{name}}</span>
+				<span class="half">{{team}}</span>
+				{{#eq ../detail compare=true}}
+				<span>20</span>
+				<span>9</span>
+				{{/eq}}
+				<span>34</span>
+			</div>
+			{{/gte}}
+			{{else}}
+			{{/gte}}
+			{{/each}}
+		</div>
+		{{#eq detail compare=true}}
+		{{else}}
+		<div class="t-footer">
+			<a href="kompetisi-detail-motogp.html" class="more">Selengkapnya</a>
+		</div>
+		{{/eq}}
+	</div>
+	</div>
+	{{#eq indeks compare=true}}
+	<div class="t-footer">
+		<a href="kompetisi-klasemen-motogp.html" class="more">Selengkapnya</a>
+	</div>
+	{{/eq}}
+</div>

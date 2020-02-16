@@ -1,0 +1,47 @@
+<div class="standing__league">
+	{{#eq indeks compare=true}}
+	{{else}}
+	<h3 class="title">
+		<span>{{league}}</span>
+	</h3>
+	{{/eq}}
+	<div class="standing__scroll">
+	<div class="standing__table {{#eq detail compare=true}} detail{{/eq}}">
+		<div class="t-head">
+			<span>#</span>
+			<span class="wide">Klub</span>
+			{{#eq detail compare=true}}
+			{{/eq}}
+			<span>W</span>
+			<span>L</span>
+			<span>PTC</span>
+			<span>GB</span>
+		</div>
+		<div class="t-body">
+			{{#each channel}}
+			{{#gte @index compare=../index_start}}
+			{{#gte @index compare=../index_end}}
+			{{else}}
+			<div class="t-row pos {{pos}}">
+				<span>{{add @index 1}}</span>
+				<span class="wide"><div class="img"><img src="./asset/images/team/nba/{{lowercase abbreviation}}.svg" alt="{{abbreviation}}"></div>{{teamName}}</span>
+				{{#eq ../detail compare=true}}
+				{{/eq}}
+				<span>34</span>
+				<span>19</span>
+				<span>.324</span>
+				<span>4</span>
+			</div>
+			{{/gte}}
+			{{else}}
+			{{/gte}}
+			{{/each}}
+		</div>
+	</div>
+	</div>
+	{{#eq indeks compare=true}}
+	<div class="t-footer">
+		<a href="kompetisi-klasemen-basket.html" class="more">Selengkapnya</a>
+	</div>
+	{{/eq}}
+</div>

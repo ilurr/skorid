@@ -1,0 +1,87 @@
+.nav {
+	position: relative;
+	z-index: 10;
+	padding: 5px 0;
+	border-top: 1px solid #ccc;
+	//border-bottom: 1px solid #2E2E2E;
+	@include transition(all .2s ease);
+	&__wrap {
+		position: relative;
+		@include display-flex();
+		justify-content: space-evenly;
+		margin: 0;
+		@include transition(all .2s ease);
+	}
+	&__submenu {
+		visibility: hidden;
+		opacity: 0;
+		position: absolute;
+		left: -10px;
+		top: 30px;
+		text-align: left;
+		z-index: 1;
+		width: 180px;
+		background: #fff;
+		padding: 10px 10px;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+		@include transition(all .2s ease);
+	}
+	li {
+		position: relative;
+		&:last-child {
+			.nav__submenu {
+				left: -90px;
+			}
+		}
+		&:hover {
+			.nav__submenu {
+				top: 42px;
+				visibility: visible;
+				opacity: 1;
+			}
+		}		
+		a {
+			position: relative;
+			display: block;
+			padding: 13px 5px;
+			text-transform: uppercase;
+			@include font-pack($font_secondary, 13px, 700, false, #000);
+			&.active,
+			&:hover {
+				color: $color_theme;
+			}
+		}
+		li a {
+			padding: 5px 10px;
+			font-size: 12px;
+		}
+	}
+	&__logo {
+		display: block;
+		padding: 6px 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		visibility: hidden;
+		@include transition(all .2s ease);
+		img {
+			height: 40px;
+		}
+	}
+}
+
+.is--scroll {
+	.nav {
+		border-top: 1px solid transparent;
+		padding: 5px 0 5px 130px;
+	}
+	.nav__logo {
+		opacity: 1;
+		visibility: visible;
+		padding: 2px 0 0;
+	}
+	.nav li a {
+		font-size: 12px;
+	}
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	{{> head}}
+
+<body>
+	<!-- header -->
+	{{> header}}
+	
+	<!-- ads skin -->
+	{{!> ads_skin}}
+	
+	<div class="row clearfix">
+		<div class="container clearfix">
+			<div class="col-offset-fluid clearfix">
+				<div class="col-bs10-10">
+					
+					<!-- ads top -->
+					{{!> ads_top}}
+					
+					{{> read_breadcrumb channel=read.pedoman.article}}
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row clearfix">
+		<div class="container clearfix">
+			<div class="col-offset-fluid clearfix">
+				
+				<div class="col-bs10-10">
+				
+					<div class="content box clearfix">
+					
+						<!-- header -->
+						<section class="read__header clearfix">
+							{{> read_header channel=read.pedoman.article}}
+						</section>
+
+						<div class="read__article clearfix">
+
+							<!-- content -->
+							<article class="read__content clearfix">
+								{{{read.pedoman.article.content}}}
+							</article>
+
+						</div>
+						
+					</div>					
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- footer -->
+	{{> footer}}
+
+	<!-- ads horizontal -->
+	{{> ads_horizontal}}
+
+	{{> js}}
+	
+</body>
+</html>

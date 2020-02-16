@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	{{> head}}
+
+<body>
+	<!-- header -->
+	{{> header section_name="Bola"}}
+	
+	<!-- ads skin -->
+	{{!> ads_skin}}
+	
+	<div class="row clearfix">
+		<div class="container clearfix">
+			<!-- ads top -->
+			{{> ads_top}}
+		</div>
+	</div>
+
+	<!-- belt schedule -->
+	<div class="row belt clearfix">
+		<div class="container clearfix">
+			<div class="col-offset-fluid clearfix">
+				<div class="col-bs10-10">
+				
+					<!-- schedule -->
+					<section class="schedule box clearfix">
+						<div class="schedule__container">
+							<div class="schedule__wrap js--schedule">
+								<div class="schedule__item">
+									{{> widget_salat channel=channel.bola.fixtures.inggris.rounds.[0] index_start=0 index_end=4}}
+								</div>
+								<div class="schedule__item">
+									{{> widget_salat channel=channel.bola.fixtures.inggris.rounds.[1] index_start=0 index_end=4}}
+								</div>
+							</div>
+						</div>
+					</section>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- title -->
+	<div class="row clearfix">
+		<div class="container clearfix">
+			<div class="col-offset-fluid clearfix">
+				<div class="col-bs10-10">
+			
+					<div class="title3">
+						<span>Quiz</span>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- content -->
+	<div class="row clearfix">
+		<div class="container clearfix">
+			<div class="col-offset-fluid clearfix">
+				
+				<div class="col-bs10-7">
+				
+					<!-- quiz -->
+					<section class="quiz -page box clearfix">
+						{{> quiz page="register"}}
+					</section>
+									
+				</div>
+				
+				<div class="col-bs10-3">
+				
+					<!-- ads giant -->
+					{{> ads_giant}}
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- footer -->
+	{{> footer}}
+	
+	<!-- ads horizontal -->
+	{{> ads_horizontal}}
+
+	{{> js}}
+	
+</body>
+</html>

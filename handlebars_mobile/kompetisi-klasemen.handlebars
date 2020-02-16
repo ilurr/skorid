@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+	{{> head}}
+
+<body class="wp">
+	<!-- header -->
+	{{> header}}
+	
+	<!-- nav -->
+	{{>nav section="Home"}}
+	
+	<div class="row clearfix">
+		<div class="container clearfix">
+		
+			<!-- ads top -->
+			{{> ads_top}}
+			
+			<section class="competition clearfix">
+				<h3 class="title">
+					<span>Premier League</span>
+				</h3>
+				<div class="competition__box">
+					<div class="competition__option">
+						<div class="competition__option__col">
+							<h3 class="title">
+								<div class="form__group select competition__form">
+									<select name="league" id="">
+										<option value="">Sport</option>
+										<option value="">Sepak Bola</option>
+										<option value="">Basket</option>
+										<option value="">Balap</option>
+									</select>
+								</div>
+							</h3>
+						</div>
+						<div class="competition__option__col">
+							<h3 class="title">
+								<div class="form__group select competition__form">
+									<select name="league" id="">
+										<option value="">Liga</option>
+										<option value="">Liga Indonesia</option>
+										<option value="">Liga Inggris</option>
+										<option value="">Liga Italia</option>
+										<option value="">Liga Spanyol</option>
+										<option value="">Liga Jerman</option>
+										<option value="">Liga Perancis</option>
+									</select>
+								</div>
+							</h3>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- tabs -->
+			<section class="tab -page box clearfix">
+				<div class="tab__menu clearfix">
+					<div class="tab__item">
+						<a href="kompetisi-detail.html" class="tab__link"><div class="title"><span>Pertandingan</span></div></a>
+					</div>
+					<div class="tab__item">
+						<a href="kompetisi-klasemen.html" class="tab__link -active"><div class="title"><span>Klasemen</span></div></a>
+					</div>
+				</div>
+				<div class="tab__content">
+					<div class="tab__content__item">
+
+						<!-- standing -->
+						<section class="tab__content__box standing table -detail box clearfix">
+							{{> widget_valas channel=channel.bola.team.inggris index_start=0 index_end=20 dir="premier-league" league="Inggris" detail=true}}
+						</section>
+
+						<section class="standing box clearfix">
+							<div class="standing__info">
+								<div class="k-col">
+									<h4>Keterangan</h4>
+									<ul>
+										<li><strong>M</strong> : Main</li>
+										<li><strong>M</strong> : Menang</li>
+										<li><strong>S</strong> : Seri</li>
+										<li><strong>K</strong> : Kalah</li>
+										<li><strong>GM</strong> : Gol Memasukkan</li>
+										<li><strong>GK</strong> : Gol Kemasukan</li>
+										<li><strong>SG</strong> : Selisih Gol</li>
+										<li><strong>P</strong> : Poin</li>
+									</ul>
+								</div>
+								<div class="k-col">
+									<h4>Keterangan</h4>
+									<ul>
+										<li><span class="badge ucl"></span> Babak Grup Liga Champions</li>
+										<li><span class="badge uel"></span> Babak Grup Liga Eropa</li>
+										<li><span class="badge uel2"></span> Kualifikasi Liga Eropa</li>
+										<li><span class="badge deg"></span> Degradasi</li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						
+					</div>
+				</div>
+			</section>
+
+
+			<!-- ads bottom -->
+			{{> ads_skin}}
+			
+		</div>
+	</div>
+	
+	<!-- footer -->
+	{{> footer}}
+	
+	<!-- ads horizontal -->
+	{{> ads_tower}}
+
+	{{> js}}
+	
+</body>
+</html>

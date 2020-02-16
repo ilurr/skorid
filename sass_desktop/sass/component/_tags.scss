@@ -1,0 +1,27 @@
+.tag {
+	position: relative;
+	&--article {
+		position: relative;
+	}
+	&__list {
+		position: relative;
+		margin: 0 -2px;
+		@include display-flex();
+		flex-wrap: wrap;
+		li {
+			display: inline-block;
+			padding: 0 4px 8px;
+			a {
+				border-radius: 5px;
+				display: block;
+				padding: 6px 12px;
+				background: #FFC9CD;
+				@include font-pack(false, 14px, 500, false, #C71422);
+				&:hover {
+					color: #fff;
+					background: darken(#FFC9CD, 20%);
+				}
+			}
+		}
+	}
+}

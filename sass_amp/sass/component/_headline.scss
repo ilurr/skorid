@@ -1,0 +1,120 @@
+.hl {
+	position: relative;
+	margin: 10px 0 0px;
+	&__big {
+		position: relative;
+		@include display-flex();
+		flex-wrap: wrap;
+		margin: 0 -15px;
+	}
+	&__link {
+		display: block;
+		&:hover {
+			color: inherit;
+		}
+	}
+	&__b {
+		&-img {
+			position: relative;
+			background: #000;
+			//height: 381px;
+			img {
+				width: 100%;
+			}
+		}
+		&-cat {
+			position: absolute;
+			left: 0;
+			top: 20px;
+			z-index: 1;
+			background: #000;
+			padding: 5px 10px;
+			font-style: italic;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			@include font-pack(false, 11px, 700, false, #fff);
+		}
+		&-box {
+			position: absolute;
+			bottom: 2px;
+			left: 1px;
+			width: calc(100% - 2px);
+			padding: 40px 10px 10px;
+			background: linear-gradient(90deg,#000,transparent);
+			background: -webkit-linear-gradient(90deg,#000,transparent);
+		}
+		&-subtitle {
+			display: inline-block;
+			padding: 0 0 2px;
+			text-transform: uppercase;
+			border-bottom: 1px solid #fff;
+			letter-spacing: 2px;
+			@include font-pack(false, 11px, false, false, #fff);
+		}
+		&-author {
+			display: inline-block;
+			padding: 0;
+			letter-spacing: 1.2px;
+			@include font-pack(false, 12px, 700, false, #fff);
+			&__img {
+				position: relative;
+				width: 70px;
+				height: 70px;
+				margin-top: -60px;
+				margin-bottom: 10px;
+				border-radius: 100%;
+				overflow: hidden;
+				box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+			}
+		}
+		&-title {
+			margin: 0;
+			padding: 0;
+			@include title_overflow(auto, 54px);
+			@include font-pack(false, 14px, 700, false, #fff);
+			& a:hover {
+				text-decoration: underline;
+			}
+		}
+		&-date {
+			letter-spacing: 1.2px;
+			@include font-pack(false, 11px, false, false, #fff);
+		}
+		&-item {
+			position: relative;
+			padding: 0 1px 2px;
+			width: 50%;
+			&:first-child {
+				width: 100%;
+				.hl__b-title {
+					margin: 5px 0;
+					max-height: 70px;
+					@include font-pack(false, 18px, false, false, false);
+				}
+			}
+		}
+	}
+	&--channel {
+		.hl__b-box {
+			position: relative;
+			left: unset;
+			bottom: unset;
+			width: 100%;
+			background: #fff;
+			padding: 15px 15px 20px;
+		}
+		.hl__b-subtitle {
+			color: $color_theme;
+			border-bottom: 1px solid $color_theme;
+		}
+		.hl__b-title {
+			color: #000;
+		}
+		.hl__b-date {
+			color: #000;			
+		}
+		.hl__b-author {
+			color: $color_theme;
+		}
+	}
+}

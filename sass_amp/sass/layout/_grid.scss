@@ -1,0 +1,37 @@
+.clearfix {
+	//*zoom: 1;
+	&:after,
+	&:before {
+		display: table;
+		content: "";
+		line-height: 0;
+	}
+	&:after {
+		clear: both;
+	}
+}
+.container {
+	width: $screen-lg-desktop;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: $grid-gutter-width-edge;
+	padding-left: $grid-gutter-width-edge;
+	//*zoom: 1;
+	position: relative;
+}
+.row {
+	position: relative;
+}
+.page {
+	position: relative;
+	&__teaser {
+		padding: 0 0 30px;
+		@include font-pack(false, 16px, 400, false, false);
+		a {
+			color: $color_theme;
+		}
+	}
+}
+.section {
+	position: relative;
+}

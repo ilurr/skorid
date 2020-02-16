@@ -1,0 +1,148 @@
+// belt video
+.videos {
+	position: relative;
+	//padding: 25px 25px 15px;
+	&__wrap {
+		position: relative;
+		margin: 25px 15px 15px;
+	}
+	&__img {
+		position: relative;
+		width: 175px;
+		height: calc((340px - 20px) / 3);
+		overflow: hidden;
+		background: #000;
+		float: left;
+		margin-right: 15px;
+		z-index: 2;
+		border-radius: 5px;
+		img {
+			position: absolute;
+			width: 100%;
+			//max-width: unset;
+			height: auto;
+			left: 50%;
+			top: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+			opacity: .7;
+			@include transition(all .2s ease);
+		}
+		.icon {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			z-index: 2;
+			color: #fff;
+			font-size: 40px;
+			@include transition(all .2s ease);
+			-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+		}
+		&:hover {
+			.icon {
+				-webkit-transform: translate(-50%, -50%) scale(1.1);
+			    transform: translate(-50%, -50%) scale(1.1);
+			}
+			img {
+				opacity: .9;
+			}
+		}
+	}
+	&__box {
+		position: relative;
+	}
+	&__info {
+		position: relative;
+		text-transform: uppercase;
+		padding: 5px 0;
+		@include font-pack($font_secondary, 10px, 400, false, #9C9C9C);
+		//border-bottom: 1px solid #E5E5E5;
+	}
+	&__title {
+		margin: 15px 0 5px;
+		@include title_overflow(60px, 60px);
+		@include font-pack(false, 16px, 500, false, false);
+	}
+	&__link {
+		display: block;
+	}
+	&__item {
+		position: relative;
+		padding: 0 10px 10px;
+		width: calc(100% - 600px);
+		float: right;
+		&:after {
+			content: '';
+			position: absolute;
+			border-bottom: 1px solid #E5E5E5;
+			width: calc(100% - 200px);
+			right: 0;
+			bottom: 10px;
+			z-index: 1;
+		}
+		&:first-child {
+			width: 600px;
+			float: left;
+			&:after {
+				border-bottom: transparent;
+			}
+			.videos__img {
+				width: 100%;
+				height: 340px;
+				margin: 0;
+				//float: none;
+				.icon {
+					font-size: 90px;
+				}
+			}
+		}
+	}
+	
+	// read
+	&__player {
+		position: relative;
+		margin: 0 -15px 20px;
+	}
+	&__holder {
+		position: relative;
+		margin: 0 -15px;
+	}
+	&__caption {
+		padding: 10px 0;
+		text-align: left;
+		//background: #f0f0f0;
+		@include font-pack(false, 12px, 400, false, #999);
+	}
+	&__ratio {
+		position: relative;
+		padding-bottom: 56.25%; /* 16:9 */
+	//	padding-top: 25px;
+	//	height: 0;
+		img {
+			width: 100%;
+		}
+		iframe {	
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}	
+}
+
+.is--video {
+	.videos__holder {
+		position: relative;
+		margin: 0 -15px 20px;
+		padding-bottom: calc(56.25% + 17px);
+	}
+	.videos__player {
+		position: fixed;
+		bottom: 60px;
+		right: 15px;
+		width: 500px;
+		z-index: 99;
+	}
+}

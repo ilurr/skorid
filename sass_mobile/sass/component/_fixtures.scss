@@ -1,0 +1,176 @@
+.schedule {
+	position: relative;
+	background: #EFEFEF;
+	margin: 15px -15px;
+	&.-page {
+		margin: 15px 0;
+		background: #fff;
+	}
+	&__row {
+		position: relative;
+		margin: 0 -15px;
+		padding: 0;
+		.standing__form {
+			width: 160px;
+			margin-top: -10px;
+		}
+	}
+	&__scroll {
+		padding: 0;
+		position: relative;
+		white-space: nowrap;
+		overflow: hidden;
+		-webkit-overflow-scrolling: touch;
+	}
+	&__track {
+		position: relative;
+		padding: 0 10px;
+		overflow-x: scroll;
+		-webkit-scroll-snap-type: x mandatory;
+		-ms-scroll-snap-type: x mandatory;
+		scroll-snap-type: x mandatory;
+	}
+	&__indeks {
+		position: relative;
+		.arrow {
+			top: 9px;
+			font-size: 35px;
+			background: transparent;
+			&:hover {
+				color: $color_theme;
+				background: transparent;
+			}
+			&.slick-disabled {
+				color: #f0f0f0;
+			}
+		}
+		.arrow--left {
+			left: 20%;
+		}
+		.arrow--right {
+			right: 20%;
+		}
+		.schedule__gameweek .schedule__matches {
+		    box-shadow: none;
+		}
+	}
+	&__item {
+		position: relative;
+		width: 280px;
+		display: inline-block;
+		padding: 0 5px;
+		margin: 0 0 20px;
+		vertical-align: top;
+		scroll-snap-align: start;
+		-ms-scroll-snap-align: start;
+		-webkit-scroll-snap-align: start;
+		scroll-snap-stop: always;
+	}
+	&__top {
+		position: relative;
+		//text-align: center;
+		@include display-flex();
+		justify-content: center;
+		align-items: center;
+		padding: 15px 0;
+	}
+	&__arrow {
+		display: inline-block;
+		padding: 3px 20px 0;
+		font-size: 35px;
+		vertical-align: middle;
+	}
+	&__date {
+		position: relative;
+		display: inline-block;
+		span {
+			display: inline-block;
+			padding: 6px 15px;
+			border-radius: 5px;
+			background: $color_theme;
+			@include font-pack(false, 14px, 700, 1, #fff);
+		}
+	}
+	&__matches {
+		position: relative;
+		padding: 0 5px;
+		border-radius: 5px;
+		background: #fff;
+		overflow: hidden;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+		.s-col {
+			position: relative;
+			@include display-flex();
+			align-items: center;
+			justify-content: space-between;
+			vertical-align: top;
+			padding: 10px 10px 0;
+			&:first-child {
+				padding: 10px;
+				border-bottom: 1px solid #d4d4d4;
+			}
+			&:last-child {
+				padding: 10px;
+			}
+		}
+		.img {
+			height: 30px;
+			margin-right: 10px;
+			//display: inline-block;
+			img {
+				height: 100%;
+				margin: 0 auto;
+			}
+		}
+		.league,
+		.time {
+			position: relative;
+			@include font-pack($font_secondary, false, false, 1, #9C9C9C);
+		}
+		.time {
+			color: #444;
+			padding-top: 1px;
+			font-size: 13px;
+			span {
+				font-weight: 600;
+				color: $color_theme;
+			}
+		}
+		.team {
+			position: relative;
+			@include display-flex();
+			align-items: center;
+			flex-wrap: nowrap;
+		}
+		.score {
+			position: relative;
+			padding: 5px 9px;
+			//letter-spacing: -1px;
+			background: #f0f0f0;
+			border-radius: 100%;
+			@include font-pack($font_secondary, 20px, 700, 1, false);
+		}
+		.agg {
+			@include font-pack($font_secondary, 12px, 400, 1, #9C9C9C);
+		}
+		.name {
+			@include font-pack(false, 14px, 500, false, false);
+			@include title_overflow(auto, 30px);
+		}
+	}
+	
+	// livescroe
+	&__gameweek {
+		padding: 0;
+		.schedule__item {
+			width: 100%;
+			display: block;
+			padding: 0;
+			margin: 0 0 5px;
+		}
+		.schedule__box {
+			flex-wrap: wrap;
+			justify-content: flex-start;
+		}
+	}
+}

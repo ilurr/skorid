@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	{{> head}}
+
+<body class="wp">
+	<!-- header -->
+	{{> header}}
+	
+	<!-- nav -->
+	{{>nav section="Home"}}
+	
+	<div class="row clearfix">
+		<div class="container clearfix">
+		
+			<!-- ads top -->
+			{{> ads_top}}
+			
+			<!-- standing -->
+			<div class="schedule__row clearfix">
+				<h3 class="title">
+					<span>Live Score</span>
+					<div class="form__group select standing__form">
+						<select name="league" id="">
+							<option value="">Pilih Liga</option>
+							<option value="">Liga Indonesia</option>
+							<option value="">Liga Inggris</option>
+							<option value="">Liga Italia</option>
+							<option value="">Liga Spanyol</option>
+							<option value="">Liga Jerman</option>
+							<option value="">Liga Perancis</option>
+						</select>
+					</div>
+				</h3>
+			</div>
+			
+			<!-- schedule -->
+			<section class="schedule -page box clearfix">
+				<div class="schedule__page">
+					<h3 class="title -inggris">
+						<div class="title__logo">
+							<img src="./asset/images/logo-liga-inggris.png" alt="Liga Inggris">
+						</div>
+						<span>Liga Inggris</span>
+					</h3>
+				</div>
+			</section>
+			<div class="schedule__gameweek">
+				{{> widget_salat channel=channel.bola.fixtures.inggris.rounds.[0] index_start=0 index_end=4}}
+			</div>
+			<div class="schedule__gameweek">
+				{{> widget_salat channel=channel.bola.fixtures.inggris.rounds.[1] index_start=0 index_end=4}}
+			</div>
+
+			{{> paging}}
+
+			<!-- ads bottom -->
+			{{> ads_skin}}
+			
+		</div>
+	</div>
+	
+	<!-- footer -->
+	{{> footer}}
+	
+	<!-- ads horizontal -->
+	{{> ads_tower}}
+
+	{{> js}}
+	
+</body>
+</html>

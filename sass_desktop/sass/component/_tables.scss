@@ -1,0 +1,233 @@
+.standing {
+	position: relative;
+	&__table {
+		position: relative;
+		padding: 10px 5px;
+		@include font-pack(false, 12px, 500, 1, false);
+		.t-head {
+			position: relative;
+			@include display-flex();
+			padding: 10px 0;
+			border-bottom: 1px solid #F4F4F4;
+			justify-content: space-between;
+			span {
+				display: inline-block;
+				width: 10%;
+				text-align: center;
+				padding: 0 2px;
+				&.wide {
+					width: 40%;
+					text-align: left;
+				}
+				&.half {
+					width: 25%;
+					text-align: left;
+				}
+			}
+		}
+		.t-body {
+			position: relative;
+		}
+		.t-footer {
+			position: relative;
+			padding: 10px 10px 0;
+			text-align: center;
+			a {
+				display: inline-block;
+				padding: 8px 12px;
+				background: #EAEAEA;
+				border-radius: 5px;
+			}
+		}
+		.t-row {
+			position: relative;
+			@include display-flex();
+			justify-content: space-between;
+			align-items: center;
+			padding: 10px 0;
+			border-bottom: 1px solid #F4F4F4;
+			&:hover {
+				background: #f7f7f7;
+			}
+			&.pos {
+				&:after {
+					content: '';
+					position: absolute;
+					left: -4px;
+					top: 0;
+					height: 100%;
+					border-left: 4px solid transparent;
+				}
+				&.ucl {
+					&:after {
+						border-left: 4px solid #3879DA;
+					}
+				}
+				&.eul {
+					&:after {
+						border-left: 4px solid #DA3838;
+					}
+				}
+				&.eulq {
+					&:after {
+						border-left: 4px solid #34A853;
+					}
+				}
+				&.deg {
+					&:after {
+						border-left: 4px solid #EA4335;
+					}
+				}
+			}
+			.img {
+				display: inline-block;
+				height: 20px;
+				margin-right: 4px;
+				vertical-align: middle;
+				img {
+					height: 100%;
+				}
+			}
+			.flag {
+				display: inline-block;
+				height: 15px;
+				margin-right: 6px;
+				vertical-align: middle;
+				img {
+					height: 100%;
+				}
+			}
+			span {
+				display: inline-block;
+				width: 10%;
+				text-align: center;
+				color: #606060;
+				padding: 0 2px;
+				&.wide {
+					text-align: left;
+					//width: calc(100% - (25px * 6));
+					width: 40%;
+					white-space: nowrap;
+					overflow: hidden;
+					color: #242424;
+					//display: flex;
+					//align-items: center;
+				}
+				&.half {
+					text-align: left;
+					//width: calc(100% - (25px * 6));
+					width: 25%;
+					white-space: nowrap;
+					overflow: hidden;
+					color: #242424;
+					//display: flex;
+					//align-items: center;
+				}
+				&:first-child,
+				&:last-child {
+					color: #242424;
+				}
+			}
+		}
+		// &.detail {
+		// 	position: relative;
+		// 	padding: 20px 15px;
+		// 	.t-head span,
+		// 	.t-row span {
+		// 		width: 40px;
+		// 	}
+		// 	.t-row span:nth-child(7) {
+		// 		color: #606060;
+		// 	}
+		// 	.t-row span:nth-child(10) {
+		// 		color: #242424;
+		// 	}
+		// 	.t-row span:nth-child(2) {
+		// 		width: calc(100% - (40px * 9));
+		// 	}
+		// 	.t-head span:first-child {
+		// 		width: calc(100% - (40px * 8));
+		// 	}
+		// 	.t-row.pos:after {
+		// 		left: 0;
+		// 	}
+		// }
+		&.motogp {
+			.t-row .img {
+				height: 15px;
+				margin-right: 6px;
+			}
+		} 
+	}
+	&__info {
+		position: relative;
+		padding: 20px 25px;
+		@include display-flex();
+		align-items: flex-start;
+		font-size: 12px;
+		.k-col {
+			width: 50%;
+			h4 {
+				font-weight: 700;
+				padding: 5px 0 10px;
+			}
+			li {
+				padding: 2px 0;
+			}
+		}
+		.badge {
+			display: inline-block;
+			width: 12px;
+			height: 12px;
+			margin-right: 5px;
+		}
+		.ucl {
+			background: #3879DA;
+		}
+		.uel {
+			background: #DA3838;
+		}
+		.uel2 {
+			background: #34A853;
+		}
+		.deg {
+			background: #EA4335;
+		}
+	}
+	&__form {
+		display: block;
+		float: right;
+		width: 180px;
+		margin: 0;
+		background: #fff;
+		border-radius: 5px;
+		select {
+			border: transparent;
+			height: 30px !important;
+			font-size: 12px;
+		}
+		&.form__group.select:after {
+			top: 8px;
+			right: 14px;
+			width: 10px;
+			height: 10px;
+		}
+	}
+	.arrow {
+		top: 10px;
+		color: #fff;
+		background: transparent;
+		&:hover {
+			background: transparent;
+		}
+	}
+	.arrow--right {
+		right: 0;
+	}
+	.arrow--left {
+		left: 0;
+	}
+	.slick-list {
+		border-radius: 5px;
+	}
+}

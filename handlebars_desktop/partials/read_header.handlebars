@@ -1,0 +1,54 @@
+<div class="read__header clearfix">
+
+	<!-- advertorial -->
+	{{#eq ads compare=true}}
+	{{> ads_title}}
+	{{/eq}}	
+	
+	<h1 class="read__title">{{channel.title}}</h1>
+	
+	{{#if channel.editor}}
+	<div class="read__info">
+		<div class="read__info__img">
+			<img src="https://asset.kompas.com/crop/0x0:0x0/100x100/left/data/photo/{{channel.author_img}}" alt="">
+		</div>
+		<div class="read__info__col">
+			<div class="read__info__date">
+				Senin, 24 September 2019 | 23:34 WIB
+			</div>
+			<div class="read__info__author">
+				<strong>Penulis:</strong> <a href="author.html">{{channel.editor}}</a>
+			</div>
+			<div class="read__info__author">
+				<strong>Editor:</strong> <a href="author.html">{{channel.editor}}</a>
+			</div>
+		</div>
+		<div class="social social--article clearfix">
+			{{>social whatsapp=true twitter=true facebook=true line=true}}
+		</div>		
+	</div>
+	{{/if}}
+	
+	{{#eq type compare="video"}}
+	<div class="videos__holder clearfix"></div>
+	<div class="videos__player" id="js-video">
+		<div class="videos__ratio">
+			<iframe width="560" height="315" src="{{channel.video}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	</div>
+	{{else}}
+	{{#eq type compare="gallery"}}
+	{{> images_header channel=channel}}
+	{{else}}
+	{{#if channel.img}}
+	<div class="photo">
+		<div class="photo__img">
+			<img src="https://asset.kompas.com/crop/0x0:0x0/705x500/data/photo/{{channel.img}}" alt="{{channel.title}}">
+		</div>
+		<div class="photo__caption">{{channel.img_caption}}</div>
+	</div>
+	{{/if}}
+	{{/eq}}
+	{{/eq}}
+	
+</div>

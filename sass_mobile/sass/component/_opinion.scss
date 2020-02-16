@@ -1,0 +1,71 @@
+.author {
+	position: relative;
+	&__img {
+		width: 75px;
+		height: 75px;
+		overflow: hidden;
+		border-radius: 100%;
+		margin-right: 15px;
+		//border: 1px solid transparent;
+		box-shadow: 2px 2px 8px rgba(0, 0, 0, 0);
+		@include transition(all .2s ease);
+		img {
+			width: 100%;
+		}
+	}
+	&__right {
+		width: calc(100% - 90px);
+		position: relative;
+		//padding-left: 15px;
+	}
+	&__name {
+		margin: 5px 0;
+		@include font-pack(false, 16px, 700, false, false);
+		@include title_overflow(auto, 20px);
+	}
+	&__title {
+		margin: 5px 0;
+		@include font-pack(false, 12px, 400, false, false);
+		@include title_overflow(auto, 18px);
+	}
+	&__link {
+		display: block;
+	}
+	&__desc {
+		position: relative;
+		padding: 15px 0 0;
+		@include font-pack(false, 12px, 400, false, #1b1b1b);
+	}
+	// &__item {
+	// 	position: relative;
+	// 	@include display-flex();
+	// 	margin: 0 0 20px;
+	// 	padding: 0;
+	// 	align-items: center;
+	// 	&:hover {
+	// 		.opinion__img {
+	// 			@include transform_scale(1.02);
+	// 			box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+	// 			//border: 5px solid $color_theme;
+	// 		}
+	// 	}
+	// }
+	
+	// index
+	&__header {
+		position: relative;
+		@include display-flex();
+		flex-wrap: wrap;
+		padding: 15px;
+		.author__name {
+			font-size: 16px;
+		}
+		.author__title {
+			font-size: 14px;
+		}
+		.author__right {
+			//padding-left: 25px;
+			align-self: center;
+		}
+	}
+}

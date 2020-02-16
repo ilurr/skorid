@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	{{> head}}
+
+<body class="wp">
+	<!-- header -->
+	{{> header}}
+	
+	<!-- nav -->
+	{{>nav section="Home"}}
+	
+	<div class="row clearfix">
+		<div class="container clearfix">
+		
+			<!-- ads top -->
+			{{> ads_top}}
+			
+			<!-- author -->
+			<section class="author box clearfix">
+				{{> opinion_header channel=read.bola.article}}
+			</section>
+			
+			<!-- tagging -->
+			<section class="latest clearfix">
+				<div class="latest__wrap">
+					{{> latest channel=channel.bola.latest total=15 index_start=0 index_end=15}}
+				</div>
+			</section>
+					
+			{{> paging}}
+			
+			<!-- ads square -->
+			{{> ads_square}}
+
+			<!-- ads bottom -->
+			{{> ads_skin}}
+			
+		</div>
+	</div>
+	
+	<!-- footer -->
+	{{> footer}}
+	
+	<!-- ads horizontal -->
+	{{> ads_tower}}
+
+	{{> js}}
+	
+</body>
+</html>
+									
