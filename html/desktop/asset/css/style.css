@@ -2866,6 +2866,76 @@ input[type="radio"] {
       padding: 12px 15px;
       min-width: 38px; }
 
+.liveMenu {
+  position: relative;
+  margin: 10px 0;
+  max-height: 120px;
+  overflow: hidden; }
+  .liveMenu__container {
+    position: relative;
+    padding: 10px 40px; }
+    .liveMenu__container .arrow {
+      top: calc(50% - 30px);
+      font-size: 60px;
+      color: #E5E5E5;
+      background: transparent; }
+      .liveMenu__container .arrow:hover {
+        color: #000;
+        background: transparent; }
+    .liveMenu__container .arrow--left {
+      left: -35px; }
+    .liveMenu__container .arrow--right {
+      right: -35px; }
+  .liveMenu__item {
+    position: relative;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 5px;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    background: #fff; }
+    .liveMenu__item.active, .liveMenu__item:hover {
+      background: #f0f0f0; }
+  .liveMenu__img {
+    margin: 0 auto;
+    position: relative;
+    width: 70px;
+    height: 70px;
+    overflow: hidden; }
+    .liveMenu__img img {
+      width: 100%; }
+
+.liveScore {
+  position: relative;
+  background: #c2000b; }
+  .liveScore__badge {
+    display: inline-block;
+    vertical-align: middle;
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border-radius: 10px;
+    -webkit-animation: blink 1s infinite;
+    -moz-animation: blink 1s infinite;
+    -ms-animation: blink 1s infinite;
+    -o-animation: blink 1s infinite;
+    animation: blink 1s infinite; }
+
+.liveBox {
+  position: relative; }
+  .liveBox__container {
+    position: relative;
+    padding: 25px;
+    z-index: 1; }
+
+.liveDetail {
+  position: relative;
+  padding: 25px 0;
+  z-index: 1; }
+
 .footer {
   margin-top: 0;
   padding: 40px 0 100px;

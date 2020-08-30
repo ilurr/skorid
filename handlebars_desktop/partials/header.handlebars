@@ -11,7 +11,7 @@
 				</div>
 				<div class="col-bs12-3">
 					<form action="search.html" class="search__bar">
-						<input type="text" placeholder="Search" class="search__input">
+						<input type="text" placeholder="Cari" class="search__input">
 						<input type="submit" name="submit" class="search__submit">
 						<span class="icon icon-search"></span>
 					</form>
@@ -23,7 +23,11 @@
 		<div class="row container clearfix">
 			<div class="col-offset-fluid clearfix">
 				<div class="col-bs10-10">
-					{{>nav section=section_name}}
+					{{#if navCustom}}
+					{{>nav section=section_name navCustom=navCustom}}
+					{{else}}
+					{{>nav section=section_name navCustom=MainMenu}}
+					{{/if}}
 				</div>
 			</div>
 		</div>

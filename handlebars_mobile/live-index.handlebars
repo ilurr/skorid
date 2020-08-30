@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+	{{> head livescore=true}}
+
+<body class="-live">
+	<!-- header -->
+	{{> header}}
+	
+	<!-- nav -->
+	{{>nav section="Home" navCustom=MenuLive}}
+	
+	<div class="row clearfix">
+		<div class="container clearfix">
+		
+			<!-- ads top -->
+			{{> ads_top}}
+			
+			<!-- menu -->
+			<section class="liveMenu clearfix">
+				<div class="liveMenu__container">
+					<div class="liveMenu__wrap">
+						{{> liveMenu_item}}
+					</div>
+				</div>
+			</section>
+
+			<!-- live score -->
+			<section class="liveBox clearfix">
+				<h3 class="title liveScore">
+					<span><i class="liveScore__badge"></i> Live Score</span>
+				</h3>
+				<div class="liveBox__container">
+					<div 
+						data-translation-group="livescore" 
+						data-link-group="livescore" 
+						class="mx-load-snippet  mx-ajax-snippet mx-inline-widget "
+						data-snippet="page" 
+						data-params='{"theme":"xhr","title":"livescore","params":"1/0/extended/0/0/live"}'
+					>
+					</div>
+				</div>
+			</section>
+
+			<!-- news -->
+			<section class="most clearfix">
+				<h3 class="title">
+					<span>Berita</span>
+					<a class="more" href="index.html">Lihat Semua <span class="icon icon-angle-right"></span></a>
+				</h3>
+				<div class="most__scroll">
+					<div class="most__track">
+						{{> most channel=channel.bola.latest total=8 index_start=10 index_end=18}}
+					</div>
+				</div>
+			</section>
+
+			<!-- ads square -->
+			{{> ads_square}}
+
+			<!-- tables -->
+			<section class="liveBox clearfix">
+				<h3 class="title">
+					<span>Klasemen</span>
+				</h3>
+				<div class="liveBox__container">
+					<div 
+						data-translation-group="standings" 
+						data-link-group="standings" 
+						class="mx-load-snippet  mx-ajax-snippet mx-inline-widget "
+						data-snippet="page" 
+						data-params='{"theme":"xhr","title":"standings","params":"1/2/47/14022/862234/0/leaguetable_selectors/0"}'
+					></div>
+				</div>
+			</section>
+
+			<!-- fixtures -->
+			<section class="liveBox clearfix">
+				<h3 class="title">
+					<span>Jadwal</span>
+				</h3>
+				<div class="liveBox__container">
+					<div 
+						data-translation-group="stage_fixtures" 
+						data-link-group="stage_fixtures" 
+						class="mx-load-snippet  mx-ajax-snippet mx-inline-widget "
+						data-snippet="page" 
+						data-params='{"theme":"xhr","title":"stage_fixtures","params":"868824/basic/10/0"}'
+					></div>
+				</div>
+			</section>
+
+			<!-- ads square -->
+			{{> ads_square}}
+
+			<!-- result -->
+			<section class="liveBox clearfix">
+				<h3 class="title">
+					<span>Hasil</span>
+				</h3>
+				<div class="liveBox__container">
+					<div 
+						data-translation-group="stage_results" 
+						data-link-group="stage_results" 
+						class="mx-load-snippet  mx-ajax-snippet mx-inline-widget "
+						data-snippet="page" 
+						data-params='{"theme":"xhr","title":"stage_results","params":"862234/match_incidents/10/0"}'
+					></div>
+				</div>
+			</section>
+
+			<!-- most -->
+			<section class="most clearfix">
+				<h3 class="title">
+					<span>Terpopuler</span>
+				</h3>
+				<div class="most__scroll">
+					<div class="most__track">
+						{{> most channel=channel.bola.latest total=8 index_start=2 index_end=10}}
+					</div>
+				</div>
+			</section>
+
+			<!-- ads bottom -->
+			{{> ads_skin}}
+			
+		</div>
+	</div>
+	
+	<!-- footer -->
+	{{> footer}}
+	
+	<!-- ads horizontal -->
+	{{> ads_tower}}
+
+	{{> js}}
+	<script type="text/javascript">
+	var mx_user_settings = {
+		api_domain: "https://https-skor-mx-api.enetscores.com" ,
+		use_browser_time_offset: 1
+	};
+	</script>
+	<script src="//js.enetscores.com/xjs/hour/theme/mx/555/front?m=1"></script>
+	
+</body>
+</html>

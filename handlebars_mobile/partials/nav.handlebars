@@ -1,18 +1,11 @@
 <nav class="nav -hide" id="js--nav">
 	<div class="nav__scroll">
 		<ul class="nav__wrap">
-			{{#each MainMenu}}
-			<li>
-				<a href="{{link}}"{{#eq ../section compare=title}} class="active"{{/eq}}>{{title}}</a>
-				{{#if submenu}}
-				<ul class="nav__submenu">
-					{{#each submenu}}
-					<li><a href="{{link}}">{{title}}</a></li>
-					{{/each}}
-				</ul>
-				{{/if}}
-			</li>
-			{{/each}}
+			{{#if navCustom}}
+			{{>nav_item section=section navCustom=navCustom}}
+			{{else}}
+			{{>nav_item section=section navCustom=MainMenu}}
+			{{/if}}
 		</ul>
 	</div>
 	<div class="nav__overlay"></div>

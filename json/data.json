@@ -181,6 +181,62 @@
       ]
     }
   ],
+  "MenuLive": [
+    {
+      "title": "Home",
+      "link": "live-index.html",
+      "new": 0,
+      "ads": 1
+    },
+    {
+      "title": "Premier League",
+      "link": "live-section.html",
+      "new": 0,
+      "ads": 0
+    },
+    {
+      "title": "Serie A",
+      "link": "live-section.html",
+      "new": 0,
+      "ads": 0
+    },
+    {
+      "title": "La Liga",
+      "link": "live-section.html",
+      "new": 0,
+      "ads": 0
+    },
+    {
+      "title": "Liga 1",
+      "link": "live-section.html",
+      "new": 0,
+      "ads": 0
+    },
+    {
+      "title": "Liga Champions",
+      "link": "live-section.html",
+      "new": 0,
+      "ads": 0
+    },
+    {
+      "title": "Motogp",
+      "link": "live-section.html",
+      "new": 0,
+      "ads": 0
+    },
+    {
+      "title": "MMA",
+      "link": "live-section.html",
+      "new": 0,
+      "ads": 0
+    },
+    {
+      "title": "Tenis",
+      "link": "live-section.html",
+      "new": 0,
+      "ads": 0
+    }
+  ],
   "read": {
     "pedoman": {
       "article": {

@@ -1,0 +1,12 @@
+{{#each navCustom}}
+<li>
+	<a href="{{link}}"{{#eq title compare=../section}} class="active"{{/eq}}>{{title}}</a>
+	{{#if submenu}}
+	<ul class="nav__submenu">
+		{{#each submenu}}
+		<li><a href="{{link}}">{{title}}</a></li>
+		{{/each}}
+	</ul>
+	{{/if}}
+</li>
+{{/each}}

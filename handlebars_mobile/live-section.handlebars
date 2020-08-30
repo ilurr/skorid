@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+	{{> head livescore=true}}
+
+<body class="-live">
+	<!-- header -->
+	{{> header}}
+	
+	<!-- nav -->
+	{{>nav section="Home" navCustom=MenuLive}}
+	
+	<div class="row clearfix">
+		<div class="container clearfix">
+		
+			<!-- ads top -->
+			{{> ads_top}}
+			
+			<!-- menu -->
+			<section class="liveMenu clearfix">
+				<h3 class="title">
+					<span>Premier League</span>
+				</h3>
+				<div class="liveMenu__container">
+					<div class="liveMenu__wrap">
+						{{> liveMenu_item section_name="Premier League"}}
+					</div>
+				</div>
+			</section>
+
+			<!-- live score -->
+			<section class="liveBox clearfix">
+				<h3 class="title liveScore">
+					<span><i class="liveScore__badge"></i> Live Score</span>
+				</h3>
+				<div class="liveBox__container">
+					<div 
+						data-translation-group="tournament_livescore" 
+						data-link-group="tournament_livescore" 
+						class="mx-load-snippet  mx-ajax-snippet mx-inline-widget "
+						data-snippet="page" 
+						data-params='{"theme":"xhr","title":"tournament_livescore","params":"15382/0/extended/0/0"}'
+					>
+					</div>
+				</div>
+			</section>
+
+			<!-- ads square -->
+			{{> ads_square}}
+
+			<!-- tables -->
+			<section class="liveBox clearfix">
+				<h3 class="title">
+					<span>Klasemen</span>
+				</h3>
+				<div class="liveBox__container">
+					<div 
+						data-translation-group="stage_standing" 
+						data-link-group="stage_standing" 
+						class="mx-load-snippet  mx-ajax-snippet mx-inline-widget "
+						data-snippet="page" 
+						data-params='{"theme":"xhr","title":"stage_standing","params":"868824/total/0"}'
+					></div>
+				</div>
+			</section>
+
+			<!-- fixtures -->
+			<section class="liveBox clearfix">
+				<h3 class="title">
+					<span>Jadwal</span>
+				</h3>
+				<div class="liveBox__container">
+					<div 
+						data-translation-group="stage_fixtures" 
+						data-link-group="stage_fixtures" 
+						class="mx-load-snippet  mx-ajax-snippet mx-inline-widget "
+						data-snippet="page" 
+						data-params='{"theme":"xhr","title":"stage_fixtures","params":"868824/basic/10/0"}'
+					></div>
+				</div>
+			</section>
+
+			<!-- ads square -->
+			{{> ads_square}}
+
+			<!-- result -->
+			<section class="liveBox clearfix">
+				<h3 class="title">
+					<span>Hasil</span>
+				</h3>
+				<div class="liveBox__container">
+					<div 
+						data-translation-group="stage_results" 
+						data-link-group="stage_results" 
+						class="mx-load-snippet  mx-ajax-snippet mx-inline-widget "
+						data-snippet="page" 
+						data-params='{"theme":"xhr","title":"stage_results","params":"868824/0/10/0"}'
+					></div>
+				</div>
+			</section>
+
+			<!-- stat -->
+			<section class="liveBox clearfix">
+				<h3 class="title">
+					<span>Top Skor</span>
+				</h3>
+				<div class="liveBox__container">
+					<div 
+						data-translation-group="stage_playerstats" 
+						data-link-group="stage_playerstats" 
+						class="mx-load-snippet  mx-ajax-snippet mx-inline-widget "
+						data-snippet="page" 
+						data-params='{"theme":"xhr","title":"stage_playerstats","params":"862234/topscorer"}'
+					></div>
+				</div>
+			</section>
+
+			<!-- news -->
+			<section class="most clearfix">
+				<h3 class="title">
+					<span>Berita Premier League</span>
+					<a class="more" href="index.html">Lihat Semua <span class="icon icon-angle-right"></span></a>
+				</h3>
+				<div class="most__scroll">
+					<div class="most__track">
+						{{> most channel=channel.bola.latest total=8 index_start=10 index_end=18}}
+					</div>
+				</div>
+			</section>
+
+			<!-- ads bottom -->
+			{{> ads_skin}}
+			
+		</div>
+	</div>
+	
+	<!-- footer -->
+	{{> footer}}
+	
+	<!-- ads horizontal -->
+	{{> ads_tower}}
+
+	{{> js}}
+	<script type="text/javascript">
+	var mx_user_settings = {
+		api_domain: "https://https-skor-mx-api.enetscores.com" ,
+		use_browser_time_offset: 1
+	};
+	</script>
+	<script src="//js.enetscores.com/xjs/hour/theme/mx/555/front?m=1"></script>
+	
+</body>
+</html>

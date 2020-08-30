@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width">
+		<meta name="description" content="">
+		<meta name="author" content="Skor.id">
+	
+		<title>Skor.id</title>
+		
+		<link rel="apple-touch-icon" sizes="57x57" href="./asset/images/favicon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="./asset/images/favicon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="./asset/images/favicon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="./asset/images/favicon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="./asset/images/favicon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="./asset/images/favicon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="./asset/images/favicon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="./asset/images/favicon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="./asset/images/favicon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="./asset/images/favicon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./asset/images/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="./asset/images/favicon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./asset/images/favicon/favicon-16x16.png">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="./asset/images/favicon/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+	
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,400i,500,600,700,700i&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="./asset/css/style.css" type="text/css">	
+	
+		<script src="./asset/js/jquery-1.12.0.min.js"></script>
+		
+		<!-- livescore -->
+		<link rel="stylesheet" type="text/css" href="//css.enetscores.com/hour/gz/css/mx/555.css?s=476&m=1" />
+	
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+<body class="live">
+	<!-- header -->
+	<header class="header">
+		<div class="header__top">
+			<div class="row container clearfix">
+				<div class="col-offset-fluid clearfix">
+					<div class="col-bs12-9">
+						<div class="logo">
+							<a href="index.html">
+								<img src="./asset/images/logo-skorid.jpg" alt="Skor.id">
+							</a>
+						</div>
+					</div>
+					<div class="col-bs12-3">
+						<form action="search.html" class="search__bar">
+							<input type="text" placeholder="Cari" class="search__input">
+							<input type="submit" name="submit" class="search__submit">
+							<span class="icon icon-search"></span>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__bottom">
+			<div class="row container clearfix">
+				<div class="col-offset-fluid clearfix">
+					<div class="col-bs10-10">
+						<nav class="nav">
+							<div class="nav__logo"><a href="index.html"><img src="./asset/images/logo-skorid.jpg" alt="Skor.id"></a></div>
+							<ul class="nav__wrap">
+								<li>
+									<a href="live-index.html">Home</a>
+								</li>
+								<li>
+									<a href="live-section.html" class="active">Premier League</a>
+								</li>
+								<li>
+									<a href="live-section.html">Serie A</a>
+								</li>
+								<li>
+									<a href="live-section.html">La Liga</a>
+								</li>
+								<li>
+									<a href="live-section.html">Liga 1</a>
+								</li>
+								<li>
+									<a href="live-section.html">Liga champions</a>
+								</li>
+								<li>
+									<a href="live-section.html">Motogp</a>
+								</li>
+								<li>
+									<a href="live-section.html">MMA</a>
+								</li>
+								<li>
+									<a href="live-section.html">Tenis</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<!-- ads skin -->
+	<div class="row ads__stick__wrap clearfix">
+		<div class="kcm ads__stick js--stick">
+			<div class="ads__stick__fluid ads__stick__fluid--left">
+				<div class="ads__stick--left">
+					<a href="#">
+						<img src="https://tpc.googlesyndication.com/simgad/6682467544119319335?sqp=4sqPyQQ7QjkqNxABHQAAtEIgASgBMAk4A0DwkwlYAWBfcAKAAQGIAQGdAQAAgD-oAQGwAYCt4gS4AV_FAS2ynT4&rs=AOga4qm9goW87Qz2ogjm_pH_FeDTil2xXg">
+					</a>
+				</div>
+			</div>
+			<div class="ads__stick__fluid ads__stick__fluid--right">
+				<div class="ads__stick--right">
+					<a href="#">
+						<img src="https://tpc.googlesyndication.com/simgad/6682467544119319335?sqp=4sqPyQQ7QjkqNxABHQAAtEIgASgBMAk4A0DwkwlYAWBfcAKAAQGIAQGdAQAAgD-oAQGwAYCt4gS4AV_FAS2ynT4&rs=AOga4qm9goW87Qz2ogjm_pH_FeDTil2xXg">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row clearfix">
+		<div class="container clearfix">
+			<!-- ads top -->
+			<div class="ads__top">
+				<img src="https://tpc.googlesyndication.com/simgad/16215648301956253250" alt="">
+			</div>
+		</div>
+	</div>
+
+	<!-- live menu -->
+	<div class="row clearfix">
+		<div class="container clearfix">
+			<section class="liveMenu box clearfix">
+				<div class="liveMenu__container">
+					<div class="liveMenu__wrap js--liveMenu">
+						<div class="liveMenu__item active">
+							<a href="live-section.html">
+								<div class="liveMenu__img">
+									<img src="./asset/images/live/logo-premier-league.png" alt="">
+								</div>
+							</a>
+						</div>
+						<div class="liveMenu__item">
+							<a href="live-section.html">
+								<div class="liveMenu__img">
+									<img src="./asset/images/live/logo-serie-a.png" alt="">
+								</div>
+							</a>
+						</div>
+						<div class="liveMenu__item">
+							<a href="live-section.html">
+								<div class="liveMenu__img">
+									<img src="./asset/images/live/logo-la-liga.png" alt="">
+								</div>
+							</a>
+						</div>
+						<div class="liveMenu__item">
+							<a href="live-section.html">
+								<div class="liveMenu__img">
+									<img src="./asset/images/live/logo-liga-1.png" alt="">
+								</div>
+							</a>
+						</div>
+						<div class="liveMenu__item">
+							<a href="live-section.html">
+								<div class="liveMenu__img">
+									<img src="./asset/images/live/logo-liga-champions.png" alt="">
+								</div>
+							</a>
+						</div>
+						<div class="liveMenu__item">
+							<a href="live-section.html">
+								<div class="liveMenu__img">
+									<img src="./asset/images/live/logo-motogp.png" alt="">
+								</div>
+							</a>
+						</div>
+						<div class="liveMenu__item">
+							<a href="live-section.html">
+								<div class="liveMenu__img">
+									<img src="./asset/images/live/logo-mma.png" alt="">
+								</div>
+							</a>
+						</div>
+						<div class="liveMenu__item">
+							<a href="live-section.html">
+								<div class="liveMenu__img">
+									<img src="./asset/images/live/logo-tenis.png" alt="">
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="title3">
+				<span>Premier League</span>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- content -->
+	<div class="row clearfix">
+		<div class="container clearfix">
+			<div class="col-offset-fluid clearfix">
+				
+				<div class="col-bs10-7">
+
+					<!-- live scores -->
+					<section class="liveBox box clearfix">
+						<h3 class="title liveScore">
+							<span><i class="liveScore__badge"></i> Live Scores</span>
+						</h3>
+						<div class="liveBox__container">
+							<div 
+								data-translation-group="tournament_livescore" 
+								data-link-group="tournament_livescore" 
+								class="mx-load-snippet  mx-ajax-snippet mx-inline-widget "
+								data-snippet="page" 
+								data-params='{"theme":"xhr","title":"tournament_livescore","params":"15382/0/extended/0/0"}'
+							></div>
+						</div>
+					</section>
+
+					<!-- tables -->
+					<section class="liveBox box clearfix">
+						<h3 class="title">
+							<span>Klasemen</span>
+						</h3>
+						<div class="liveBox__container">
+							<div 
+								data-translation-group="stage_standing" 
+								data-link-group="stage_standing" 
+								class="mx-load-snippet  mx-ajax-snippet mx-inline-widget "
+								data-snippet="page" 
+								data-params='{"theme":"xhr","title":"stage_standing","params":"868824/total/0"}'
+							></div>
+						</div>
+					</section>
+
+					<!-- fixtures -->
+					<section class="liveBox box clearfix">
+						<h3 class="title">
+							<span>Jadwal</span>
+						</h3>
+						<div class="liveBox__container">
+							<div 
+								data-translation-group="stage_fixtures" 
+								data-link-group="stage_fixtures" 
+								class="mx-load-snippet  mx-ajax-snippet mx-inline-widget "
+								data-snippet="page" 
+								data-params='{"theme":"xhr","title":"stage_fixtures","params":"868824/basic/10/0"}'
+							></div>
+						</div>
+					</section>
+
+					<!-- Results -->
+					<section class="liveBox box clearfix">
+						<h3 class="title">
+							<span>Hasil</span>
+						</h3>
+						<div class="liveBox__container">
+							<div 
+								data-translation-group="stage_results" 
+								data-link-group="stage_results" 
+								class="mx-load-snippet  mx-ajax-snippet mx-inline-widget "
+								data-snippet="page" 
+								data-params='{"theme":"xhr","title":"stage_results","params":"868824/0/10/0"}'
+							></div>
+						</div>
+					</section>
+
+					<!-- Stat -->
+					<section class="liveBox box clearfix">
+						<h3 class="title">
+							<span>Top Skor</span>
+						</h3>
+						<div class="liveBox__container">
+							<div 
+								data-translation-group="stage_playerstats" 
+								data-link-group="stage_playerstats" 
+								class="mx-load-snippet  mx-ajax-snippet mx-inline-widget "
+								data-snippet="page" 
+								data-params='{"theme":"xhr","title":"stage_playerstats","params":"862234/topscorer"}'
+							></div>
+						</div>
+					</section>
+
+					<!-- editors pick -->
+					<section class="editors box clearfix">
+						<h3 class="title">
+							<span>Berita Premier League</span>
+							<a class="more" href="index.html">Lihat Semua</a>
+						</h3>
+						<div class="editors__container">
+							<div class="editors__wrap js--editors">
+								<div class="editors__item">
+									<div class="editors__img">
+										<a href="artikel.html">
+											<img src="https://asset.kompas.com/crop/0x0:0x0/200x140/data/photo/2019/06/17/1267950637.jpg" alt="Uccio Salucci Yakin Rossi Dapat Membalap hingga 2022">
+										</a>
+									</div>
+									<div class="editors__box">
+										<h2 class="editors__title">
+											<a href="artikel.html" class="editors__link">Uccio Salucci Yakin Rossi Dapat Membalap hingga 2022</a>
+										</h2>
+									</div>
+								</div>
+								<div class="editors__item">
+									<div class="editors__img">
+										<a href="artikel.html">
+											<img src="https://asset.kompas.com/crop/0x0:0x0/200x140/data/photo/2018/07/14/103265694.jpg" alt="Eden Hazard Buka Pintu Lebar Untuk Real Madrid">
+										</a>
+									</div>
+									<div class="editors__box">
+										<h2 class="editors__title">
+											<a href="artikel.html" class="editors__link">Eden Hazard Buka Pintu Lebar Untuk Real Madrid</a>
+										</h2>
+									</div>
+								</div>
+								<div class="editors__item">
+									<div class="editors__img">
+										<a href="artikel.html">
+											<img src="https://asset.kompas.com/crop/0x0:0x0/200x140/data/photo/2019/08/21/5d5d62dc4e730.jpg" alt="Coutinho Tak Sabar Raih Banyak Trofi Bersama Bayern Muenchen">
+										</a>
+									</div>
+									<div class="editors__box">
+										<h2 class="editors__title">
+											<a href="artikel.html" class="editors__link">Coutinho Tak Sabar Raih Banyak Trofi Bersama Bayern Muenchen</a>
+										</h2>
+									</div>
+								</div>
+								<div class="editors__item">
+									<div class="editors__img">
+										<a href="artikel.html">
+											<img src="https://asset.kompas.com/crop/0x0:0x0/200x140/data/photo/2015/04/29/1318417shutterstock-golf780x390.jpg" alt="Sudah Pulih, Petugas Korban Sambaran Petir di Kejuaraan Golf Atlanta">
+										</a>
+									</div>
+									<div class="editors__box">
+										<h2 class="editors__title">
+											<a href="artikel.html" class="editors__link">Sudah Pulih, Petugas Korban Sambaran Petir di Kejuaraan Golf Atlanta</a>
+										</h2>
+									</div>
+								</div>
+								<div class="editors__item">
+									<div class="editors__img">
+										<a href="artikel.html">
+											<img src="https://asset.kompas.com/crop/0x0:0x0/200x140/data/photo/2018/06/21/3334426512.jpg" alt="Resmi, Emre Can Bergabung dengan Juventus">
+										</a>
+									</div>
+									<div class="editors__box">
+										<h2 class="editors__title">
+											<a href="artikel.html" class="editors__link">Resmi, Emre Can Bergabung dengan Juventus</a>
+										</h2>
+									</div>
+								</div>
+								<div class="editors__item">
+									<div class="editors__img">
+										<a href="artikel.html">
+											<img src="https://asset.kompas.com/crop/0x0:0x0/200x140/data/photo/2018/07/10/2249629156.jpg" alt="Trofi Liga Champions Jadi Alasan Riyad Mahrez ke Manchester City">
+										</a>
+									</div>
+									<div class="editors__box">
+										<h2 class="editors__title">
+											<a href="artikel.html" class="editors__link">Trofi Liga Champions Jadi Alasan Riyad Mahrez ke Manchester City</a>
+										</h2>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+				</div>
+				
+				<div class="col-bs10-3">
+				
+					<!-- ads giant -->
+					<div class="ads__box clearfix">
+						<a href="#">
+							<img src="https://tpc.googlesyndication.com/simgad/839624583650028823" alt="">
+						</a>
+					</div>
+					
+					<!-- ads square -->
+					<div class="ads__box clearfix">
+						<a href="#">
+							<img src="https://tpc.googlesyndication.com/simgad/241969906600065835" alt="">
+						</a>
+					</div>
+					
+					<!-- most -->
+					<section class="most box clearfix">
+						<h3 class="title -center"><span>Terpopuler</span></h3>
+						<div class="most__wrap">
+							<div class="most__item clearfix">
+								<a href="artikel.html" class="most__link">
+									<div class="most__img">
+										<img src="https://asset.kompas.com/crop/0x0:0x0/80x80/data/photo/2019/10/16/5da5fca9e2cc8.jpg" alt="Timnas Indonesia Kalah Lagi, Salah Siapa?">
+									</div>
+									<div class="most__right">
+										<h2 class="most__title">Timnas Indonesia Kalah Lagi, Salah Siapa?</h2>
+										<div class="most__info">Indonesia | 23:12 WIB</div>
+									</div>
+								</a>
+							</div>
+							<div class="most__item clearfix">
+								<a href="artikel.html" class="most__link">
+									<div class="most__img">
+										<img src="https://asset.kompas.com/crop/0x0:0x0/80x80/data/photo/2018/07/15/1676128012.jpg" alt="Perancis Juara Piala Dunia 2018, Griezmann Senang sampai Bingung">
+									</div>
+									<div class="most__right">
+										<h2 class="most__title">Perancis Juara Piala Dunia 2018, Griezmann Senang sampai Bingung</h2>
+										<div class="most__info">Internasional | 23:12 WIB</div>
+									</div>
+								</a>
+							</div>
+							<div class="most__item clearfix">
+								<a href="artikel.html" class="most__link">
+									<div class="most__img">
+										<img src="https://asset.kompas.com/crop/0x0:0x0/80x80/data/photo/2019/08/26/5d633d3396ebd.jpg" alt="Hendra Setiawan Pastikan Belum Ingin Gantung Raket">
+									</div>
+									<div class="most__right">
+										<h2 class="most__title">Hendra Setiawan Pastikan Belum Ingin Gantung Raket</h2>
+										<div class="most__info">Olahraga | 23:12 WIB</div>
+									</div>
+								</a>
+							</div>
+							<div class="most__item clearfix">
+								<a href="artikel.html" class="most__link">
+									<div class="most__img">
+										<img src="https://asset.kompas.com/crop/0x0:0x0/80x80/data/photo/2019/06/15/100351085.jpg" alt="Indonesia Vs Malaysia, Evan Dimas Ungkap Kelebihan Harimau Malaya">
+									</div>
+									<div class="most__right">
+										<h2 class="most__title">Indonesia Vs Malaysia, Evan Dimas Ungkap Kelebihan Harimau Malaya</h2>
+										<div class="most__info">Liga Indonesia | 23:12 WIB</div>
+									</div>
+								</a>
+							</div>
+							<div class="most__item clearfix">
+								<a href="artikel.html" class="most__link">
+									<div class="most__img">
+										<img src="https://asset.kompas.com/crop/0x0:0x0/80x80/data/photo/2019/05/19/903934684.jpg" alt="Kostum Ronaldo Terjual Setiap Satu Menit">
+									</div>
+									<div class="most__right">
+										<h2 class="most__title">Kostum Ronaldo Terjual Setiap Satu Menit</h2>
+										<div class="most__info">Liga Italia | 23:12 WIB</div>
+									</div>
+								</a>
+							</div>
+							<div class="most__item clearfix">
+								<a href="artikel.html" class="most__link">
+									<div class="most__img">
+										<img src="https://asset.kompas.com/crop/0x0:0x0/80x80/data/photo/2019/08/25/5d62368a70612.jpg" alt="Alasan Bejo Beri Supriadi Lakukan Debut Saat Persebaya Lawan Persija">
+									</div>
+									<div class="most__right">
+										<h2 class="most__title">Alasan Bejo Beri Supriadi Lakukan Debut Saat Persebaya Lawan Persija</h2>
+										<div class="most__info">Liga Indonesia | 23:12 WIB</div>
+									</div>
+								</a>
+							</div>
+							<div class="most__item clearfix">
+								<a href="artikel.html" class="most__link">
+									<div class="most__img">
+										<img src="https://asset.kompas.com/crop/0x0:0x0/80x80/data/photo/2018/02/15/3507632090.jpg" alt="Real Madrid Klarifikasi Kabar Transfer Neymar dari PSG">
+									</div>
+									<div class="most__right">
+										<h2 class="most__title">Real Madrid Klarifikasi Kabar Transfer Neymar dari PSG</h2>
+										<div class="most__info">Liga Spanyol | 23:12 WIB</div>
+									</div>
+								</a>
+							</div>
+							<div class="most__item clearfix">
+								<a href="artikel.html" class="most__link">
+									<div class="most__img">
+										<img src="https://asset.kompas.com/crop/0x0:0x0/80x80/data/photo/2018/07/14/2157885286.jpg" alt="Ikut Maurizio Sarri, Jorginho Resmi Bergabung dengan Chelsea">
+									</div>
+									<div class="most__right">
+										<h2 class="most__title">Ikut Maurizio Sarri, Jorginho Resmi Bergabung dengan Chelsea</h2>
+										<div class="most__info">Liga Inggris | 23:12 WIB</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</section>
+
+					<!-- ads square -->
+					<div class="ads__box clearfix">
+						<a href="#">
+							<img src="https://tpc.googlesyndication.com/simgad/241969906600065835" alt="">
+						</a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- footer -->
+	<footer class="footer">
+		<div class="row footer__top container clearfix">
+			<div class="col-offset-fluid clearfix">
+				<div class="col-bs12-4">
+					<div class="footer__logo">
+						<a href="index.html">
+							<img src="./asset/images/logo-skorid-black.jpg" alt="Skor.id">
+						</a>
+					</div>
+				</div>
+				<div class="col-bs12-4">
+					<div class="footer__menu inline clearfix">
+						<div class="footer__item">
+							<a href="about.html" class="footer__link">Tentang Kami</a>
+						</div>
+						<div class="footer__item">
+							<a href="pedoman.html" class="footer__link">Pedoman Media Siber</a>
+						</div>
+						<div class="footer__item">
+							<a href="#" class="footer__link">Kebijakan Privasi</a>
+						</div>
+						<div class="footer__item">
+							<a href="#" class="footer__link">Hubungi Kami</a>
+						</div>
+						<div class="footer__item">
+							<a href="#" class="footer__link">Karier</a>
+						</div>
+					</div>
+					<div class="footer__copyright">
+						<p>&copy; SKOR ID. All Right Reserved. 2020</p>
+					</div>
+				</div>
+				<div class="col-bs12-4">
+					<div class="social social--footer clearfix">
+						<div class="social__item">
+							<a href="#" class="social__link social__link--facebook">
+								<span class="icon icon-facebook"></span>
+							</a>
+						</div>
+						<div class="social__item">
+							<a href="#" class="social__link social__link--twitter">
+								<span class="icon icon-twitter"></span>
+							</a>
+						</div>
+						<div class="social__item">
+							<a href="#" class="social__link social__link--instagram">
+								<span class="icon icon-instagram"></span>
+							</a>
+						</div>
+						<div class="social__item">
+							<a href="#" class="social__link social__link--youtube">
+								<span class="icon icon-youtube"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<!-- ads horizontal -->
+	<div class="ads__horizontal">
+		<a class="ads__close" href="#" id="js--close">X</a>
+		<a href="#">
+			<img src="https://tpc.googlesyndication.com/simgad/2111631091213805740" alt="">
+		</a>
+	</div>
+
+	<script src="./asset/js/slick.min.js"></script>
+	<script src="./asset/js/jquery.sticky-kit.min.js"></script>
+	<script src="./asset/js/jquery.magnific-popup.min.js"></script>
+	<script src="./asset/js/jquery.marquee.min.js"></script>
+	<script src="./asset/js/main.js"></script>
+	<script src="./asset/js/main-live.js"></script>
+	<script type="text/javascript">
+	var mx_user_settings = {
+		api_domain: "https://https-skor-mx-api.enetscores.com" ,
+		use_browser_time_offset: 1
+	};
+	</script>
+	<script src="//js.enetscores.com/xjs/hour/theme/mx/555/front?m=1"></script>
+	
+</body>
+</html>

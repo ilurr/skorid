@@ -2941,6 +2941,96 @@ input[type="radio"] {
       padding: 12px 15px;
       min-width: 38px; }
 
+.liveMenu {
+  position: relative;
+  margin: 10px -15px;
+  background: #EFEFEF; }
+  .liveMenu__container {
+    position: relative;
+    padding: 20px 5px; }
+  .liveMenu__wrap {
+    position: relative;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;
+    /* NEW, Spec - Firefox, Chrome, Opera */
+    flex-wrap: wrap;
+    justify-content: center; }
+  .liveMenu__item {
+    position: relative;
+    width: calc(100% / 4);
+    padding: 0;
+    margin: 10px 0;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
+    .liveMenu__item.active .liveMenu__img {
+      background: #f8f8f8;
+      border: 2px solid #c2000b;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); }
+  .liveMenu__img {
+    margin: 0 auto;
+    position: relative;
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); }
+    .liveMenu__img img {
+      width: 100%; }
+  .liveMenu .title {
+    margin-bottom: -25px; }
+
+.liveScore {
+  position: relative; }
+  .liveScore__badge {
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 10px;
+    background: #c2000b;
+    border-radius: 10px;
+    -webkit-animation: blink 1s infinite;
+    -moz-animation: blink 1s infinite;
+    -ms-animation: blink 1s infinite;
+    -o-animation: blink 1s infinite;
+    animation: blink 1s infinite; }
+
+.liveBox {
+  position: relative;
+  margin: 0 -15px;
+  padding: 10px 0 0; }
+  .liveBox__container {
+    background: #fff;
+    position: relative;
+    padding: 20px 15px;
+    z-index: 1; }
+
+.liveDetail {
+  position: relative;
+  padding: 0 15px;
+  z-index: 1; }
+  .liveDetail > .read__header {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd; }
+  .liveDetail .read__content {
+    padding: 20px 0; }
+
+.-live .most {
+  margin: 0 -15px;
+  padding: 10px 0; }
+
+.-live .title {
+  font-size: 20px; }
+
 .footer {
   margin-top: 0;
   padding: 20px 0 80px;

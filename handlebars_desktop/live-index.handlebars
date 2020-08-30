@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+	{{> head livescore=true}}
+
+<body class="live">
+	<!-- header -->
+	{{> header section_name="Home" navCustom=MenuLive}}
+	
+	<!-- ads skin -->
+	{{> ads_skin}}
+	
+	<div class="row clearfix">
+		<div class="container clearfix">
+			<!-- ads top -->
+			{{> ads_top}}
+		</div>
+	</div>
+
+	<!-- live menu -->
+	<div class="row clearfix">
+		<div class="container clearfix">
+			<section class="liveMenu box clearfix">
+				<div class="liveMenu__container">
+					<div class="liveMenu__wrap js--liveMenu">
+						{{> liveMenu_item}}
+						{{!> liveMenu_item}}
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+
+	<!-- content -->
+	<div class="row clearfix">
+		<div class="container clearfix">
+			<div class="col-offset-fluid clearfix">
+				
+				<div class="col-bs10-7">
+				
+					<!-- live scores -->
+					<section class="liveBox box clearfix">
+						<h3 class="title liveScore">
+							<span><i class="liveScore__badge"></i> Live Scores</span>
+						</h3>
+						<div class="liveBox__container">
+							<div 
+								data-translation-group="livescore" 
+								data-link-group="livescore" 
+								class="mx-load-snippet  mx-ajax-snippet mx-inline-widget "
+								data-snippet="page" 
+								data-params='{"theme":"xhr","title":"livescore","params":"1/0/extended/0/0/live"}'
+							>
+							</div>
+						</div>
+					</section>
+
+					<!-- editors pick -->
+					<section class="editors box clearfix">
+						<h3 class="title">
+							<span>Berita</span>
+							<a class="more" href="index.html">Lihat Semua</a>
+						</h3>
+						<div class="editors__container">
+							<div class="editors__wrap js--editors">
+								{{> editor_pick channel=channel.bola.latest total=6 index_start=10 index_end=16}}
+							</div>
+						</div>
+					</section>
+
+					<!-- tables -->
+					<section class="liveBox box clearfix">
+						<h3 class="title">
+							<span>Klasemen</span>
+						</h3>
+						<div class="liveBox__container">
+							<div 
+								data-translation-group="standings" 
+								data-link-group="standings" 
+								class="mx-load-snippet  mx-ajax-snippet mx-inline-widget "
+								data-snippet="page" 
+								data-params='{"theme":"xhr","title":"standings","params":"1/2/47/14022/862234/0/leaguetable_selectors/0"}'
+							></div>
+						</div>
+					</section>
+
+					<!-- fixtures -->
+					<section class="liveBox box clearfix">
+						<h3 class="title">
+							<span>Jadwal</span>
+						</h3>
+						<div class="liveBox__container">
+							<div 
+								data-translation-group="stage_fixtures" 
+								data-link-group="stage_fixtures" 
+								class="mx-load-snippet  mx-ajax-snippet mx-inline-widget "
+								data-snippet="page" 
+								data-params='{"theme":"xhr","title":"stage_fixtures","params":"868824/basic/10/0"}'
+							></div>
+						</div>
+					</section>
+
+					<!-- Results -->
+					<section class="liveBox box clearfix">
+						<h3 class="title">
+							<span>Hasil</span>
+						</h3>
+						<div class="liveBox__container">
+							<div 
+								data-translation-group="stage_results" 
+								data-link-group="stage_results" 
+								class="mx-load-snippet  mx-ajax-snippet mx-inline-widget "
+								data-snippet="page" 
+								data-params='{"theme":"xhr","title":"stage_results","params":"862234/match_incidents/10/0"}'
+							></div>
+						</div>
+					</section>
+
+				</div>
+				
+				<div class="col-bs10-3">
+				
+					<!-- ads giant -->
+					{{> ads_giant}}
+					
+					<!-- ads square -->
+					{{> ads_square}}
+					
+					<!-- most -->
+					<section class="most box clearfix">
+						<h3 class="title -center"><span>Terpopuler</span></h3>
+						<div class="most__wrap">
+							{{> most channel=channel.bola.latest total=8 index_start=2 index_end=10}}
+						</div>
+					</section>
+
+					<!-- ads square -->
+					{{> ads_square}}
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- footer -->
+	{{> footer}}
+	
+	<!-- ads horizontal -->
+	{{> ads_horizontal}}
+
+	{{> js}}
+	<script src="./asset/js/main-live.js"></script>
+	<script type="text/javascript">
+	var mx_user_settings = {
+		api_domain: "https://https-skor-mx-api.enetscores.com" ,
+		use_browser_time_offset: 1
+	};
+	</script>
+	<script src="//js.enetscores.com/xjs/hour/theme/mx/555/front?m=1"></script>
+	
+</body>
+</html>

@@ -27,6 +27,11 @@
 	-webkit-transform: $x; /* Safari */
 	transform: $x;
 }
+@mixin filter($x) {	
+	-moz-filter: $x; /* IE 9 */
+	-webkit-filter: $x; /* Safari */
+	filter: $x;
+}
 @mixin transform_scale($x) {
 	-ms-transform: scale($x); /* IE 9 */
 	-webkit-transform: scale($x); /* Safari */

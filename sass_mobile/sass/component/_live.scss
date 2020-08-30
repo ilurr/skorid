@@ -1,0 +1,95 @@
+.live {
+	&Menu {
+		position: relative;
+		margin: 10px -15px;
+		background: #EFEFEF;
+		&__container {
+			position: relative;
+			padding: 20px 5px;
+		}
+		&__wrap {
+			position: relative;
+			@include display-flex();
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		&__item {
+			position: relative;
+			width: calc(100% / 4);
+			padding: 0;
+			margin: 10px 0;
+			@include transition(all .2s ease);
+			// background: #fff;
+			&.active {
+				.liveMenu__img {
+					background: #f8f8f8;
+					border: 2px solid $color_theme;
+					box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+				}
+			}
+		}
+		&__img {
+			margin: 0 auto;
+			position: relative;
+			width: 70px;
+			height: 70px;
+			padding: 10px;
+			background: #fff;
+			border-radius: 50px;
+			overflow: hidden;
+			box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+			img {
+				width: 100%;
+			}
+		}
+		.title {
+			margin-bottom: -25px;
+		}
+	}
+	&Score {
+		position: relative;
+		// background: $color_theme;
+		&__badge {
+			display: inline-block;
+			vertical-align: middle;
+			width: 10px;
+			height: 10px;
+			background: $color_theme;
+			border-radius: 10px;
+			@include animation(blink 1s infinite);
+		}
+	}
+	&Box {
+		position: relative;
+		margin: 0 -15px;
+		padding: 10px 0 0;
+		&__container {
+			background: #fff;
+			position: relative;
+			padding: 20px 15px;
+			z-index: 1;
+		}
+	}
+	&Detail {
+		position: relative;
+		padding: 0 15px;
+		z-index: 1;
+		& > .read__header {
+			padding: 10px 0;
+			border-bottom: 1px solid #ddd;
+		}
+		.read__content {
+			padding: 20px 0;
+		}
+	}
+}
+
+.-live {
+	.most {
+		margin: 0 -15px;
+		padding: 10px 0;
+	}
+	.title {
+		font-size: 20px;
+	}
+}

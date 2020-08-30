@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+	{{> head livescore=true}}
+
+<body class="live">
+	<!-- header -->
+	{{> header navCustom=MenuLive}}
+	
+	<!-- ads skin -->
+	{{> ads_skin}}
+	
+	<div class="row clearfix">
+		<div class="container clearfix">
+			<div class="col-offset-fluid clearfix">
+				<div class="col-bs10-10">
+					
+					<!-- ads top -->
+					{{> ads_top}}
+					
+					<div class="breadcrumb clearfix">
+						<ul class="breadcrumb__wrap">
+							<li class="breadcrumb__item"><a class="breadcrumb__link" href="live-index.html">Home</a></li>
+							<li class="breadcrumb__item"><a class="breadcrumb__link" href="live-section.html">Liga Champions</a></li>
+							{{!-- <li class="breadcrumb__item"><a class="breadcrumb__link" href="live-section.html">Liga Champions</a></li> --}}
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row clearfix">
+		<div class="container clearfix">
+			<div class="col-offset-fluid clearfix">
+				
+				<div class="col-bs10-7">
+				
+					<div class="content box clearfix">
+					
+						<!-- header -->
+						<section class="read__header clearfix">
+							{{> liveDetail_header}}
+						</section>
+
+						<!-- detail -->
+						<div class="read__article liveDetail clearfix">
+
+							<article class="read__content clearfix">
+
+								<div 
+									data-translation-group="match_center" 
+									data-link-group="match_center" 
+									class="mx-load-snippet  mx-ajax-snippet mx-inline-widget "
+									data-snippet="page" 
+									data-params='{"theme":"xhr","title":"match_center","params":"3363666/formula1"}'
+								></div>
+
+								<h2>Kejadian Penting</h2>
+
+								<div 
+									data-translation-group="match_incidents" 
+									data-link-group="match_incidents" 
+									class="mx-load-snippet  mx-ajax-snippet mx-inline-widget "
+									data-snippet="page" 
+									data-params='{"theme":"xhr","title":"match_incidents","params":"3363666/basic"}'
+								></div>
+
+								<h2>Susunan Pemain</h2>
+
+								<div 
+									data-translation-group="lineup" 
+									data-link-group="lineup" 
+									class="mx-load-snippet  mx-ajax-snippet mx-inline-widget "
+									data-snippet="page" 
+									data-params='{"theme":"xhr","title":"lineup","params":"3363666/both"}'
+								></div>
+
+							</article>
+
+							<!-- comment -->
+							<section class="read__comment clearfix">
+								<div class="title2">
+									<span>Komentar</span>
+								</div>
+								{{> read_comment}}
+							</section>
+
+						</div>
+
+					</div>
+
+					<!-- editors pick -->
+					<section class="editors box clearfix">
+						<h3 class="title">
+							<span>Berita Terkait</span>
+							<a class="more" href="index.html">Lihat Semua</a>
+						</h3>
+						<div class="editors__container">
+							<div class="editors__wrap js--editors">
+								{{> editor_pick channel=channel.bola.latest total=6 index_start=10 index_end=16}}
+							</div>
+						</div>
+					</section>
+										
+				</div>
+				<div class="col-bs10-3">
+
+					<!-- ads giant -->
+					{{> ads_giant}}
+					
+					<!-- ads square -->
+					{{> ads_square}}
+					
+					<!-- most -->
+					<section class="most box clearfix">
+						<h3 class="title -center"><span>Terpopuler</span></h3>
+						<div class="most__wrap">
+							{{> most channel=channel.bola.latest total=8 index_start=2 index_end=10}}
+						</div>
+					</section>
+
+					<!-- ads square -->
+					{{> ads_square}}
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- footer -->
+	{{> footer}}
+
+	<!-- ads horizontal -->
+	{{> ads_horizontal}}
+
+	{{> js}}
+	<script src="./asset/js/main-live.js"></script>
+	<script type="text/javascript">
+	var mx_user_settings = {
+		api_domain: "https://https-skor-mx-api.enetscores.com" ,
+		use_browser_time_offset: 1
+	};
+	</script>
+	<script src="//js.enetscores.com/xjs/hour/theme/mx/555/front?m=1"></script>
+	
+</body>
+</html>

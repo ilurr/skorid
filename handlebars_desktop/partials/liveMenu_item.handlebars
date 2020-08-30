@@ -1,0 +1,11 @@
+{{#each MenuLive}}
+{{#eq ads compare=0}}
+<div class="liveMenu__item{{#eq title compare=../section_name}} active{{/eq}}">
+	<a href="live-section.html">
+		<div class="liveMenu__img">
+			<img src="./asset/images/live/logo-{{lowercase (hyphenate title)}}.png" alt="">
+		</div>
+	</a>
+</div>
+{{/eq}}
+{{/each}}
